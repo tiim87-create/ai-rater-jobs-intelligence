@@ -46,7 +46,7 @@ def lever(vendor,slug):
         out.append({"id":vendor+":"+str(p["id"]),"vendor":vendor,"source_id":str(p["id"]),"title":p["text"],"country":country_for(loc),"location_raw":loc,"category":cat.get("department") or cat.get("team") or "Other","url":link,"source":source,"coverage":"full_board"})
     if not out: raise ValueError("No valid Lever records")
     return out
-TELUS_URL="https://jobs.telusdigital.com/search/cfm5/ai-community/jobs"
+TELUS_URL="https://jobs.telusdigital.com/search/jobs?cfm5=AI+Community&ns_category=ai-community"
 def telus():
     page=request(TELUS_URL,"text/html")
     if len(page)<2000: raise ValueError("Unexpectedly short TELUS page")
