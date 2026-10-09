@@ -19,10 +19,14 @@ def request(url, accept=None):
     if accept: headers["Accept"] = accept
     with urllib.request.urlopen(urllib.request.Request(url,headers=headers),timeout=35) as response:
         return response.read().decode("utf-8",errors="replace")
+CITY_COUNTRIES = {"kuala lumpur":"Malaysia","riyadh":"Saudi Arabia","jeddah":"Saudi Arabia","dubai":"United Arab Emirates","abu dhabi":"United Arab Emirates","florida":"United States","california":"United States","new york":"United States","london":"United Kingdom","manila":"Philippines","bangkok":"Thailand","amsterdam":"Netherlands","berlin":"Germany","paris":"France","toronto":"Canada","sydney":"Australia","singapore":"Singapore"}
 def country_for(location):
     s = str(location or "").lower()
     hits = {canonical for name,canonical in COUNTRIES.items() if re.search(r"(?<![a-z])"+re.escape(name)+r"(?![a-z])",s)}
-    return next(iter(hits)) if len(hits)==1 else "Unmapped"
+    if len(hits)==1: return next(iter(hits))
+    if len(hits)>1: return "Unmapped"
+    city_hits={canonical for name,canonical in CITY_COUNTRIES.items() if re.search(r"(?<![a-z])"+re.escape(name)+r"(?![a-z])",s)}
+    return next(iter(city_hits)) if len(city_hits)==1 else "Unmapped"
 def read(name,default):
     try: return json.loads((DATA/name).read_text(encoding="utf-8"))
     except (OSError,ValueError): return default
