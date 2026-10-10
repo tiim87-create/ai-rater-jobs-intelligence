@@ -53,7 +53,7 @@
     },
     {
       "category": "RWS",
-      "country": "Unmapped",
+      "country": "United States",
       "coverage": "full_board",
       "first_seen": "2026-10-09T11:29:19+00:00",
       "id": "RWS:08eb2f35-4333-4e90-a3e9-1518517eed21",
@@ -67,8 +67,10 @@
       "url": "https://jobs.lever.co/rws/08eb2f35-4333-4e90-a3e9-1518517eed21",
       "vendor": "RWS",
       "workplace_type": "remote",
-      "countries": [],
-      "geography_status": "unmapped",
+      "countries": [
+        "US"
+      ],
+      "geography_status": "mapped",
       "all_locations_raw": [
         "Dallas, Texas"
       ],
@@ -151,7 +153,7 @@
     },
     {
       "category": "RWS",
-      "country": "Unmapped",
+      "country": "United States",
       "coverage": "full_board",
       "first_seen": "2026-10-09T11:29:19+00:00",
       "id": "RWS:1af08aa1-0ee0-4800-8cec-91b8b766c2d0",
@@ -165,8 +167,10 @@
       "url": "https://jobs.lever.co/rws/1af08aa1-0ee0-4800-8cec-91b8b766c2d0",
       "vendor": "RWS",
       "workplace_type": "remote",
-      "countries": [],
-      "geography_status": "unmapped",
+      "countries": [
+        "US"
+      ],
+      "geography_status": "mapped",
       "all_locations_raw": [
         "Dallas, Texas"
       ],
@@ -199,7 +203,7 @@
     },
     {
       "category": "RWS",
-      "country": "Unmapped",
+      "country": "United States",
       "coverage": "full_board",
       "first_seen": "2026-10-09T11:29:19+00:00",
       "id": "RWS:1e321ef1-f58c-47bc-827d-dd392cf2671b",
@@ -213,8 +217,10 @@
       "url": "https://jobs.lever.co/rws/1e321ef1-f58c-47bc-827d-dd392cf2671b",
       "vendor": "RWS",
       "workplace_type": "remote",
-      "countries": [],
-      "geography_status": "unmapped",
+      "countries": [
+        "US"
+      ],
+      "geography_status": "mapped",
       "all_locations_raw": [
         "Dallas, Texas"
       ],
@@ -422,7 +428,7 @@
     },
     {
       "category": "RWS",
-      "country": "Unmapped",
+      "country": "United States",
       "coverage": "full_board",
       "first_seen": "2026-10-10T07:32:41+00:00",
       "id": "RWS:3d590a14-c374-48fe-89cc-24d2b6bcc29d",
@@ -436,8 +442,10 @@
       "url": "https://jobs.lever.co/rws/3d590a14-c374-48fe-89cc-24d2b6bcc29d",
       "vendor": "RWS",
       "workplace_type": "remote",
-      "countries": [],
-      "geography_status": "unmapped",
+      "countries": [
+        "US"
+      ],
+      "geography_status": "mapped",
       "all_locations_raw": [
         "New Jersey"
       ],
@@ -495,7 +503,7 @@
     },
     {
       "category": "RWS",
-      "country": "Unmapped",
+      "country": "United States",
       "coverage": "full_board",
       "first_seen": "2026-10-10T07:32:41+00:00",
       "id": "RWS:49bf7770-f54a-42d4-805c-cb1f1e3365b7",
@@ -509,8 +517,10 @@
       "url": "https://jobs.lever.co/rws/49bf7770-f54a-42d4-805c-cb1f1e3365b7",
       "vendor": "RWS",
       "workplace_type": "remote",
-      "countries": [],
-      "geography_status": "unmapped",
+      "countries": [
+        "US"
+      ],
+      "geography_status": "mapped",
       "all_locations_raw": [
         "California"
       ],
@@ -568,7 +578,7 @@
     },
     {
       "category": "RWS",
-      "country": "Unmapped",
+      "country": "United States",
       "coverage": "full_board",
       "first_seen": "2026-10-09T11:29:19+00:00",
       "id": "RWS:5b16108c-b19c-4b3d-80d5-5bab8c8a980f",
@@ -582,8 +592,10 @@
       "url": "https://jobs.lever.co/rws/5b16108c-b19c-4b3d-80d5-5bab8c8a980f",
       "vendor": "RWS",
       "workplace_type": "remote",
-      "countries": [],
-      "geography_status": "unmapped",
+      "countries": [
+        "US"
+      ],
+      "geography_status": "mapped",
       "all_locations_raw": [
         "Edison, New Jersey"
       ],
@@ -814,7 +826,7 @@
     },
     {
       "category": "RWS",
-      "country": "Unmapped",
+      "country": "United States",
       "coverage": "full_board",
       "first_seen": "2026-10-09T11:29:19+00:00",
       "id": "RWS:758ec345-86a0-421e-ad04-91c09308ae47",
@@ -828,8 +840,10 @@
       "url": "https://jobs.lever.co/rws/758ec345-86a0-421e-ad04-91c09308ae47",
       "vendor": "RWS",
       "workplace_type": "remote",
-      "countries": [],
-      "geography_status": "unmapped",
+      "countries": [
+        "US"
+      ],
+      "geography_status": "mapped",
       "all_locations_raw": [
         "Dallas, Texas"
       ],
@@ -1285,7 +1299,7 @@
     },
     {
       "category": "RWS",
-      "country": "Unmapped",
+      "country": "United States",
       "coverage": "full_board",
       "first_seen": "2026-10-10T07:32:41+00:00",
       "id": "RWS:c0992264-6bb0-495a-9eea-cd127255419e",
@@ -1299,8 +1313,10 @@
       "url": "https://jobs.lever.co/rws/c0992264-6bb0-495a-9eea-cd127255419e",
       "vendor": "RWS",
       "workplace_type": "remote",
-      "countries": [],
-      "geography_status": "unmapped",
+      "countries": [
+        "US"
+      ],
+      "geography_status": "mapped",
       "all_locations_raw": [
         "Florida"
       ],
@@ -1408,7 +1424,7 @@
     },
     {
       "category": "RWS",
-      "country": "Unmapped",
+      "country": "United States",
       "coverage": "full_board",
       "first_seen": "2026-10-09T11:29:19+00:00",
       "id": "RWS:cd843b41-a48b-4fa5-aae7-ead7b0a27d51",
@@ -1422,8 +1438,10 @@
       "url": "https://jobs.lever.co/rws/cd843b41-a48b-4fa5-aae7-ead7b0a27d51",
       "vendor": "RWS",
       "workplace_type": "remote",
-      "countries": [],
-      "geography_status": "unmapped",
+      "countries": [
+        "US"
+      ],
+      "geography_status": "mapped",
       "all_locations_raw": [
         "Milwaukee, Wisconsin"
       ],
@@ -1556,7 +1574,7 @@
     },
     {
       "category": "RWS",
-      "country": "Unmapped",
+      "country": "United States",
       "coverage": "full_board",
       "first_seen": "2026-10-10T07:32:41+00:00",
       "id": "RWS:e390deb8-86d1-44f6-891e-40a3f046b3b5",
@@ -1570,8 +1588,10 @@
       "url": "https://jobs.lever.co/rws/e390deb8-86d1-44f6-891e-40a3f046b3b5",
       "vendor": "RWS",
       "workplace_type": "remote",
-      "countries": [],
-      "geography_status": "unmapped",
+      "countries": [
+        "US"
+      ],
+      "geography_status": "mapped",
       "all_locations_raw": [
         "Dallas, Texas"
       ],
@@ -1679,7 +1699,7 @@
     },
     {
       "category": "RWS",
-      "country": "Unmapped",
+      "country": "Canada",
       "coverage": "full_board",
       "first_seen": "2026-10-09T11:29:19+00:00",
       "id": "RWS:f2909261-9bde-4762-a109-c7a0021c8d87",
@@ -1693,8 +1713,10 @@
       "url": "https://jobs.lever.co/rws/f2909261-9bde-4762-a109-c7a0021c8d87",
       "vendor": "RWS",
       "workplace_type": "remote",
-      "countries": [],
-      "geography_status": "unmapped",
+      "countries": [
+        "CA"
+      ],
+      "geography_status": "mapped",
       "all_locations_raw": [
         "Brampton, Ontario"
       ],
@@ -1702,7 +1724,7 @@
     },
     {
       "category": "RWS",
-      "country": "Unmapped",
+      "country": "United States",
       "coverage": "full_board",
       "first_seen": "2026-10-09T11:29:19+00:00",
       "id": "RWS:f4e3ba40-dc02-4f86-a88a-9cc7e7891ede",
@@ -1716,8 +1738,10 @@
       "url": "https://jobs.lever.co/rws/f4e3ba40-dc02-4f86-a88a-9cc7e7891ede",
       "vendor": "RWS",
       "workplace_type": "remote",
-      "countries": [],
-      "geography_status": "unmapped",
+      "countries": [
+        "US"
+      ],
+      "geography_status": "mapped",
       "all_locations_raw": [
         "Florida"
       ],
@@ -1964,8 +1988,8 @@
         "amount": 100,
         "currency": "USD",
         "unit": "per_unit",
-        "normalized_usd": 100.0,
-        "max_amount": 200.0
+        "normalized_usd": 100,
+        "max_amount": 200
       },
       "description": "<p>Ready to help shape the future of technology? This short but impactful 1-hour study aims to improve human movement recognition via artificial intelligence technology.&nbsp;</p><p><br></p><p><strong>Project Overview&nbsp;</strong></p><p>For this study, we are looking for participants of all demographics! Adults and minors will be video recorded while performing basic movements, walk up/down stairs inside and outside and act out activities such as walking around a residential home.</p><ul><li>13-17-year-olds need a legal guardian to register, provide consent, and need to be accompanied for the session.</li><li>Research is being conducted in <strong>Seattle, WA, Los Angeles, CA, and San Jose, CA.</strong></li><li>This is a one-time task</li></ul><p><br></p><p><strong>Compensation:</strong></p><p>Participants will be compensated for completed sessions. An additional half hour is required to check in for appointments and is not included in session times.&nbsp;</p><p><br></p><p>Our current sessions are compensated at the following rates:</p><p><br></p><p><strong>Seattle, WA 1-hour sessions:</strong></p><ul><li>Adults: $100</li><li>Seniors: $125</li><li>Minors: $140</li></ul><p><br></p><p><strong>Los Angeles, CA and San Jose, CA 1-hour sessions:</strong></p><ul><li>Adults: $125</li><li>Seniors: $150</li><li>Minors: $200</li></ul><p><br></p><p>Payments will be made via Hyperwallet, where you can choose PayPal, bank transfer, or Venmo as the payment method.</p><p><br></p><p><strong>TELUS International AI Community</strong></p><p>Our global AI Community is a vibrant network of 1 million+ contributors from diverse backgrounds who help our customers collect, enhance, train, translate, and localize content to build better AI models. Become part of our growing community and make an impact supporting the machine learning models of some of the world’s largest brands.&nbsp;</p>"
     },
@@ -2030,8 +2054,8 @@
         "amount": 2,
         "currency": "USD",
         "unit": "per_unit",
-        "normalized_usd": 2.0,
-        "max_amount": 3.0
+        "normalized_usd": 2,
+        "max_amount": 3
       },
       "description": "<p><span style=\"background-color: transparent;\">Ready to help shape the future of tech? Join this quick, impactful study designed to make AI even better at understanding human movement.</span></p><p><br></p><p><strong style=\"background-color: transparent;\">Project Overview and Expectations</strong></p><ul><li><span style=\"background-color: transparent;\">For this data collection, participants are invited to take part in an </span><strong style=\"background-color: transparent;\">on-site, video-recorded session involving basic physical movements</strong><span style=\"background-color: transparent;\"> such as sitting, standing, and walking between designated points within a room.&nbsp;</span></li><li><span style=\"background-color: transparent;\">This project is being conducted on-site at a designated location in either Seattle, WA, San Jose, CA, Los Angeles, CA, Honolulu, HI. </span></li></ul><p><br></p><p><strong style=\"background-color: transparent;\">Project Compensation</strong></p><p><span style=\"background-color: transparent;\">Participants will be compensated for completed 2.5 hour- sessions. </span></p><p><span style=\"background-color: transparent;\">An additional half hour is required to check in for appointments and is not included in session times. </span></p><p><br></p><p><span style=\"background-color: transparent;\">Our current sessions are compensated at the following rates:</span></p><ul><li><span style=\"background-color: transparent;\">Seattle, WA: </span><strong style=\"background-color: transparent;\">175 USD</strong></li><li><span style=\"background-color: transparent;\">San Jose, CA: </span><strong style=\"background-color: transparent;\">225 USD</strong></li><li><span style=\"background-color: transparent;\">Los Angeles, CA: </span><strong style=\"background-color: transparent;\">225 USD</strong></li><li>Kapolei, Hawaii: <strong style=\"background-color: transparent;\">225 USD</strong></li></ul><p><br></p><p><span style=\"background-color: transparent;\">Sign up today for sessions starting in the next few weeks!&nbsp;Our current sessions are scheduled Monday - Friday, from 9 am - 5 pm.</span></p><p>Please note that recordings at the Los Angeles location will begin within the next 5 weeks.</p><p><br></p><p><strong style=\"background-color: transparent;\">TELUS Digital AI Community</strong></p><p><span style=\"background-color: transparent;\">Our global AI Community is a vibrant network of 1 million+ contributors from diverse backgrounds who help our customers collect, enhance, train, translate, and localize content to build better AI models. Become part of our growing community and make an impact supporting the machine learning models of some of the world’s largest brands.</span></p>"
     },
@@ -2065,7 +2089,7 @@
         "currency": "USD",
         "unit": "per_hour",
         "normalized_usd": 3.5,
-        "max_amount": 15.0
+        "max_amount": 15
       },
       "description": "<p><strong>Spelling &amp; Grammar Correction (On-Device AI)</strong></p><p><br></p><p><strong>Join TELUS Digital</strong> as a freelance AI linguistic specialist and help improve on-device spelling and grammar correction for Arabic used by millions of users worldwide.</p><h3><br></h3><h3>Responsibilities</h3><ul><li><strong>Script Verification:</strong> Review Arabic text and scripts to ensure linguistic accuracy, clarity, and alignment with project guidelines</li><li><strong>Typo Creation &amp; Error Simulation:</strong> Create controlled spelling and typographical errors to train and test AI correction systems</li><li><strong>Grammar Error Creation:</strong> Design grammatical errors across different sentence structures, registers, and real-world contexts</li><li><strong>Quality Control:</strong> Perform quality checks to ensure consistency and high linguistic standards</li><li><strong>Language &amp; Content Evaluation:</strong> Analyze AI-generated outputs to improve understanding of meaning, context, and linguistic nuance in Arabic</li><li><strong>Cultural &amp; Contextual Analysis:</strong> Apply cultural and regional knowledge to ensure corrections are natural, appropriate, and inclusive across Arabic varieties</li></ul><p><br></p><p><strong>Work Model</strong></p><ul><li>Freelance / Project-Based</li><li>Remote</li><li>Flexible hours</li></ul><p><br></p><p><br></p><h2><br></h2>"
     },
@@ -2099,7 +2123,7 @@
         "currency": "USD",
         "unit": "per_hour",
         "normalized_usd": 3.5,
-        "max_amount": 15.0
+        "max_amount": 15
       },
       "description": "<p>Freelance AI Linguistic Specialist – Indonesian</p><p><br></p><p><strong>Spelling &amp; Grammar Correction (On-Device AI)</strong></p><p><strong style=\"background-color: transparent;\">Join </strong><strong>TELUS Digital</strong> as a freelance AI linguistic specialist and help improve on-device spelling and grammar correction for Indonesian used by millions of users worldwide.</p><p><br></p><h3>Responsibilities</h3><ul><li><strong>Script Verification:</strong> Review Indonesian text to ensure linguistic accuracy, clarity, and alignment with project guidelines</li><li><strong>Typo Creation &amp; Error Simulation:</strong> Create controlled spelling and typographical errors to train and test AI systems</li><li><strong>Grammar Error Creation:</strong> Design grammatical errors across various sentence structures and real-world contexts</li><li><strong>Quality Control:</strong> Perform quality checks to ensure consistency and high linguistic standards</li><li><strong>Language &amp; Content Evaluation:</strong> Analyze AI-generated outputs for meaning, context, and linguistic nuance</li><li><strong>Cultural &amp; Contextual Analysis:</strong> Apply cultural and regional knowledge to ensure natural and inclusive corrections</li></ul><p><strong>Work Model</strong></p><ul><li>Freelance / Project-Based</li><li>Remote</li><li>Flexible hours</li></ul><h2><br></h2>"
     },
@@ -2132,8 +2156,8 @@
         "amount": 6,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 6.0,
-        "max_amount": 12.0
+        "normalized_usd": 6,
+        "max_amount": 12
       },
       "description": "<p><strong>Spelling &amp; Grammar Correction (On-Device AI)</strong></p><p>Join <strong>TELUS Digital</strong> as a freelance AI linguistic specialist and help improve on-device spelling and grammar correction for <strong>Russian as used in Kazakhstan</strong>, supporting millions of users worldwide.</p><p><br></p><h3>Responsibilities</h3><ul><li><strong>Script Verification:</strong> Review Indonesian text to ensure linguistic accuracy, clarity, and alignment with project guidelines</li><li><strong>Typo Creation &amp; Error Simulation:</strong> Create controlled spelling and typographical errors to train and test AI systems</li><li><strong>Grammar Error Creation:</strong> Design grammatical errors across various sentence structures and real-world contexts</li><li><strong>Quality Control:</strong> Perform quality checks to ensure consistency and high linguistic standards</li><li><strong>Language &amp; Content Evaluation:</strong> Analyze AI-generated outputs for meaning, context, and linguistic nuance</li><li><strong>Cultural &amp; Contextual Analysis:</strong> Apply cultural and regional knowledge to ensure natural and inclusive corrections</li></ul><p><strong>Work Model</strong></p><ul><li>Freelance / Project-Based</li><li>Remote</li><li>Flexible hours</li></ul><h2><br></h2>"
     },
@@ -2168,7 +2192,7 @@
         "amount": 20,
         "currency": "USD",
         "unit": "per_unit",
-        "normalized_usd": 20.0,
+        "normalized_usd": 20,
         "max_amount": null
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role</strong></p><p><br></p><p>We are inviting parents and guardians of teenagers aged 13–17 to take part in a short, secure online participation task.</p><p>As part of a global effort to better protect children online, this task supports the development of safer internet technologies, including age verification systems that prevent access to harmful or age-inappropriate content.</p><p>The task involves confirming basic information for identity verification and can be completed from home in around 30 minutes. It is a simple data collection process designed to support secure, privacy-focused age verification systems.</p><p><br></p><p><strong style=\"background-color: transparent;\">About Us:&nbsp;</strong></p><p><br></p><p>We are a team dedicated to<strong> safeguarding children and society online</strong>. Our solutions help platforms follow regulations, build trust, and keep their communities safe.</p><p>Your participation helps make the internet safer for children and families while supporting responsible and secure online safety solutions.</p>"
@@ -2202,8 +2226,8 @@
         "amount": 20,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 20.0,
-        "max_amount": 50.0
+        "normalized_usd": 20,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong></p><p><br></p><p><span style=\"background-color: transparent;\">At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we believe Python is the language of the AI revolution. As a </span><strong style=\"background-color: transparent;\">Python AI Logic Expert</strong><span style=\"background-color: transparent;\"> in our Global Community, you are the architect of algorithmic reasoning. Your mission is to train Large Language Models (LLMs) to master Python—not just for syntax, but for complex data science, automation, and machine learning workflows. You will join an elite group of engineers dedicated to ensuring that AI can write, debug, and optimize Python code that is secure, efficient, and enterprise-ready. At TELUS, you are teaching the models that will build the next generation of software.</span></p><p><br></p><p><br></p><p><strong style=\"background-color: transparent;\">What You’ll Do :</strong></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Algorithmic Instruction Tuning:</strong><span style=\"background-color: transparent;\"> Create and refine complex Python challenges to teach LLMs how to walk through \"Chain-of-Thought\" (CoT) reasoning for data structures and algorithms.</span></li><li><strong style=\"background-color: transparent;\">Logic &amp; Security Auditing:</strong><span style=\"background-color: transparent;\"> Perform rigorous code reviews on AI-generated Python scripts, ensuring they follow </span><strong style=\"background-color: transparent;\">PEP 8</strong><span style=\"background-color: transparent;\"> standards and are free from security vulnerabilities or logical fallacies.</span></li><li><strong style=\"background-color: transparent;\">Data Engineering for SFT:</strong><span style=\"background-color: transparent;\"> Develop and optimize Python scripts to clean, structure, and augment massive datasets used for </span><strong style=\"background-color: transparent;\">Supervised Fine-Tuning (SFT)</strong><span style=\"background-color: transparent;\">.</span></li><li><strong style=\"background-color: transparent;\">Scientific &amp; ML Library Validation:</strong><span style=\"background-color: transparent;\"> Evaluate how models utilize advanced Python libraries such as </span><strong style=\"background-color: transparent;\">Pandas, NumPy, PyTorch, and Scikit-learn</strong><span style=\"background-color: transparent;\">, ensuring high-fidelity mathematical and data outputs.</span></li><li><strong style=\"background-color: transparent;\">Bug Diagnostic &amp; Resolution:</strong><span style=\"background-color: transparent;\"> Design \"Broken Code\" scenarios to test the model’s ability to identify runtime errors, logical bugs, and performance bottlenecks in Python codebases.</span></li></ul><p><span style=\"background-color: transparent;\">﻿</span></p>"
     },
@@ -2236,8 +2260,8 @@
         "amount": 20,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 20.0,
-        "max_amount": 50.0
+        "normalized_usd": 20,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong></p><p><br></p><p><span style=\"background-color: transparent;\">At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we believe that when AI enters the healthcare space, accuracy is a matter of life and death. As a </span><strong style=\"background-color: transparent;\">Clinical &amp; Medical AI Expert</strong><span style=\"background-color: transparent;\">, you are the guardian of medical truth. You will join an elite circle of healthcare professionals within our </span><strong style=\"background-color: transparent;\">AI Community</strong><span style=\"background-color: transparent;\"> tasked with training Large Language Models (LLMs) on complex diagnostics, pharmacology, and patient care logic. Your role is to ensure that AI does not just \"predict\" text, but reasons through clinical data with the precision of a board-certified professional.</span></p><p><br></p><p><br></p><p><strong style=\"background-color: transparent;\">What You’ll Do (Key Responsibilities):</strong></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Clinical Reasoning Validation:</strong><span style=\"background-color: transparent;\"> Audit AI \"Chain-of-Thought\" reasoning for medical diagnostics to ensure adherence to international clinical protocols (e.g., ICD-11, DSM-5).</span></li></ul><p><br></p><ul><li><strong style=\"background-color: transparent;\">Pharmacological Fact-Grounding:</strong><span style=\"background-color: transparent;\"> Rigorously verify AI-generated drug interactions, dosage recommendations, and contraindications against peer-reviewed medical literature.</span></li></ul><p><br></p><ul><li><strong style=\"background-color: transparent;\">Specialized Bio-Medical Annotation:</strong><span style=\"background-color: transparent;\"> Precisely label complex datasets—including MRI/CT scans, pathology reports, and genomic data—to improve model visual-spatial reasoning.</span></li></ul><p><br></p><ul><li><strong style=\"background-color: transparent;\">Risk &amp; Hallucination Mitigation:</strong><span style=\"background-color: transparent;\"> Identify and neutralize \"medical hallucinations\" that could lead to patient harm, creating high-fidelity safety guardrails for clinical environments.</span></li></ul>"
     },
@@ -2270,8 +2294,8 @@
         "amount": 20,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 20.0,
-        "max_amount": 50.0
+        "normalized_usd": 20,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong></p><p><br></p><p><span style=\"background-color: transparent;\">Do you have a background in </span><strong style=\"background-color: transparent;\">Medicine, Nursing, or Biology</strong><span style=\"background-color: transparent;\">? AI is being used more and more in healthcare, but it needs experts to make sure the information it gives is safe and accurate. At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we are looking for people with medical knowledge to check AI-generated health content. You don't need to be a doctor or a tech expert—you just need your medical degree to help the AI \"learn\" the right facts.</span></p><p><br></p><p><br></p><p><strong style=\"background-color: transparent;\">What You’ll Do :</strong></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Fact-Check Health Info:</strong><span style=\"background-color: transparent;\"> Read an AI's answer about a medical topic and make sure the facts are 100% correct and up-to-date.</span></li><li><strong style=\"background-color: transparent;\">Review Medical Terms:</strong><span style=\"background-color: transparent;\"> Ensure the AI is using the right names for bones, muscles, medicines, or conditions so it sounds professional.</span></li><li><strong style=\"background-color: transparent;\">Safety First:</strong><span style=\"background-color: transparent;\"> If the AI gives health advice that seems dangerous or wrong, you flag it immediately to help keep users safe.</span></li><li><strong style=\"background-color: transparent;\">Explain Simply:</strong><span style=\"background-color: transparent;\"> Help the AI take complicated medical research and rewrite it in a way that a regular person can understand clearly.</span></li></ul>"
     },
@@ -2304,8 +2328,8 @@
         "amount": 20,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 20.0,
-        "max_amount": 50.0
+        "normalized_usd": 20,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong><span style=\"background-color: transparent;\"> At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we are training AI to handle the world's most sensitive data: finances. As a </span><strong style=\"background-color: transparent;\">Financial Accuracy Specialist</strong><span style=\"background-color: transparent;\">, your job is to make sure AI models understand the \"rules of money.\" You will review AI-generated financial statements, tax advice, and expense reports to ensure they are mathematically perfect and follow local accounting laws. You are the \"Human Auditor\" who makes sure the AI doesn't make costly financial mistakes.</span></p><p><br></p><p><strong style=\"background-color: transparent;\">What You’ll Do :</strong></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Statement Auditing:</strong><span style=\"background-color: transparent;\"> Review AI-generated balance sheets and P&amp;L statements to ensure the math balances perfectly.</span></li><li><strong style=\"background-color: transparent;\">Tax Logic Verification:</strong><span style=\"background-color: transparent;\"> Check if the AI is applying the correct tax rates and rules for your specific country (e.g., VAT in Europe or Zakat in the Middle East).</span></li><li><strong style=\"background-color: transparent;\">Expense Categorization:</strong><span style=\"background-color: transparent;\"> Train the AI to correctly \"tag\" expenses (e.g., distinguishing between a \"Travel Expense\" and a \"Capital Asset\").</span></li><li><strong style=\"background-color: transparent;\">Fraud Detection Training:</strong><span style=\"background-color: transparent;\"> Help the AI recognize \"weird\" patterns that might look like double-billing or suspicious financial activity.</span></li></ul>"
     },
@@ -2338,8 +2362,8 @@
         "amount": 20,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 20.0,
-        "max_amount": 50.0
+        "normalized_usd": 20,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong><span style=\"background-color: transparent;\"> </span></p><p><br></p><p><span style=\"background-color: transparent;\">Do you have a background in </span><strong style=\"background-color: transparent;\">Economics or Finance</strong><span style=\"background-color: transparent;\">? AI models are often used to summarize market trends, explain supply and demand, or give business advice, but they can sometimes get the \"logic of money\" wrong. At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we are looking for people who understand how economies work to help our AI become a better financial thinker. You don’t need to be a data scientist—you just need to use your degree to keep the AI’s economic facts and reasoning accurate.</span></p><p><br></p><p><strong style=\"background-color: transparent;\">What You’ll Do (Simple Tasks):</strong></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Check Economic Logic:</strong><span style=\"background-color: transparent;\"> Read an AI’s explanation of a market event and make sure it correctly understands concepts like inflation, interest rates, or opportunity cost.</span></li><li><strong style=\"background-color: transparent;\">Verify Data &amp; Trends:</strong><span style=\"background-color: transparent;\"> Look at simple charts or economic summaries generated by the AI and ensure the numbers and conclusions match real-world data.</span></li><li><strong style=\"background-color: transparent;\">Review Business Advice:</strong><span style=\"background-color: transparent;\"> If the AI is asked to help a small business with pricing or competition, you check to make sure its advice follows sound economic principles.</span></li><li><strong style=\"background-color: transparent;\">Local Market Context:</strong><span style=\"background-color: transparent;\"> Help the AI understand how the economy works in your specific country, including local currencies and regional trade habits.</span></li></ul>"
     },
@@ -2372,8 +2396,8 @@
         "amount": 18,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 18.0,
-        "max_amount": 50.0
+        "normalized_usd": 18,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong><span style=\"background-color: transparent;\"> </span></p><p><span style=\"background-color: transparent;\">Do you have a degree in </span><strong style=\"background-color: transparent;\">Geography</strong><span style=\"background-color: transparent;\"> or </span><strong style=\"background-color: transparent;\">Urban Planning</strong><span style=\"background-color: transparent;\">? AI models power the maps we use every day for delivery and travel, but they often struggle to understand the real world. At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we are looking for Geography enthusiasts to be the \"eyes on the ground\" for our AI. You will look at satellite images and maps to make sure the AI is identifying roads, buildings, and landmarks correctly. You help the AI understand exactly where things are.</span></p><p><strong style=\"background-color: transparent;\">What You’ll Do (Simple Tasks):</strong></p><ul><li><strong style=\"background-color: transparent;\">Confirming Landmarks:</strong><span style=\"background-color: transparent;\"> Look at a photo from space and tell the AI: \"Yes, that is a hospital,\" or \"No, that is actually a shopping mall.\"</span></li><li><strong style=\"background-color: transparent;\">Route Checking:</strong><span style=\"background-color: transparent;\"> Look at a map and make sure the AI isn't suggesting a route that is impossible (like driving a car through a park or a walking path).</span></li><li><strong style=\"background-color: transparent;\">Naming Places:</strong><span style=\"background-color: transparent;\"> Use your local knowledge to make sure the AI is using the correct names for neighborhoods, streets, and natural features in your region.</span></li><li><strong style=\"background-color: transparent;\">Environmental Tagging:</strong><span style=\"background-color: transparent;\"> Help the AI identify things like forests, rivers, or new construction sites on a map.</span></li></ul>"
     },
@@ -2406,8 +2430,8 @@
         "amount": 18,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 18.0,
-        "max_amount": 50.0
+        "normalized_usd": 18,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong></p><p><br></p><p><span style=\"background-color: transparent;\">At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we know that as AI becomes more powerful, the need for robust safety guardrails is paramount. We view you as our strategic \"adversary.\" You will utilize your critical thinking and cultural depth to stress-test models, uncovering vulnerabilities that could lead to biased or harmful outputs. At TELUS, you are the final line of defense, ensuring that our AI remains a force for good in every corner of the world.</span></p><p><br></p><p><br></p><p><strong style=\"background-color: transparent;\">Key Responsibilities:</strong></p><p><br></p><ul><li><span style=\"background-color: transparent;\">Conduct high-stakes adversarial testing sessions, employing creative \"jailbreaking\" techniques to probe model vulnerabilities.</span></li><li><span style=\"background-color: transparent;\">Map regional social, political, and religious sensitivities to help the model avoid cultural \"blind spots\" in diverse global markets.</span></li><li><span style=\"background-color: transparent;\">Synthesize safety findings into comprehensive risk reports, collaborating with Policy Teams to update model safety guardrails.</span></li><li><span style=\"background-color: transparent;\">Evaluate the model’s ethical decision-making in \"gray-area\" scenarios, ensuring it prioritizes human safety and institutional values.</span></li></ul><p><br></p><p><span style=\"background-color: transparent;\">﻿</span></p>"
     },
@@ -2440,8 +2464,8 @@
         "amount": 20,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 20.0,
-        "max_amount": 50.0
+        "normalized_usd": 20,
+        "max_amount": 50
       },
       "description": "<h3><strong style=\"color: rgb(67, 67, 67); background-color: transparent;\">About the Role:</strong></h3><h3><br></h3><h3><span style=\"color: rgb(67, 67, 67); background-color: transparent;\"> At </span><strong style=\"color: rgb(67, 67, 67); background-color: transparent;\">TELUS Digital</strong><span style=\"color: rgb(67, 67, 67); background-color: transparent;\">, we use Reinforcement Learning from Human Feedback (RLHF) to align AI with human values, and in this role, you act as our \"Logical Compass.\" We believe that AI should be helpful, honest, and harmless; you are the one who designs the strategies and rubrics to make that a reality. You will teach AI how to reason and how to maintain a consistent, helpful persona across different cultural contexts. At TELUS, you aren't just ranking data; you are defining the ethics of tomorrow’s AI.</span></h3><h3><br></h3><h3><br></h3><p><strong style=\"background-color: transparent;\">Key Responsibilities:</strong></p><p><br></p><ul><li><span style=\"background-color: transparent;\">Conceptualize and draft multi-dimensional grading rubrics that evaluate AI responses for tone, logic, and instructional following.</span></li><li><span style=\"background-color: transparent;\">Lead quality-assurance audits for large-scale annotation projects, ensuring the human-feedback loop is optimized for model learning.</span></li><li><span style=\"background-color: transparent;\">Investigate complex \"hallucinations\" and logical fallacies in model outputs, developing prompt-engineering strategies to mitigate them.</span></li><li><span style=\"background-color: transparent;\">Interface with project stakeholders to define the \"Ideal Response Profile\" for specific industries or user personas.</span></li></ul><p><span style=\"background-color: transparent;\">﻿</span></p>"
     },
@@ -2474,8 +2498,8 @@
         "amount": 20,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 20.0,
-        "max_amount": 50.0
+        "normalized_usd": 20,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong></p><p><br></p><p><span style=\"background-color: transparent;\">At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we are expanding our mission to include the physical world. We believe that for AI to be truly transformative, it must move beyond the screen and into the real world. As a Robotics AI Specialist, you are a pioneer in Embodied AI, helping us bridge the gap between machine reasoning and physical action.&nbsp;</span></p><p><br></p><p><br></p><p><br></p><p><strong style=\"background-color: transparent;\">Key Responsibilities:</strong></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Physical Data Evaluation:</strong><span style=\"background-color: transparent;\"> Audit video and sensor data to ensure robotic movements are logical, safe, and efficient.</span></li><li><strong style=\"background-color: transparent;\">Spatial Reasoning &amp; Annotation:</strong><span style=\"background-color: transparent;\"> Provide expert feedback on 3D environments, helping AI models understand depth, distance, and physical obstacles.</span></li><li><strong style=\"background-color: transparent;\">Simulation &amp; Digital Twin Testing:</strong><span style=\"background-color: transparent;\"> Review and grade AI performance in simulated environments to identify errors before hardware deployment.</span></li><li><strong style=\"background-color: transparent;\">Safety &amp; Physics Validation:</strong><span style=\"background-color: transparent;\"> Ensure AI-generated physical instructions adhere to the laws of physics and rigorous engineering safety standards.</span></li><li><strong style=\"background-color: transparent;\">Edge-Case Detection:</strong><span style=\"background-color: transparent;\"> Identify complex real-world scenarios (e.g., lighting changes, surface textures, or moving hazards) that could confuse a robotic system.</span></li></ul><p><span style=\"background-color: transparent;\">﻿</span></p>"
     },
@@ -2508,8 +2532,8 @@
         "amount": 20,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 20.0,
-        "max_amount": 50.0
+        "normalized_usd": 20,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong></p><p><br></p><p><span style=\"background-color: transparent;\">In an era of synthetic media, safety is paramount. </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\"> is looking for freelance experts in digital forensics to help train the next generation of deepfake detection models. You will use your specialized \"detective\" skills to identify the subtle artifacts of AI-generated content, helping us build a more secure digital world.</span></p><p><br></p><p><br></p><p><strong style=\"background-color: transparent;\">Key Responsibilities:</strong></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Synthetic Media Artifact Detection:</strong><span style=\"background-color: transparent;\"> Identify microscopic inconsistencies in AI-generated video, audio, and images to help train detection \"shields.\"</span></li><li><strong style=\"background-color: transparent;\">Biometric Stress-Testing:</strong><span style=\"background-color: transparent;\"> Evaluate how AI models handle deceptive inputs to improve the security of facial and voice recognition systems.</span></li><li><strong style=\"background-color: transparent;\">Forensic Reporting:</strong><span style=\"background-color: transparent;\"> Document the specific markers of synthetic manipulation to help refine safety guardrails for high-security clients.</span></li></ul>"
     },
@@ -2542,8 +2566,8 @@
         "amount": 18,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 18.0,
-        "max_amount": 50.0
+        "normalized_usd": 18,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong></p><p><br></p><p><span style=\"background-color: transparent;\">Do you have a background in </span><strong style=\"background-color: transparent;\">Physics or Mechanical Engineering</strong><span style=\"background-color: transparent;\">? AI models are getting smarter, but they often struggle with \"common sense\" physics—like how gravity works, how objects move, or how much force is needed to lift something. At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we need people who understand the laws of the universe to check the AI's work. You don’t need to be a coder; you just need to ensure the AI's science is grounded in reality.</span></p><p><br></p><p><br></p><p><strong style=\"background-color: transparent;\">What You’ll Do:</strong></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Problem Checking:</strong><span style=\"background-color: transparent;\"> Review physics problems solved by the AI and make sure the formulas, units (like Newtons or Joules), and final answers are correct.</span></li><li><strong style=\"background-color: transparent;\">Mechanical Logic:</strong><span style=\"background-color: transparent;\"> Check if the AI's descriptions of physical objects make sense (for example, making sure it doesn't say a feather is heavier than a brick).</span></li><li><strong style=\"background-color: transparent;\">Diagram Review:</strong><span style=\"background-color: transparent;\"> Look at simple diagrams of forces or motion and ensure the AI is labeling the vectors and directions correctly.</span></li><li><strong style=\"background-color: transparent;\">Explain the \"Why\":</strong><span style=\"background-color: transparent;\"> Help the AI write better explanations for complex topics like energy, light, or motion so that students can learn more easily.</span></li><li><br></li></ul>"
     },
@@ -2576,8 +2600,8 @@
         "amount": 20,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 20.0,
-        "max_amount": 50.0
+        "normalized_usd": 20,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"color: rgb(31, 31, 31); background-color: transparent;\">About the Role:</strong><span style=\"color: rgb(31, 31, 31); background-color: transparent;\"> </span></p><p><span style=\"color: rgb(31, 31, 31);\">At </span><strong style=\"color: rgb(31, 31, 31);\">TELUS Digital</strong><span style=\"color: rgb(31, 31, 31);\">, we believe that the true power of AI lies in its responsible and strategic application. As a Specialist in our </span><strong style=\"color: rgb(31, 31, 31);\">AI Consulting Governance &amp; Strategy Community</strong><span style=\"color: rgb(31, 31, 31);\">, you are the architect of trust and value. You will work at the intersection of business, law, and technology to design the frameworks that allow organizations to scale AI safely and effectively. We look to you to translate complex regulatory requirements into actionable roadmaps, ensuring that every AI solution we build is ethical, transparent, and high-impact. At TELUS, you don't just follow the rules; you help set the global standard for responsible innovation.</span></p><p><br></p><p><strong style=\"color: rgb(31, 31, 31);\">What You’ll Do (Key Responsibilities):</strong></p><ul><li><strong>Strategic Roadmap Development:</strong> Collaborate with executive stakeholders to identify high-value AI use cases and align them with long-term business objectives and ROI targets.</li><li><strong>Governance Framework Design:</strong> Build and implement robust AI governance structures, including accountability models (RACI), policy guidelines, and ethical review processes.</li><li><strong>Regulatory Compliance &amp; Risk Management:</strong> Lead cross-functional assessments to ensure alignment with global standards (e.g., EU AI Act, GDPR, NIST RMF) and mitigate risks related to bias, privacy, and security.</li><li><strong>Ethical Oversight &amp; Transparency:</strong> Develop rubrics for Model Explainability and Fairness, ensuring that AI-driven decisions are traceable, unbiased, and socially responsible.</li><li><strong style=\"color: rgb(31, 31, 31);\">Organizational Change &amp; Literacy:</strong><span style=\"color: rgb(31, 31, 31);\"> Facilitate workshops and training programs to bridge the \"AI expertise barrier,\" fostering a culture of data-driven decision-making and ethical AI adoption.</span></li></ul>"
     },
@@ -2610,8 +2634,8 @@
         "amount": 18,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 18.0,
-        "max_amount": 50.0
+        "normalized_usd": 18,
+        "max_amount": 50
       },
       "description": "<h3><strong style=\"background-color: transparent; color: rgb(67, 67, 67);\">About the Role:</strong><span style=\"background-color: transparent; color: rgb(67, 67, 67);\"> </span></h3><h3><br></h3><h3><span style=\"background-color: transparent; color: rgb(67, 67, 67);\">At </span><strong style=\"background-color: transparent; color: rgb(67, 67, 67);\">TELUS Digital</strong><span style=\"background-color: transparent; color: rgb(67, 67, 67);\">, data is the lifeblood of our innovation, and as an data scientist, you are the guardian of its quality. We don't just process data; we interrogate it. You will perform rigorous diagnostic testing on model performance to uncover hidden biases, identify performance \"plateaus,\" and provide the statistical evidence we need to push AI \"intelligence\" to the next level.</span></h3><h3><br></h3><h3><br></h3><p><strong style=\"background-color: transparent;\">Key Responsibilities:</strong></p><p><br></p><ul><li><span style=\"background-color: transparent;\">Architect and execute evaluation frameworks to measure model accuracy, helpfulness, and safety across massive datasets.</span></li><li><span style=\"background-color: transparent;\">Perform advanced data-wrangling to transform raw text into optimized training sets for Large Language Models (LLMs).</span></li><li><span style=\"background-color: transparent;\">Detect and visualize complex trends in model failures, providing actionable insights that guide the next phase of AI training.</span></li><li><br></li><li><span style=\"background-color: transparent;\">Develop automated scripts to monitor the consistency of human-annotated data, ensuring the quality standards of TELUS Digital are met.</span></li></ul><p><br></p><p><span style=\"background-color: transparent;\">﻿</span></p>"
     },
@@ -2644,8 +2668,8 @@
         "amount": 18,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 18.0,
-        "max_amount": 50.0
+        "normalized_usd": 18,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent; color: rgb(31, 31, 31);\">About the Role:</strong><span style=\"background-color: transparent; color: rgb(31, 31, 31);\"> </span></p><p><span style=\"background-color: transparent;\">At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we believe that safety is a continuous process, not a one-time check. As an </span><strong style=\"background-color: transparent;\">AI Safety &amp; Policy Associate</strong><span style=\"background-color: transparent;\">, you are the primary guardian of our AI training datasets. You will join our </span><strong style=\"background-color: transparent;\">AI Community</strong><span style=\"background-color: transparent;\"> as a specialist dedicated to identifying, labeling, and mitigating risks at the data level. While our Strategists design the rules, you are the one who applies them to thousands of complex scenarios to ensure the model learns what is right, what is wrong, and what is a \"gray area.\" At TELUS, your daily work directly prevents harmful AI behaviors before they ever reach a user.</span></p><p><br></p><p><br></p><p><br></p><p><strong style=\"background-color: transparent;\">What You’ll Do (Key Responsibilities):</strong></p><ul><li><strong style=\"background-color: transparent;\">Safety Annotation:</strong><span style=\"background-color: transparent;\"> Evaluate AI-generated responses against strict safety rubrics, flagging content that contains bias, misinformation, or prohibited topics.</span></li><li><strong style=\"background-color: transparent;\">Harmful Content Classification:</strong><span style=\"background-color: transparent;\"> Categorize various types of \"harm\" (e.g., hate speech, self-harm, or illegal acts) to help the model understand specific boundary lines.</span></li><li><strong style=\"background-color: transparent;\">Fact-Checking &amp; Grounding:</strong><span style=\"background-color: transparent;\"> Verify the factual accuracy of model claims using reliable external sources to prevent \"hallucinations.\"</span></li><li><strong style=\"background-color: transparent;\">Guideline Application:</strong><span style=\"background-color: transparent;\"> Apply complex policy documents to \"edge cases\"—scenarios where the answer isn't clearly right or wrong—to ensure consistent model alignment.</span></li><li><strong style=\"background-color: transparent;\">Feedback Loop Participation:</strong><span style=\"background-color: transparent;\"> Report recurring model weaknesses to the Governance Leads to help refine and update our global safety policies.</span></li></ul>"
     },
@@ -2678,8 +2702,8 @@
         "amount": 25,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 25.0,
-        "max_amount": 50.0
+        "normalized_usd": 25,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong></p><p><br></p><p><span style=\"background-color: transparent;\">TELUS Digital is building a </span><strong style=\"background-color: transparent;\">high-impact team of Machine Learning Experts</strong><span style=\"background-color: transparent;\"> working alongside Policy Enforcement specialists to provide actionable insights on AI decision-making.</span></p><p><span style=\"background-color: transparent;\">As a </span><strong style=\"background-color: transparent;\">Machine Learning Consultant</strong><span style=\"background-color: transparent;\">, you will play a pivotal role in </span><strong style=\"background-color: transparent;\">analyzing, fine-tuning, and optimizing machine learning models</strong><span style=\"background-color: transparent;\"> for content moderation and policy enforcement. You will evaluate complex, nuanced content, provide feedback on AI reasoning processes, and collaborate with policy experts to ensure model outputs align with organizational guidelines. Your work will directly influence model performance, annotation workflows, and the quality of AI-driven policy decisions.</span></p><p><br></p><p><br></p><p><strong style=\"background-color: transparent;\">Key Responsibilities:</strong></p><p><br></p><ul><li><span style=\"background-color: transparent;\">Evaluate and provide </span><strong style=\"background-color: transparent;\">feedback on AI model outputs</strong><span style=\"background-color: transparent;\"> and reasoning (chain-of-thought) for nuanced Trust &amp; Safety cases.</span></li><li><span style=\"background-color: transparent;\">Perform </span><strong style=\"background-color: transparent;\">high-quality content annotations</strong><span style=\"background-color: transparent;\"> in collaboration with Policy Experts.</span></li><li><span style=\"background-color: transparent;\">Support </span><strong style=\"background-color: transparent;\">supervised fine-tuning and reinforcement learning (RLHF)</strong><span style=\"background-color: transparent;\"> processes.</span></li><li><span style=\"background-color: transparent;\">Conduct </span><strong style=\"background-color: transparent;\">data analysis</strong><span style=\"background-color: transparent;\"> to detect patterns, trends, and model weaknesses.</span></li><li><span style=\"background-color: transparent;\">Produce </span><strong style=\"background-color: transparent;\">clear reports and insights</strong><span style=\"background-color: transparent;\"> for engineering and policy teams.</span></li><li><span style=\"background-color: transparent;\">Collaborate closely with policy enforcement teams to ensure ML models adhere to guidelines.</span></li><li><span style=\"background-color: transparent;\">Maintain </span><strong style=\"background-color: transparent;\">confidentiality and handle sensitive content responsibly</strong><span style=\"background-color: transparent;\">.</span></li></ul>"
     },
@@ -2712,8 +2736,8 @@
         "amount": 20,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 20.0,
-        "max_amount": 50.0
+        "normalized_usd": 20,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong><span style=\"background-color: transparent;\"> Do you have a background in </span><strong style=\"background-color: transparent;\">Psychology</strong><span style=\"background-color: transparent;\">? At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we are looking for freelancers to help make the internet a safer place. You don't need to be a tech expert or a computer scientist. Your job is to use your understanding of human behavior and mental health to check if AI-generated content is safe, helpful, and responsible. You are the \"Human Compass\" that helps the AI understand people better.</span></p><p><br></p><p><strong style=\"background-color: transparent;\">What You’ll Do (Simple Tasks):</strong></p><ul><li><strong style=\"background-color: transparent;\">Safety Reviews:</strong><span style=\"background-color: transparent;\"> Review content that has been flagged as potentially risky or harmful and decide if it follows safety rules.</span></li><li><strong style=\"background-color: transparent;\">Behavior Analysis:</strong><span style=\"background-color: transparent;\"> Look at how an AI interacts with users and identify if it is showing any biased or unfair behavior.</span></li><li><strong style=\"background-color: transparent;\">Risk Reporting:</strong><span style=\"background-color: transparent;\"> Identify \"gray areas\" where an AI might give bad advice and suggest better, safer ways for it to respond.</span></li><li><strong style=\"background-color: transparent;\">Mental Health Awareness:</strong><span style=\"background-color: transparent;\"> Use your degree to ensure the AI recognizes sensitive topics and handles them with care.</span></li></ul>"
     },
@@ -2746,8 +2770,8 @@
         "amount": 25,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 25.0,
-        "max_amount": 50.0
+        "normalized_usd": 25,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong></p><p><br></p><p><span style=\"background-color: transparent;\">At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we are bridging the gap between how a human thinks and how a machine writes code. As a </span><strong style=\"background-color: transparent;\">Full-Stack AI Logic Specialist</strong><span style=\"background-color: transparent;\">, you will join an elite squad of developers tasked with training AI to master the entire development lifecycle—from front-end interfaces to back-end logic. You aren't just writing code; you are teaching AI how to think like a Senior Engineer.</span></p><p><br></p><p><strong style=\"background-color: transparent;\">Key Responsibilities:</strong></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Logic &amp; Syntax Validation:</strong><span style=\"background-color: transparent;\"> Audit AI-generated code in </span><strong style=\"background-color: transparent;\">Python</strong><span style=\"background-color: transparent;\"> and </span><strong style=\"background-color: transparent;\">JavaScript</strong><span style=\"background-color: transparent;\"> to ensure it is functional and follows clean-code principles.</span></li><li><strong style=\"background-color: transparent;\">Security Auditing:</strong><span style=\"background-color: transparent;\"> Evaluate code for common vulnerabilities, such as SQL injection or buffer overflows, to ensure the AI creates secure software.</span></li><li><strong style=\"background-color: transparent;\">Multi-Turn Debugging:</strong><span style=\"background-color: transparent;\"> Design scenarios where the AI must identify, explain, and fix bugs within an existing codebase.</span></li><li><strong style=\"background-color: transparent;\">Prompt Optimization:</strong><span style=\"background-color: transparent;\"> Improve the relationship between natural language instructions and functional code outputs.</span></li><li><strong style=\"background-color: transparent;\">Library Testing:</strong><span style=\"background-color: transparent;\"> Check how the AI uses popular frameworks and libraries (like React or Django) to ensure high-quality results.</span></li></ul><p><br></p><p><span style=\"background-color: transparent;\">﻿</span></p>"
     },
@@ -2780,8 +2804,8 @@
         "amount": 19,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 19.0,
-        "max_amount": 50.0
+        "normalized_usd": 19,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong><span style=\"background-color: transparent;\"> </span></p><p><span style=\"background-color: transparent;\">At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we are teaching AI to move from 2D screens into 3D reality. As a </span><strong style=\"background-color: transparent;\">3D Spatial Data Expert</strong><span style=\"background-color: transparent;\">, you are the \"Mapmaker of the Future.\" You will join our </span><strong style=\"background-color: transparent;\">AI Community</strong><span style=\"background-color: transparent;\"> as a specialist tasked with identifying and labeling the physical world within 3D datasets, such as LiDAR (Light Detection and Ranging) and 3D meshes. While our Specialists handle complex physics and urban planning, you are the one who teaches the AI the \"alphabet\" of space—where a curb ends, where a pedestrian begins, and how a robotic arm perceives a shelf. At TELUS, you are helping to build the data foundation for autonomous vehicles, drones, and the industrial metaverse.</span></p><p><br></p><p><strong style=\"background-color: transparent;\">What You’ll Do (Key Responsibilities):</strong></p><ul><li><strong style=\"background-color: transparent;\">3D Bounding Box Annotation:</strong><span style=\"background-color: transparent;\"> Placing precise 3D cubes (bounding boxes) around objects in point-cloud data to help AI identify their size, location, and orientation in space.</span></li><li><strong style=\"background-color: transparent;\">Semantic Segmentation:</strong><span style=\"background-color: transparent;\"> \"Painting\" 3D maps to categorize different surfaces—distinguishing between a drivable road, a sidewalk, and a permanent obstacle.</span></li><li><strong style=\"background-color: transparent;\">Point-Cloud Cleaning:</strong><span style=\"background-color: transparent;\"> Reviewing raw sensor data from self-driving cars or robots to remove \"noise\" (like rain or dust) so the AI sees a clear picture of reality.</span></li><li><strong style=\"background-color: transparent;\">Simulated Data Validation:</strong><span style=\"background-color: transparent;\"> Comparing AI-generated 3D environments against real-world captures to ensure the digital version is a faithful \"twin\" of the physical one.</span></li><li><strong style=\"background-color: transparent;\">Spatial Logic Testing:</strong><span style=\"background-color: transparent;\"> Answering simple questions about 3D scenes (e.g., \"Is the drone's path clear of the overhead wire?\") to validate the model's spatial reasoning.</span></li></ul>"
     },
@@ -2814,8 +2838,8 @@
         "amount": 18,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 18.0,
-        "max_amount": 50.0
+        "normalized_usd": 18,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong><span style=\"background-color: transparent;\"> At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we are building the future of software development. As a expert in our </span><strong style=\"background-color: transparent;\">Core Engineering &amp; AI Development Community</strong><span style=\"background-color: transparent;\">, you are the architect behind the \"Code-Gen\" revolution. Your mission is to push the boundaries of how Large Language Models (LLMs) understand logic, syntax, and architectural patterns. You will join an elite squad of developers tasked with training AI to solve complex algorithmic challenges, optimize legacy codebases, and master multiple programming languages. At TELUS, you aren't just writing code; you are teaching AI how to think like a Senior Engineer.</span></p><p><strong style=\"background-color: transparent;\">What You’ll Do (Key Responsibilities):</strong></p><ul><li><strong style=\"background-color: transparent;\">Algorithmic Reasoning Validation:</strong><span style=\"background-color: transparent;\"> Audit and refine \"Chain-of-Thought\" (CoT) reasoning for complex coding tasks in </span><strong style=\"background-color: transparent;\">Python, JavaScript, Java, and C++</strong><span style=\"background-color: transparent;\">.</span></li><li><strong style=\"background-color: transparent;\">Code Quality &amp; Security Auditing:</strong><span style=\"background-color: transparent;\"> Evaluate AI-generated code for security vulnerabilities (e.g., SQL injection, buffer overflows) and adherence to clean-code principles (SOLID, DRY).</span></li><li><strong style=\"background-color: transparent;\">Multi-Turn Debugging Strategy:</strong><span style=\"background-color: transparent;\"> Design and test complex multi-turn scenarios where the AI must identify, explain, and fix bugs in existing code blocks.</span></li><li><strong style=\"background-color: transparent;\">NLP-to-Code Translation:</strong><span style=\"background-color: transparent;\"> Optimize the relationship between natural language prompts and functional code outputs, ensuring the AI captures subtle logic requirements.</span></li><li><strong style=\"background-color: transparent;\">LLM Benchmarking:</strong><span style=\"background-color: transparent;\"> Execute and analyze performance benchmarks for coding models, identifying \"logic gaps\" in how the model handles specific libraries or frameworks.</span></li></ul>"
     },
@@ -2848,8 +2872,8 @@
         "amount": 20,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 20.0,
-        "max_amount": 50.0
+        "normalized_usd": 20,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong><span style=\"background-color: transparent;\"> </span></p><p><span style=\"background-color: transparent;\">At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we are building the \"Shield of Trust\" for global digital identity. You will join an elite freelance pool focused on training AI to detect fraud, verify identity documents, and maintain the highest standards of </span><strong style=\"background-color: transparent;\">KYC (Know Your Customer)</strong><span style=\"background-color: transparent;\">. Your role is to teach AI models how to distinguish between a real human and a high-fidelity synthetic mask, and between a genuine passport and a masterfully forged document. At TELUS, you ensure that digital access remains secure for everyone.</span></p><p><br></p><p><strong style=\"background-color: transparent;\">Key Responsibilities:</strong></p><ul><li><strong style=\"background-color: transparent;\">Document Authenticity Auditing:</strong><span style=\"background-color: transparent;\"> Review and annotate high-resolution scans of international IDs (Passports, Visas, Licenses) to identify microscopic markers of forgery or tampering.</span></li><li><strong style=\"background-color: transparent;\">Liveness &amp; Biometric Verification:</strong><span style=\"background-color: transparent;\"> Evaluate \"Liveness\" test data to help AI detect deepfakes, playback attacks, or 3D masks during the face-matching process.</span></li><li><strong style=\"background-color: transparent;\">OCR &amp; PII Data Validation:</strong><span style=\"background-color: transparent;\"> Audit the accuracy of AI-extracted data (Name, DOB, Expiry) from documents, ensuring the model handles different scripts and localized document formats.</span></li><li><strong style=\"background-color: transparent;\">Adversarial Fraud Testing:</strong><span style=\"background-color: transparent;\"> Act as a \"Fraudster\" by testing the system with edge-case documents and synthetic identities to find vulnerabilities in the KYC model.</span></li></ul>"
     },
@@ -2882,8 +2906,8 @@
         "amount": 18,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 18.0,
-        "max_amount": 50.0
+        "normalized_usd": 18,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong></p><p><br></p><p><span style=\"background-color: transparent;\">At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we don't just build smart AI; we build </span><strong style=\"background-color: transparent;\">intuitive AI</strong><span style=\"background-color: transparent;\">. As a </span><strong style=\"background-color: transparent;\">Human-AI Interaction (HAI) &amp; UX Expert</strong><span style=\"background-color: transparent;\">, you are the architect of the user experience. You study the \"friction\" between human intent and machine response, refining the personality, empathy, and logic of the AI. Your goal is to move AI from being a \"tool\" to becoming a \"partner\" by optimizing how it handles multi-turn conversations and builds user trust. At TELUS, you ensure technology adapts to the human, not the other way around.</span></p><p><br></p><p><br></p><p><strong style=\"background-color: transparent;\">Key Responsibilities:</strong></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Conversational UX Auditing:</strong><span style=\"background-color: transparent;\"> Analyze the \"flow\" of multi-turn interactions to ensure the AI maintains state, reduces cognitive load, and provides concise, actionable answers.</span></li><li><strong style=\"background-color: transparent;\">Trust &amp; Calibration Analysis:</strong><span style=\"background-color: transparent;\"> Identify instances where the AI is overconfident (leading to false trust) or overly cautious (leading to frustration) and refine the \"Calibration of Trust.\"</span></li><li><strong style=\"background-color: transparent;\">Persona &amp; Tone Synthesis:</strong><span style=\"background-color: transparent;\"> Develop and test specialized personas (e.g., Empathetic Counselor vs. Objective Data Analyst) to ensure tone-alignment across different industries.</span></li><li><strong style=\"background-color: transparent;\">Accessibility &amp; Inclusivity Design:</strong><span style=\"background-color: transparent;\"> Evaluate how models handle diverse speech patterns, non-standard dialects, and accessibility needs to ensure the AI is truly global.</span></li></ul>"
     },
@@ -2916,8 +2940,8 @@
         "amount": 20,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 20.0,
-        "max_amount": 50.0
+        "normalized_usd": 20,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong></p><p><br></p><p><span style=\"background-color: transparent;\">Do you have a background in </span><strong style=\"background-color: transparent;\">Chemistry or Chemical Engineering</strong><span style=\"background-color: transparent;\">? AI is currently learning how to help scientists design new materials, understand reactions, and read lab reports. At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we need people with a \"Chemistry Brain\" to make sure the AI understands molecules, formulas, and safety rules correctly. You don’t need to be a computer scientist—you just need to know your way around a periodic table and a lab manual.</span></p><p><br></p><p><strong style=\"background-color: transparent;\">Key Responsibilities:</strong></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Check Formulas:</strong><span style=\"background-color: transparent;\"> Look at chemical equations or molecular structures written by the AI and make sure they are scientifically accurate.</span></li><li><strong style=\"background-color: transparent;\">Safety Review:</strong><span style=\"background-color: transparent;\"> Check if the AI is giving correct advice on how to handle chemicals or what happens when two substances are mixed.</span></li><li><strong style=\"background-color: transparent;\">Lab Data Cleanup:</strong><span style=\"background-color: transparent;\"> Help the AI organize data from chemistry experiments so it can find patterns in how different materials behave.</span></li><li><strong style=\"background-color: transparent;\">Simplify Science:</strong><span style=\"background-color: transparent;\"> Take complex chemical concepts and help the AI explain them in simple terms for students or non-experts.</span></li></ul>"
     },
@@ -2950,8 +2974,8 @@
         "amount": 20,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 20.0,
-        "max_amount": 50.0
+        "normalized_usd": 20,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong></p><p><br></p><p><span style=\"background-color: transparent;\">AI models often sound like smart students, but they lack \"real-world\" business experience. As a </span><strong style=\"background-color: transparent;\">Business Logic Expert</strong><span style=\"background-color: transparent;\">, your job is to teach the AI how a real company works. You will review AI-generated business emails, reports, and strategies to make sure they aren't just grammatically correct, but </span><strong style=\"background-color: transparent;\">professionally sound</strong><span style=\"background-color: transparent;\">. You are the \"Business Mentor\" for the AI.</span></p><p><br></p><p><strong style=\"background-color: transparent;\">Key Responsibilities:</strong></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Professional Tone Review:</strong><span style=\"background-color: transparent;\"> Check if an AI-generated email to a client sounds professional, polite, and persuasive, rather than robotic or rude.</span></li><li><strong style=\"background-color: transparent;\">Business Fact-Checking:</strong><span style=\"background-color: transparent;\"> If the AI suggests a marketing plan or a budget, you make sure the math is right and the advice follows standard business rules.</span></li><li><strong style=\"background-color: transparent;\">Process Training:</strong><span style=\"background-color: transparent;\"> Teach the AI how to handle common office tasks, like summarizing a meeting, drafting an invoice, or creating a project timeline.</span></li><li><strong style=\"background-color: transparent;\">Ethics &amp; Etiquette:</strong><span style=\"background-color: transparent;\"> Ensure the AI understands \"Business Etiquette\" for your specific region (e.g., how to address a CEO in Riyadh vs. a Startup Founder in New York).</span></li></ul>"
     },
@@ -2986,8 +3010,8 @@
         "amount": 125,
         "currency": "USD",
         "unit": "per_unit",
-        "normalized_usd": 125.0,
-        "max_amount": 160.0
+        "normalized_usd": 125,
+        "max_amount": 160
       },
       "description": "<p><em style=\"background-color: transparent;\">Ready to help advance pet recognition technology? This engaging in-home study invites you and your furry friend to participate in shaping the future of artificial intelligence.</em></p><p><br></p><h3><span style=\"color: rgb(73, 22, 109);\">Project Overview&nbsp;</span></h3><p><br></p><p><span style=\"background-color: transparent;\">TELUS Digital is looking for adults and their pets (cats and dogs) to participate in a video data collection project being conducted in Bellevue, WA; Seattle, WA; and San Jose, CA.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Participants and their pets will complete a session conducted by on-site moderators in a private home setting. The session involves the pet walking around outside and in front of devices while being recorded. Pets can remain on leashes and are permitted breaks throughout the session.</span></p><p><br></p><h3><span style=\"color: rgb(73, 22, 109);\">Compensation:</span></h3><p><br></p><p><span style=\"background-color: transparent;\">Participants will receive the following compensation for a completed 2-hour session:</span></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Seattle, WA and Bellevue, WA:</strong><span style=\"background-color: transparent;\"> $125</span></li><li><strong style=\"background-color: transparent;\">San Jose, CA:</strong><span style=\"background-color: transparent;\"> $160</span></li></ul><p><br></p><p><span style=\"color: rgb(32, 33, 36);\">Payments will be made via Hyperwallet, where you can choose PayPal, bank transfer, or Venmo as your payment method.</span></p><p><span style=\"color: rgb(32, 33, 36);\">Please note that you will need a Tax Identification Number to set up your Hyperwallet account.</span></p><p><br></p><p><strong style=\"color: rgb(32, 33, 36);\">TELUS Digital AI Community</strong></p><p><span style=\"color: rgb(32, 33, 36);\">Our global AI Community is a vibrant network of 1 million+ contributors from diverse backgrounds who help our customers collect, enhance, train, translate, and localize content to build better AI models. Become part of our growing community and make an impact supporting the machine learning models of some of the world’s largest brands.&nbsp;</span></p>"
     },
@@ -3020,8 +3044,8 @@
         "amount": 10,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 10.0,
-        "max_amount": 20.0
+        "normalized_usd": 10,
+        "max_amount": 20
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong><span style=\"background-color: transparent;\"> </span></p><p><br></p><p><span style=\"background-color: transparent;\">Do you enjoy thinking deeply and solving logical puzzles? At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we need people with a </span><strong style=\"background-color: transparent;\">Philosophy</strong><span style=\"background-color: transparent;\"> background to help AI models become more logical and ethical. You don't need to be a tech expert. Your job is to read what the AI writes and make sure it follows clear reasoning, avoids contradictions, and stays fair. You are the \"Logic Coach\" for the AI.</span></p><p><br></p><p><br></p><p><strong style=\"background-color: transparent;\">What You’ll Do (Key Responsibilities):</strong></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Check the Logic:</strong><span style=\"background-color: transparent;\"> Read an AI’s explanation and point out if it makes a mistake or doesn't make sense (e.g., \"If A is B, then B must be A\"—is that actually true?).</span></li><li><strong style=\"background-color: transparent;\">Review Ethics:</strong><span style=\"background-color: transparent;\"> Look at how the AI handles \"right vs. wrong\" questions and ensure its answers are balanced and helpful.</span></li><li><strong style=\"background-color: transparent;\">Spot Bias:</strong><span style=\"background-color: transparent;\"> Help the AI avoid favoring one group or viewpoint unfairly so it can be used by everyone around the world.</span></li><li><strong style=\"background-color: transparent;\">Simplify Answers:</strong><span style=\"background-color: transparent;\"> Take complex AI responses and help rewrite them so they are honest, clear, and easy for everyone to understand.</span></li></ul>"
     },
@@ -3054,8 +3078,8 @@
         "amount": 10,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 10.0,
-        "max_amount": 25.0
+        "normalized_usd": 10,
+        "max_amount": 25
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong><span style=\"background-color: transparent;\"> At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we are building the future of software development. As a Specialist in our </span><strong style=\"background-color: transparent;\">Core Engineering &amp; AI Development Community</strong><span style=\"background-color: transparent;\">, you are the architect behind the \"Code-Gen\" revolution. Your mission is to push the boundaries of how Large Language Models (LLMs) understand logic, syntax, and architectural patterns. You will join an elite squad of developers tasked with training AI to solve complex algorithmic challenges, optimize legacy codebases, and master multiple programming languages. At TELUS, you aren't just writing code; you are teaching AI how to think like a Senior Engineer.</span></p><p><strong style=\"background-color: transparent;\">What You’ll Do (Key Responsibilities):</strong></p><ul><li><strong style=\"background-color: transparent;\">Algorithmic Reasoning Validation:</strong><span style=\"background-color: transparent;\"> Audit and refine \"Chain-of-Thought\" (CoT) reasoning for complex coding tasks in </span><strong style=\"background-color: transparent;\">Python, JavaScript, Java, and C++</strong><span style=\"background-color: transparent;\">.</span></li><li><strong style=\"background-color: transparent;\">Code Quality &amp; Security Auditing:</strong><span style=\"background-color: transparent;\"> Evaluate AI-generated code for security vulnerabilities (e.g., SQL injection, buffer overflows) and adherence to clean-code principles (SOLID, DRY).</span></li><li><strong style=\"background-color: transparent;\">Multi-Turn Debugging Strategy:</strong><span style=\"background-color: transparent;\"> Design and test complex multi-turn scenarios where the AI must identify, explain, and fix bugs in existing code blocks.</span></li><li><strong style=\"background-color: transparent;\">NLP-to-Code Translation:</strong><span style=\"background-color: transparent;\"> Optimize the relationship between natural language prompts and functional code outputs, ensuring the AI captures subtle logic requirements.</span></li><li><strong style=\"background-color: transparent;\">LLM Benchmarking:</strong><span style=\"background-color: transparent;\"> Execute and analyze performance benchmarks for coding models, identifying \"logic gaps\" in how the model handles specific libraries or frameworks.</span></li></ul>"
     },
@@ -3088,8 +3112,8 @@
         "amount": 10,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 10.0,
-        "max_amount": 20.0
+        "normalized_usd": 10,
+        "max_amount": 20
       },
       "description": "<p><strong style=\"color: rgb(31, 31, 31); background-color: transparent;\">About the Role:</strong><span style=\"color: rgb(31, 31, 31); background-color: transparent;\"> Do you have a passion for the past? At </span><strong style=\"color: rgb(31, 31, 31); background-color: transparent;\">TELUS Digital</strong><span style=\"color: rgb(31, 31, 31); background-color: transparent;\">, we need specialists with a background in </span><strong style=\"color: rgb(31, 31, 31); background-color: transparent;\">History</strong><span style=\"color: rgb(31, 31, 31); background-color: transparent;\"> to help AI understand time, culture, and heritage. AI often gets historical facts mixed up or forgets the cultural importance of events. Your job is to be the \"Memory\" for the AI, ensuring it discusses history accurately and respectfully.</span></p><p><br></p><p><strong style=\"color: rgb(31, 31, 31); background-color: transparent;\">What You’ll Do (Simple Tasks):</strong></p><ul><li><strong style=\"color: rgb(31, 31, 31); background-color: transparent;\">Fact-Checking:</strong><span style=\"color: rgb(31, 31, 31); background-color: transparent;\"> Review AI-generated articles or summaries about historical events to ensure dates, names, and places are 100% correct.</span></li><li><strong style=\"color: rgb(31, 31, 31); background-color: transparent;\">Cultural Sensitivity:</strong><span style=\"color: rgb(31, 31, 31); background-color: transparent;\"> Make sure the AI describes historical figures and events in a way that is respectful to the cultures involved.</span></li><li><strong style=\"color: rgb(31, 31, 31); background-color: transparent;\">Timeline Logic:</strong><span style=\"color: rgb(31, 31, 31); background-color: transparent;\"> Check if the AI understands \"cause and effect\"—for example, making sure it doesn't say an invention existed before it was actually created.</span></li></ul><p><strong style=\"color: rgb(31, 31, 31); background-color: transparent;\">Content Evaluation:</strong><span style=\"color: rgb(31, 31, 31); background-color: transparent;\"> Help the AI write better, clearer historical stories for students and researchers by providing feedback on its reasoning.</span></p>"
     },
@@ -3122,8 +3146,8 @@
         "amount": 10,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 10.0,
-        "max_amount": 19.0
+        "normalized_usd": 10,
+        "max_amount": 19
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong></p><p><br></p><p><span style=\"background-color: transparent;\">At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we don't just build smart AI; we build </span><strong style=\"background-color: transparent;\">intuitive AI</strong><span style=\"background-color: transparent;\">. As a </span><strong style=\"background-color: transparent;\">Human-AI Interaction (HAI) &amp; UX Specialist</strong><span style=\"background-color: transparent;\">, you are the architect of the user experience. You study the \"friction\" between human intent and machine response, refining the personality, empathy, and logic of the AI. Your goal is to move AI from being a \"tool\" to becoming a \"partner\" by optimizing how it handles multi-turn conversations and builds user trust. At TELUS, you ensure technology adapts to the human, not the other way around.</span></p><p><br></p><p><br></p><p><strong style=\"background-color: transparent;\">Key Responsibilities:</strong></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Conversational UX Auditing:</strong><span style=\"background-color: transparent;\"> Analyze the \"flow\" of multi-turn interactions to ensure the AI maintains state, reduces cognitive load, and provides concise, actionable answers.</span></li><li><strong style=\"background-color: transparent;\">Trust &amp; Calibration Analysis:</strong><span style=\"background-color: transparent;\"> Identify instances where the AI is overconfident (leading to false trust) or overly cautious (leading to frustration) and refine the \"Calibration of Trust.\"</span></li><li><strong style=\"background-color: transparent;\">Persona &amp; Tone Synthesis:</strong><span style=\"background-color: transparent;\"> Develop and test specialized personas (e.g., Empathetic Counselor vs. Objective Data Analyst) to ensure tone-alignment across different industries.</span></li><li><strong style=\"background-color: transparent;\">Accessibility &amp; Inclusivity Design:</strong><span style=\"background-color: transparent;\"> Evaluate how models handle diverse speech patterns, non-standard dialects, and accessibility needs to ensure the AI is truly global.</span></li></ul>"
     },
@@ -3156,8 +3180,8 @@
         "amount": 20,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 20.0,
-        "max_amount": 50.0
+        "normalized_usd": 20,
+        "max_amount": 50
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong></p><p><br></p><p><span style=\"background-color: transparent;\">AI is great at writing, but it often makes legal documents too confusing or misses simple rules. As a </span><strong style=\"background-color: transparent;\">Legal Content Expert</strong><span style=\"background-color: transparent;\">, your job is to read AI-generated legal text—like simple contracts, privacy policies, or terms of service—and make sure they are clear, accurate, and make sense. You are the \"Common Sense\" filter for legal AI.</span></p><p><br></p><p><br></p><p><strong style=\"background-color: transparent;\">Key Responsibilities:</strong></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Simple Fact-Checking:</strong><span style=\"background-color: transparent;\"> Make sure the AI is using the correct names, dates, and basic laws for your country.</span></li><li><strong style=\"background-color: transparent;\">Clarity Check:</strong><span style=\"background-color: transparent;\"> If the AI writes a sentence that is too long or confusing, you rewrite it to be simple and easy to understand.</span></li><li><strong style=\"background-color: transparent;\">Document Categorizing:</strong><span style=\"background-color: transparent;\"> Help the AI sort documents into the right piles (e.g., \"This is a Rental Agreement,\" \"This is a Non-Disclosure Agreement\").</span></li><li><strong style=\"background-color: transparent;\">Rule Following:</strong><span style=\"background-color: transparent;\"> Check if the AI followed a basic \"Playbook\" (e.g., \"Always ensure the late fee is no more than 5%\").</span></li></ul>"
     },
@@ -3190,8 +3214,8 @@
         "amount": 10,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 10.0,
-        "max_amount": 25.0
+        "normalized_usd": 10,
+        "max_amount": 25
       },
       "description": "<h3><strong>About the Role:</strong></h3><h3><br></h3><p>At TELUS Digital, we help the world’s biggest brands build smarter technology. As a <strong>E-commerce Product &amp; Search Relevancy Expert</strong>&nbsp;, your mission is to help an AI learn how to suggest the perfect products to online shoppers. You will look at massive catalogs across various industries and decide which items belong together. You act as the \"human logic\" that ensures a customer sees a matching set or compatible accessories instead of a random, incorrect suggestion.</p><p><br></p><h3><strong>What You’ll Do:</strong></h3><p><br></p><ul><li><strong>Create Pairs:</strong> Match products based on color, pattern, and style so they are visually consistent.</li><li><strong>Check Compatibility:</strong> Ensure products actually work together for the same use case. <em>(Example: Matching the right technical gear for specific sub-disciplines like gravel biking vs. road cycling).</em></li><li><strong>Review Metadata:</strong> Look at gender, price segment, and seasonality to ensure recommendations are logically and commercially sound.</li><li><strong>Maintain Data Integrity:</strong> Keep a clean, structured list of matches that follow strict brand and category guidelines.</li><li><strong>Category Research:</strong> Quickly learn the nuances of new product domains to pick the best matches. <em>(Example: Researching technical differences in skiing, cycling, or gym fitness gear).</em></li></ul>"
     },
@@ -3252,8 +3276,8 @@
         "amount": 2,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 2.0,
-        "max_amount": 5.0
+        "normalized_usd": 2,
+        "max_amount": 5
       },
       "description": "<p><strong style=\"background-color: transparent;\">About the Role:</strong></p><p><br></p><p><span style=\"background-color: transparent;\">At </span><strong style=\"background-color: transparent;\">TELUS Digital</strong><span style=\"background-color: transparent;\">, we are expanding our mission to include the physical world. We believe that for AI to be truly transformative, it must move beyond the screen and into the real world. As a Robotics AI Specialist, you are a pioneer in Embodied AI, helping us bridge the gap between machine reasoning and physical action.&nbsp;</span></p><p><br></p><p><br></p><p><strong style=\"background-color: transparent;\">Key Responsibilities:</strong></p><p><br></p><ul><li><strong style=\"background-color: transparent;\">Physical Data Evaluation:</strong><span style=\"background-color: transparent;\"> Audit video and sensor data to ensure robotic movements are logical, safe, and efficient.</span></li><li><strong style=\"background-color: transparent;\">Spatial Reasoning &amp; Annotation:</strong><span style=\"background-color: transparent;\"> Provide expert feedback on 3D environments, helping AI models understand depth, distance, and physical obstacles.</span></li><li><strong style=\"background-color: transparent;\">Simulation &amp; Digital Twin Testing:</strong><span style=\"background-color: transparent;\"> Review and grade AI performance in simulated environments to identify errors before hardware deployment.</span></li><li><strong style=\"background-color: transparent;\">Safety &amp; Physics Validation:</strong><span style=\"background-color: transparent;\"> Ensure AI-generated physical instructions adhere to the laws of physics and rigorous engineering safety standards.</span></li><li><strong style=\"background-color: transparent;\">Edge-Case Detection:</strong><span style=\"background-color: transparent;\"> Identify complex real-world scenarios (e.g., lighting changes, surface textures, or moving hazards) that could confuse a robotic system.</span></li></ul><p><span style=\"background-color: transparent;\">﻿</span></p>"
     },
@@ -3316,8 +3340,8 @@
         "amount": 6,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 6.0,
-        "max_amount": 40.0
+        "normalized_usd": 6,
+        "max_amount": 40
       },
       "description": "<h2><strong class=\"ql-size-small\">About the Role:</strong></h2><h2><br></h2><p><span class=\"ql-size-small\">At TELUS Digital, we are advancing the future of Artificial Intelligence by helping AI systems understand, process, and generate human speech with greater accuracy and naturalness.</span></p><p><span class=\"ql-size-small\">As an </span><strong class=\"ql-size-small\">AI Speech &amp; Audio Specialist</strong><span class=\"ql-size-small\"> in our AI Community, you will contribute to the development and improvement of next-generation speech AI technologies, including </span><strong class=\"ql-size-small\">Automatic Speech Recognition (ASR), Text-to-Speech (TTS), Voice AI, and audio machine learning systems</strong><span class=\"ql-size-small\">.</span></p><p><span class=\"ql-size-small\">We rely on our global community of specialists to evaluate, create, refine, and improve high-quality speech and audio datasets. Your expertise in audio production, speech analysis, linguistics, or voice technology will help ensure AI models deliver natural, accurate, culturally relevant, and human-like voice experiences.</span></p><p><span class=\"ql-size-small\">At TELUS Digital, you will play a key role in shaping how AI listens, understands, and communicates with people around the world.</span></p><p><br></p><h1><strong class=\"ql-size-small\">Key Responsibilities:</strong></h1><h1><br></h1><ul><li><span class=\"ql-size-small\">Evaluate AI-generated speech (TTS) for naturalness, pronunciation accuracy, rhythm, tone, emotion, and overall voice quality.</span></li><li><span class=\"ql-size-small\">Review and improve speech recognition outputs (ASR) by identifying transcription errors, pronunciation issues, accents, and linguistic nuances.</span></li><li><span class=\"ql-size-small\">Perform professional audio editing tasks including segmentation, trimming, noise reduction, silence adjustment, and quality enhancement.</span></li><li><span class=\"ql-size-small\">Analyze audio recordings using waveform and spectrogram-based tools to identify quality issues.</span></li><li><span class=\"ql-size-small\">Support the creation and validation of high-quality speech datasets used for AI model training and evaluation.</span></li><li><span class=\"ql-size-small\">Review voice recordings for clarity, consistency, articulation, and technical quality.</span></li><li><span class=\"ql-size-small\">Perform audio quality checks including loudness levels, background noise detection, clipping, distortion, and export specifications.</span></li><li><span class=\"ql-size-small\">Support voice AI projects including TTS, ASR, voice generation, voice similarity, voice mimicry, and conversational AI evaluation.</span></li><li><span class=\"ql-size-small\">Apply expertise in phonetics, linguistics, audio engineering, or speech technology to improve AI-generated voice experiences.</span></li></ul>"
     },
@@ -3444,8 +3468,8 @@
         "amount": 1,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 1.0,
-        "max_amount": 65.0
+        "normalized_usd": 1,
+        "max_amount": 65
       },
       "description": "<p><strong style=\"background-color: transparent;\">TELUS Digital AI Community</strong></p><p><span style=\"background-color: transparent;\">Our global AI Community is a vibrant network of more than one million contributors from diverse backgrounds who help customers collect, enhance, train, translate, and localize content to build better AI models. Become part of our growing community and contribute to the development of innovative AI technologies used by some of the world's largest brands.</span></p><p><br></p><p><strong>About the role </strong></p><p><span style=\"background-color: transparent;\">We are seeking experienced Bioinformatics and Computational Biology Subject Matter Experts (SMEs) to support the development of advanced evaluation content for next-generation AI systems.</span></p><p><span style=\"background-color: transparent;\">This is expert scientific content creation, not data annotation or data labeling. You will apply your research expertise to analyze real biological datasets, solve complex computational biology problems, and develop technically rigorous evaluation tasks that measure AI reasoning capabilities.</span></p><p><span style=\"background-color: transparent;\">This opportunity is ideal for researchers, postdoctoral scientists, industry professionals, and experienced bioinformaticians looking for flexible, remote freelance work.</span></p><p><br></p><p><strong style=\"background-color: transparent;\">Key Responsibilities</strong></p><ul><li><span style=\"background-color: transparent;\">Analyze real biological and multi-omics datasets to create original technical challenges.</span></li><li><span style=\"background-color: transparent;\">Design complex, multi-step problem statements based on authentic research data.</span></li><li><span style=\"background-color: transparent;\">Select appropriate bioinformatics tools and analytical workflows to produce and validate a single, defensible solution.</span></li><li><span style=\"background-color: transparent;\">Write clear, self-contained technical content with objective and unambiguous grading criteria.</span></li><li><span style=\"background-color: transparent;\">Peer review and independently validate problems created by other SMEs to ensure scientific accuracy, difficulty, and reproducibility.</span></li><li><span style=\"background-color: transparent;\">Prepare datasets and supporting documentation in accordance with defined technical specifications.</span></li><li><span style=\"background-color: transparent;\">Contribute to the development of high-quality benchmarks used to evaluate advanced AI systems.</span></li></ul>"
     },
@@ -3478,8 +3502,8 @@
         "amount": 5,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 5.0,
-        "max_amount": 15.0
+        "normalized_usd": 5,
+        "max_amount": 15
       },
       "description": "<p><span style=\"background-color: transparent;\">As a Thai Linguist in our Global AI Community, you evaluate and validate speech AI systems from a linguistic perspective—ensuring machine-generated voices communicate with natural language flow and prosody, speech recognition captures intent with linguistic accuracy, and voice AI models are trained on linguistically sound datasets. Your work directly impacts millions of users' voice-based AI experiences by maintaining the highest standards of linguistic quality and cultural authenticity.</span></p><p><span style=\"background-color: transparent;\">What You'll Do</span></p><p><span style=\"background-color: transparent;\">Linguistic Analysis &amp; Language Quality Assessment</span></p><p><span style=\"background-color: transparent;\">Analyze AI-generated speech (TTS) for naturalness of language patterns, pronunciation accuracy, prosodic rhythm, intonation, and emotional register from a linguistic perspective</span></p><p><span style=\"background-color: transparent;\">Identify transcription errors, phonological and morphological issues, and linguistic nuances in speech recognition (ASR) outputs</span></p><p><span style=\"background-color: transparent;\">Conduct linguistic quality evaluation of speech output including assessment of grammar, semantics, pragmatics, and discourse coherence</span></p><p><span style=\"background-color: transparent;\">Apply phonetic and phonological analysis to identify pronunciation variations, dialectal features, and language-specific patterns</span></p><p><span style=\"background-color: transparent;\">Provide structured linguistic feedback for model improvement</span></p><p><span style=\"background-color: transparent;\">Language Variation &amp; Dialectological Analysis</span></p><p><span style=\"background-color: transparent;\">Apply expertise in phonetics, phonology, morphology, and syntax to identify speech variations across Thai dialects and accents</span></p><p><span style=\"background-color: transparent;\">Analyze prosodic features including stress patterns, intonation contours, and rhythm across different speech varieties</span></p><p><span style=\"background-color: transparent;\">Document regional and sociolinguistic variations in speech patterns to inform dataset diversity</span></p><p><span style=\"background-color: transparent;\">Evaluate linguistic consistency and naturalness across different speaker profiles and contexts</span></p><p><span style=\"background-color: transparent;\">Speech Dataset Validation &amp; Annotation</span></p><p><span style=\"background-color: transparent;\">Review voice recordings for linguistic clarity, consistency, and technical quality</span></p><p><span style=\"background-color: transparent;\">Apply linguistic expertise to support creation and validation of high-quality speech datasets with attention to language structure and variation</span></p><p><span style=\"background-color: transparent;\">Perform detailed linguistic annotation and labeling for dataset integrity (phonetic transcription, prosodic markup, morphological tagging where applicable)</span></p><p><span style=\"background-color: transparent;\">Assess dataset diversity and representativeness from a linguistic perspective</span></p><p><span style=\"background-color: transparent;\">Identify and document linguistic patterns that improve ASR and TTS model performance</span></p><p><span style=\"background-color: transparent;\">Voice AI Project Support</span></p><p><span style=\"background-color: transparent;\">Support TTS, ASR, voice similarity, voice generation, and conversational AI evaluation projects with linguistic expertise</span></p><p><span style=\"background-color: transparent;\">Provide linguistic quality assurance for voice technology projects focused on naturalness and semantic/pragmatic accuracy</span></p><p><span style=\"background-color: transparent;\">Document linguistic findings to inform model improvement and contribute to research insights</span></p><p><span style=\"background-color: transparent;\">Assess how linguistic features impact user perception and model performance</span></p><p><span style=\"background-color: transparent;\">Mandatory Qualifications</span></p><p><span style=\"background-color: transparent;\">Education / Professional Background</span></p><p><span style=\"background-color: transparent;\">One of the following:</span></p><p><span style=\"background-color: transparent;\">Bachelor's degree in Linguistics, Phonetics, Phonology, Speech-Language Pathology, Computational Linguistics, Language Sciences, or related linguistic discipline</span></p><p><span style=\"background-color: transparent;\">OR 2+ years professional experience in: linguistic analysis, speech science, language documentation, dialect research, computational linguistics, speech dataset creation, or voice AI linguistics projects</span></p><p><span style=\"background-color: transparent;\">Linguistic &amp; Technical Competency</span></p><p><span style=\"background-color: transparent;\">Advanced knowledge of Thai phonetics, phonology, morphology, and syntax</span></p><p><span style=\"background-color: transparent;\">Working knowledge of: phonetic transcription, spectrogram analysis, prosodic analysis, acoustic phonetics, and language quality assessment</span></p><p><span style=\"background-color: transparent;\">Familiarity with linguistic annotation tools and practices (IPA notation, SAMPA, or similar systems)</span></p><p><span style=\"background-color: transparent;\">Ability to apply linguistic frameworks to evaluate speech quality and language naturalness</span></p><p><span style=\"background-color: transparent;\">Assessment &amp; Verification Requirements</span></p>"
     },
@@ -3512,8 +3536,8 @@
         "amount": 5,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 5.0,
-        "max_amount": 15.0
+        "normalized_usd": 5,
+        "max_amount": 15
       },
       "description": "<p><span style=\"background-color: transparent;\">As a Indonesian Linguist in our Global AI Community, you evaluate and validate speech AI systems from a linguistic perspective—ensuring machine-generated voices communicate with natural language flow and prosody, speech recognition captures intent with linguistic accuracy, and voice AI models are trained on linguistically sound datasets. Your work directly impacts millions of users' voice-based AI experiences by maintaining the highest standards of linguistic quality and cultural authenticity.</span></p><p><span style=\"background-color: transparent;\">What You'll Do</span></p><p><span style=\"background-color: transparent;\">Linguistic Analysis &amp; Language Quality Assessment</span></p><p><span style=\"background-color: transparent;\">Analyze AI-generated speech (TTS) for naturalness of language patterns, pronunciation accuracy, prosodic rhythm, intonation, and emotional register from a linguistic perspective</span></p><p><span style=\"background-color: transparent;\">Identify transcription errors, phonological and morphological issues, and linguistic nuances in speech recognition (ASR) outputs</span></p><p><span style=\"background-color: transparent;\">Conduct linguistic quality evaluation of speech output including assessment of grammar, semantics, pragmatics, and discourse coherence</span></p><p><span style=\"background-color: transparent;\">Apply phonetic and phonological analysis to identify pronunciation variations, dialectal features, and language-specific patterns</span></p><p><span style=\"background-color: transparent;\">Provide structured linguistic feedback for model improvement</span></p><p><span style=\"background-color: transparent;\">Language Variation &amp; Dialectological Analysis</span></p><p><span style=\"background-color: transparent;\">Apply expertise in phonetics, phonology, morphology, and syntax to identify speech variations across Indonesian dialects and accents</span></p><p><span style=\"background-color: transparent;\">Analyze prosodic features including stress patterns, intonation contours, and rhythm across different speech varieties</span></p><p><span style=\"background-color: transparent;\">Document regional and sociolinguistic variations in speech patterns to inform dataset diversity</span></p><p><span style=\"background-color: transparent;\">Evaluate linguistic consistency and naturalness across different speaker profiles and contexts</span></p><p><span style=\"background-color: transparent;\">Speech Dataset Validation &amp; Annotation</span></p><p><span style=\"background-color: transparent;\">Review voice recordings for linguistic clarity, consistency, and technical quality</span></p><p><span style=\"background-color: transparent;\">Apply linguistic expertise to support creation and validation of high-quality speech datasets with attention to language structure and variation</span></p><p><span style=\"background-color: transparent;\">Perform detailed linguistic annotation and labeling for dataset integrity (phonetic transcription, prosodic markup, morphological tagging where applicable)</span></p><p><span style=\"background-color: transparent;\">Assess dataset diversity and representativeness from a linguistic perspective</span></p><p><span style=\"background-color: transparent;\">Identify and document linguistic patterns that improve ASR and TTS model performance</span></p><p><span style=\"background-color: transparent;\">Voice AI Project Support</span></p><p><span style=\"background-color: transparent;\">Support TTS, ASR, voice similarity, voice generation, and conversational AI evaluation projects with linguistic expertise</span></p><p><span style=\"background-color: transparent;\">Provide linguistic quality assurance for voice technology projects focused on naturalness and semantic/pragmatic accuracy</span></p><p><span style=\"background-color: transparent;\">Document linguistic findings to inform model improvement and contribute to research insights</span></p><p><span style=\"background-color: transparent;\">Assess how linguistic features impact user perception and model performance</span></p><p><span style=\"background-color: transparent;\">Mandatory Qualifications</span></p><p><span style=\"background-color: transparent;\">Education / Professional Background</span></p><p><span style=\"background-color: transparent;\">One of the following:</span></p><p><span style=\"background-color: transparent;\">Bachelor's degree in Linguistics, Phonetics, Phonology, Speech-Language Pathology, Computational Linguistics, Language Sciences, or related linguistic discipline</span></p><p><span style=\"background-color: transparent;\">OR 2+ years professional experience in: linguistic analysis, speech science, language documentation, dialect research, computational linguistics, speech dataset creation, or voice AI linguistics projects</span></p><p><span style=\"background-color: transparent;\">Linguistic &amp; Technical Competency</span></p><p><span style=\"background-color: transparent;\">Advanced knowledge of Indonesian phonetics, phonology, morphology, and syntax</span></p><p><span style=\"background-color: transparent;\">Working knowledge of: phonetic transcription, spectrogram analysis, prosodic analysis, acoustic phonetics, and language quality assessment</span></p><p><span style=\"background-color: transparent;\">Familiarity with linguistic annotation tools and practices (IPA notation, SAMPA, or similar systems)</span></p><p><span style=\"background-color: transparent;\">Ability to apply linguistic frameworks to evaluate speech quality and language naturalness</span></p><p><span style=\"background-color: transparent;\">Assessment &amp; Verification Requirements</span></p><p><br></p><ul><li><br></li></ul><p><span style=\"background-color: transparent;\">﻿</span></p>"
     },
@@ -3546,8 +3570,8 @@
         "amount": 25,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 25.0,
-        "max_amount": 65.0
+        "normalized_usd": 25,
+        "max_amount": 65
       },
       "description": "<h4><strong>About the Role</strong></h4><h4><br></h4><p>Join our global AI Community as a <strong>Bioinformatics AI Expert</strong> specializing in advanced benchmark dataset creation and AI model evaluation.</p><p>In this role, you will design complex, reasoning-intensive, \"information-reversal\" evaluation tasks to measure the autonomous tool-use and data analysis capabilities of Agent-style Large Language Models (LLMs) on real \"wet lab / dry lab\" biological data (e.g., RNA-seq, FASTQ, BAM, mzML).</p><p><br></p><h4><strong>Key Responsibilities</strong></h4><h4><br></h4><ul><li><strong>Information-Reversal Problem Creation:</strong> Construct complex scientific scenario questions where AI models receive anonymized raw/processed biological datasets and must deduce hidden identities, experimental conditions, variant locations, or functional pathways.</li><li><strong>Data Workspace Packaging:</strong> Build clean, self-contained zip workspace archives containing real or synthesized biological datasets (e.g., expression tables, sequence files, metadata).</li><li><strong>Multi-Step Tool Orchestration:</strong> Design tasks that strictly require multi-step external tool execution (e.g., BLAST, genomic interval tools, variant annotators, phylogenetic software, differential expression pipelines) rather than simple code execution or direct text lookups.</li><li><strong>Chain of Thought (CoT) &amp; Rubric Engineering:</strong> Author step-by-step resolution paths and rigid <strong>all-or-nothing grading rubrics</strong> featuring canonical answers and explicitly accepted variants for automated LLM evaluation.</li><li><strong>Quality Assurance &amp; Verification:</strong> Ensure all benchmark deliverables pass automated validation checks, eliminating answer leakage in metadata or filenames, and guaranteeing single, deterministic correct answers.</li></ul>"
     },
@@ -3666,7 +3690,7 @@
         "amount": 30,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 30.0,
+        "normalized_usd": 30,
         "max_amount": null
       },
       "description": "<h2><strong style=\"color: rgb(53, 28, 117); background-color: transparent;\">Overview</strong></h2><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">We're building a diverse, high-quality dataset to improve advanced AI models across multiple languages and real-world use cases. Your task? Interact naturally with AI assistants on your device while performing everyday tasks—and we'll pay you for it.</span></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">This is your chance to directly influence AI development while using the cutting-edge tools you're already passionate about.</span></p><h2><br></h2><h2><strong style=\"color: rgb(53, 28, 117); background-color: transparent;\">A Day in the Life</strong></h2><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Work on short, non-literary translation and localization tasks, mainly reviewing machine translations from English into the target language, while also supporting transcription-related work and other ad hoc linguistic assignments.</span></p><h2><br></h2><h2><strong style=\"color: rgb(53, 28, 117); background-color: transparent;\">Key Responsibilities</strong></h2><ul><li><span style=\"background-color: transparent;\">Localization</span></li><li><span style=\"background-color: transparent;\">Review and validation of machine learning translation corpora.&nbsp;</span></li><li><span style=\"background-color: transparent;\">Translation&nbsp;</span></li><li><span style=\"background-color: transparent;\">Ad hoc linguistic tasks&nbsp;</span></li></ul><p><br></p><h2><strong style=\"color: rgb(53, 28, 117); background-color: transparent;\">Compensation</strong></h2><p><span style=\"background-color: transparent;\">You will earn 30 USD paid per worked hour.</span></p>"
@@ -3700,7 +3724,7 @@
         "amount": 30,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 30.0,
+        "normalized_usd": 30,
         "max_amount": null
       },
       "description": "<h2><strong style=\"background-color: transparent; color: rgb(53, 28, 117);\">Overview</strong></h2><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">We're building a diverse, high-quality dataset to improve advanced AI models across multiple languages and real-world use cases. Your task? Interact naturally with AI assistants on your device while performing everyday tasks—and we'll pay you for it.</span></p><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">This is your chance to directly influence AI development while using the cutting-edge tools you're already passionate about.</span></p><h2><br></h2><h2><strong style=\"background-color: transparent; color: rgb(53, 28, 117);\">A Day in the Life</strong></h2><p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">Work on short, non-literary translation and localization tasks, mainly reviewing machine translations from English into the target language, while also supporting transcription-related work and other ad hoc linguistic assignments.</span></p><h2><br></h2><h2><strong style=\"background-color: transparent; color: rgb(53, 28, 117);\">Key Responsibilities</strong></h2><ul><li><span style=\"background-color: transparent;\">Localization</span></li><li><span style=\"background-color: transparent;\">Review and validation of machine learning translation corpora.&nbsp;</span></li><li><span style=\"background-color: transparent;\">Translation&nbsp;</span></li><li><span style=\"background-color: transparent;\">Ad hoc linguistic tasks&nbsp;</span></li></ul><p><br></p><h2><strong style=\"background-color: transparent; color: rgb(53, 28, 117);\">Compensation</strong></h2><p><span style=\"background-color: transparent;\">You will earn 30 USD paid per worked hour.</span></p>"
@@ -3734,8 +3758,8 @@
         "amount": 45,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 45.0,
-        "max_amount": 160.0
+        "normalized_usd": 45,
+        "max_amount": 160
       },
       "description": "<p><span style=\"color: rgb(84, 90, 94);\">TELUS Digital is building a global community of experts to support the development and evaluation of advanced Artificial Intelligence systems.</span></p><p><br></p><p><span style=\"color: rgb(84, 90, 94);\">We are seeking </span><strong style=\"color: rgb(84, 90, 94);\">AI, Machine Learning, Research and Subject-Matter Experts</strong><span style=\"color: rgb(84, 90, 94);\"> to support an upcoming </span><strong style=\"color: rgb(84, 90, 94);\">Recursive Self-Improvement (RSI) Training and Ready-Made Dataset Procurement</strong><span style=\"color: rgb(84, 90, 94);\"> initiative. This opportunity is particularly suited to experts who can combine </span><strong style=\"color: rgb(84, 90, 94);\">technical knowledge, research capability, critical thinking and dataset evaluation</strong><span style=\"color: rgb(84, 90, 94);\"> to identify high-quality resources for advanced AI training.</span></p><p><br></p><p><strong style=\"color: rgb(84, 90, 94);\"><u>What You’ll Do</u></strong></p><p><br></p><p><span style=\"color: rgb(84, 90, 94);\">Depending on your area of expertise, you may be asked to:</span></p><ul><li><span style=\"color: rgb(84, 90, 94);\">Research existing, ready-made datasets relevant to advanced AI training and evaluation</span></li><li><span style=\"color: rgb(84, 90, 94);\">Identify datasets that meet specific technical, research or domain requirements</span></li><li><span style=\"color: rgb(84, 90, 94);\">Assess dataset quality, relevance, complexity and completeness</span></li><li><span style=\"color: rgb(84, 90, 94);\">Evaluate whether datasets are suitable for AI reasoning, learning and self-improvement</span></li><li><span style=\"color: rgb(84, 90, 94);\">Review dataset structure, metadata, provenance and licensing considerations</span></li><li><span style=\"color: rgb(84, 90, 94);\">Identify potential quality issues, duplication, contamination or limitations</span></li><li><span style=\"color: rgb(84, 90, 94);\">Compare multiple datasets against defined selection criteria</span></li><li><span style=\"color: rgb(84, 90, 94);\">Recommend the most suitable datasets for potential procurement</span></li><li><span style=\"color: rgb(84, 90, 94);\">Provide clear, evidence-based justification for your recommendations</span></li><li><span style=\"color: rgb(84, 90, 94);\">Identify gaps and suggest additional resources where required</span></li><li><span style=\"color: rgb(84, 90, 94);\">Support advanced AI training and evaluation initiatives</span></li></ul><p><br></p><p><strong style=\"color: rgb(84, 90, 94);\"><u>Who We’re Looking For</u></strong></p><p><br></p><p><strong style=\"color: rgb(84, 90, 94);\">We welcome applications from experts with backgrounds in:</strong></p><p><br></p><ul><li><span style=\"color: rgb(84, 90, 94);\">Artificial Intelligence</span></li><li><span style=\"color: rgb(84, 90, 94);\">Machine Learning</span></li><li><span style=\"color: rgb(84, 90, 94);\">Computer Science</span></li><li><span style=\"color: rgb(84, 90, 94);\">AI Research</span></li><li><span style=\"color: rgb(84, 90, 94);\">Machine Learning Research</span></li><li><span style=\"color: rgb(84, 90, 94);\">Data Science</span></li><li><span style=\"color: rgb(84, 90, 94);\">Dataset Development or Data Quality</span></li><li><span style=\"color: rgb(84, 90, 94);\">AI Evaluation</span></li><li><span style=\"color: rgb(84, 90, 94);\">LLM Evaluation</span></li><li><span style=\"color: rgb(84, 90, 94);\">AI Safety / Red Teaming</span></li><li><span style=\"color: rgb(84, 90, 94);\">Mathematics &amp; Statistics</span></li><li><span style=\"color: rgb(84, 90, 94);\">Scientific Research</span></li><li><span style=\"color: rgb(84, 90, 94);\">Engineering</span></li><li><span style=\"color: rgb(84, 90, 94);\">NLP / Computational Linguistics</span></li><li><span style=\"color: rgb(84, 90, 94);\">Healthcare</span></li><li><span style=\"color: rgb(84, 90, 94);\">Finance &amp; Economics</span></li><li><span style=\"color: rgb(84, 90, 94);\">Law</span></li><li><span style=\"color: rgb(84, 90, 94);\">Education</span></li><li><span style=\"color: rgb(84, 90, 94);\">Other specialist technical or scientific domains</span></li></ul><p><br></p><p><strong style=\"color: rgb(84, 90, 94);\">You may be an:</strong></p><p><br></p><ul><li><span style=\"color: rgb(84, 90, 94);\">AI Researcher</span></li><li><span style=\"color: rgb(84, 90, 94);\">Research Scientist</span></li><li><span style=\"color: rgb(84, 90, 94);\">Machine Learning Engineer</span></li><li><span style=\"color: rgb(84, 90, 94);\">AI Evaluation Engineer</span></li><li><span style=\"color: rgb(84, 90, 94);\">LLM Evaluation Expert</span></li><li><span style=\"color: rgb(84, 90, 94);\">Data Scientist</span></li><li><span style=\"color: rgb(84, 90, 94);\">Dataset Specialist</span></li><li><span style=\"color: rgb(84, 90, 94);\">AI Safety Researcher</span></li><li><span style=\"color: rgb(84, 90, 94);\">Technical Researcher</span></li><li><span style=\"color: rgb(84, 90, 94);\">Subject-Matter Expert</span></li><li><span style=\"color: rgb(84, 90, 94);\">Academic or PhD researcher</span></li></ul>"
     },
@@ -3768,8 +3792,8 @@
         "amount": 45,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 45.0,
-        "max_amount": 160.0
+        "normalized_usd": 45,
+        "max_amount": 160
       },
       "description": "<p><span style=\"color: rgb(84, 90, 94);\">TELUS Digital is building a global community of experts to </span><strong style=\"color: rgb(84, 90, 94);\">evaluate, challenge and improve advanced AI systems</strong><span style=\"color: rgb(84, 90, 94);\">.</span></p><p><br></p><p><span style=\"color: rgb(84, 90, 94);\">We are looking for university students, graduates, researchers and experienced professionals with expertise across </span><strong style=\"color: rgb(84, 90, 94);\">Artificial Intelligence, Machine Learning, LLMs, Mathematics, Science, Engineering, Linguistics, Cybersecurity, Psychology, Law, Healthcare, Finance, Education and other specialist disciplines.</strong></p><p><br></p><p><strong style=\"color: rgb(84, 90, 94);\">You do not need a degree specifically called “Artificial Intelligence.”</strong><span style=\"color: rgb(84, 90, 94);\"> We are looking for people with strong subject-matter expertise, analytical thinking and the ability to assess whether AI is accurate, logical, safe and fit for purpose.</span></p><p><br></p><p><strong style=\"color: rgb(84, 90, 94);\">What you may work on:</strong></p><p><br></p><p><span style=\"color: rgb(84, 90, 94);\">Depending on your expertise, you could evaluate:</span></p><p><strong style=\"color: rgb(84, 90, 94);\"> AI &amp; Machine Learning</strong></p><ul><li><span style=\"color: rgb(84, 90, 94);\">AI/ML concepts and technical outputs</span></li><li><span style=\"color: rgb(84, 90, 94);\">Model reasoning and performance</span></li><li><span style=\"color: rgb(84, 90, 94);\">Data and technical accuracy</span></li><li><span style=\"color: rgb(84, 90, 94);\">Coding and computational outputs</span></li></ul><p><strong style=\"color: rgb(84, 90, 94);\">LLM &amp; NLP</strong></p><ul><li><span style=\"color: rgb(84, 90, 94);\">AI-generated text and conversations</span></li><li><span style=\"color: rgb(84, 90, 94);\">Language, meaning, context and reasoning</span></li><li><span style=\"color: rgb(84, 90, 94);\">Hallucinations and factual accuracy</span></li><li><span style=\"color: rgb(84, 90, 94);\">LLM responses and instruction following</span></li></ul><p><strong style=\"color: rgb(84, 90, 94);\">Mathematical &amp; Logical Reasoning</strong></p><ul><li><span style=\"color: rgb(84, 90, 94);\">Mathematical calculations</span></li><li><span style=\"color: rgb(84, 90, 94);\">Statistics and probability</span></li><li><span style=\"color: rgb(84, 90, 94);\">Logic and multi-step reasoning</span></li><li><span style=\"color: rgb(84, 90, 94);\">Scientific and quantitative problem solving</span></li></ul><p><strong style=\"color: rgb(84, 90, 94);\">AI Safety &amp; Red Teaming</strong></p><ul><li><span style=\"color: rgb(84, 90, 94);\">AI failure modes</span></li><li><span style=\"color: rgb(84, 90, 94);\">Unsafe or inappropriate outputs</span></li><li><span style=\"color: rgb(84, 90, 94);\">Model vulnerabilities and weaknesses</span></li><li><span style=\"color: rgb(84, 90, 94);\">Adversarial and edge-case scenarios</span></li><li><span style=\"color: rgb(84, 90, 94);\">Responsible AI behaviour</span></li></ul><p><strong style=\"color: rgb(84, 90, 94);\"> Domain-Specific AI Evaluation</strong></p><ul><li><span style=\"color: rgb(84, 90, 94);\">Healthcare &amp; Medicine</span></li><li><span style=\"color: rgb(84, 90, 94);\">Law</span></li><li><span style=\"color: rgb(84, 90, 94);\">Finance, Economics &amp; Accounting</span></li><li><span style=\"color: rgb(84, 90, 94);\">Education</span></li><li><span style=\"color: rgb(84, 90, 94);\">Engineering &amp; Robotics</span></li><li><span style=\"color: rgb(84, 90, 94);\">Physics &amp; Science</span></li><li><span style=\"color: rgb(84, 90, 94);\">Business</span></li><li><span style=\"color: rgb(84, 90, 94);\">Humanities &amp; Social Sciences</span></li><li><span style=\"color: rgb(84, 90, 94);\">Linguistics and other specialist domains</span></li></ul><p><br></p><p><strong style=\"color: rgb(84, 90, 94);\">You may be asked to:</strong></p><p><br></p><ul><li><span style=\"color: rgb(84, 90, 94);\">Evaluate AI-generated responses against defined criteria</span></li><li><span style=\"color: rgb(84, 90, 94);\">Identify factual, technical, linguistic or reasoning errors</span></li><li><span style=\"color: rgb(84, 90, 94);\">Compare multiple AI responses and determine which is stronger</span></li><li><span style=\"color: rgb(84, 90, 94);\">Assess whether an AI solution is accurate, relevant and logically sound</span></li><li><span style=\"color: rgb(84, 90, 94);\">Identify hallucinations, inconsistencies and potential risks</span></li><li><span style=\"color: rgb(84, 90, 94);\">Apply evaluation guidelines consistently</span></li><li><span style=\"color: rgb(84, 90, 94);\">Provide clear, structured expert feedback</span></li><li><span style=\"color: rgb(84, 90, 94);\">Help establish and maintain high-quality evaluation standards</span></li></ul>"
     },
@@ -3832,8 +3856,8 @@
         "amount": 15,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 15.0,
-        "max_amount": 40.0
+        "normalized_usd": 15,
+        "max_amount": 40
       },
       "description": "<p><strong>Position Overview</strong></p><p><br></p><p><strong style=\"background-color: transparent;\">TELUS Digital is seeking native English speakers to evaluate, refine, and improve artificial intelligence models for </strong><strong>Location-Based Services (LBS)</strong> and <strong>Search-Based Services (SBS)</strong>. In this role, you will analyze query results, geographic accuracy, search intent, and local relevance to train next-generation mapping, search, and AI assistant technologies.</p><p><br></p><p><strong>Key Responsibilities</strong></p><p><br></p><ul><li>Evaluate AI-generated search results, map routing, and local business data for accuracy, intent, and cultural relevance.</li><li>Perform side-by-side (SBS) evaluations comparing model responses against user search queries.</li><li>Validate Location-Based Services (LBS) data, ensuring accurate geocoding, landmark context, and regional nuances.</li><li>Grade and annotate datasets following strict guideline documentation provided by client projects.</li><li>Identify edge cases, factual hallucinations, and spatial errors in AI outputs to improve model safety and accuracy.</li></ul>"
     },
@@ -3867,7 +3891,7 @@
         "currency": "USD",
         "unit": "per_hour",
         "normalized_usd": 7.21,
-        "max_amount": 24.0
+        "max_amount": 24
       },
       "description": "<h4><strong>About the Role</strong></h4><h4><br></h4><p>Join the TELUS Digital AI Community and make a direct impact on the machine learning models of some of the world’s largest brands.</p><p><br></p><p>As a <strong>Multilingual Image &amp; Text AI Evaluator</strong>, you will participate in a specialized two-stage visual evaluation project for generative AI models. You will evaluate AI-generated images for text accuracy, identify visual distortions, and perform precise localized corrections to ensure AI outputs meet high linguistic and visual standards.</p><p><br></p><h4><strong>Target Languages Requested</strong></h4><h4><br></h4><p>We are currently seeking language experts with <strong>native or fluent proficiency</strong> in any of the following target languages:</p><ul><li><strong>Thai</strong></li><li><strong>French (France)</strong></li><li><strong>Vietnamese</strong></li><li><strong>Malay</strong></li><li><strong>Japanese</strong></li><li><strong>Korean</strong></li><li><strong>Indonesian</strong></li><li><strong>Arabic (Gulf)</strong></li><li><strong>Spanish (Mexico)</strong></li><li><strong>Portuguese (Brazil)</strong></li><li><strong>Tagalog</strong></li></ul><p><strong>﻿</strong></p><h4><strong>Key Responsibilities</strong></h4><ul><li>Two-Stage Visual &amp; Text Evaluation:</li></ul><ol><li class=\"ql-indent-1\"><strong>Text Correctness Scoring:</strong> Evaluate and score text embedded within AI-generated images for spelling, grammar, vocabulary, and contextual accuracy.</li><li class=\"ql-indent-1\"><strong>Localized Bounding-Box Corrections:</strong> Perform precise spatial bounding-box annotations to capture, flag, and correct spelling errors, typographical issues, and visual rendering distortions.</li></ol><ul><li><strong>Guideline &amp; Quality Adherence:</strong> Consistently learn, apply, and maintain complex visual and linguistic annotation guidelines across all assigned tasks.</li><li><strong>Feedback &amp; Escalation:</strong> Identify subtle visual/textual anomalies, flag ambiguous data, and ensure high annotation trustworthiness across project workflows</li></ul><h2><br></h2>"
     },
@@ -3900,8 +3924,8 @@
         "amount": 5,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 5.0,
-        "max_amount": 15.0
+        "normalized_usd": 5,
+        "max_amount": 15
       },
       "description": "<p><span style=\"background-color: transparent;\">As a </span>Malaysian Malay Linguist Expert<span style=\"background-color: transparent;\"> in our Global AI Community, you evaluate and validate speech AI systems from a linguistic perspective—ensuring machine-generated voices communicate with natural language flow and prosody, speech recognition captures intent with linguistic accuracy, and voice AI models are trained on linguistically sound datasets. Your work directly impacts millions of users' voice-based AI experiences by maintaining the highest standards of linguistic quality and cultural authenticity.</span></p><p><span style=\"background-color: transparent;\">What You'll Do</span></p><p><span style=\"background-color: transparent;\">Linguistic Analysis &amp; Language Quality Assessment</span></p><p><br></p><p><span style=\"background-color: transparent;\">Analyze AI-generated speech (TTS) for naturalness of language patterns, pronunciation accuracy, prosodic rhythm, intonation, and emotional register from a linguistic perspective</span></p><p><span style=\"background-color: transparent;\">Identify transcription errors, phonological and morphological issues, and linguistic nuances in speech recognition (ASR) outputs</span></p><p><span style=\"background-color: transparent;\">Conduct linguistic quality evaluation of speech output including assessment of grammar, semantics, pragmatics, and discourse coherence</span></p><p><span style=\"background-color: transparent;\">Apply phonetic and phonological analysis to identify pronunciation variations, dialectal features, and language-specific patterns</span></p><p><span style=\"background-color: transparent;\">Provide structured linguistic feedback for model improvement</span></p><p><span style=\"background-color: transparent;\">Language Variation &amp; Dialectological Analysis</span></p><p><br></p><p><span style=\"background-color: transparent;\">Apply expertise in phonetics, phonology, morphology, and syntax to identify speech variations across Malaysian Malay dialects and accents</span></p><p><span style=\"background-color: transparent;\">Analyze prosodic features including stress patterns, intonation contours, and rhythm across different speech varieties</span></p><p><span style=\"background-color: transparent;\">Document regional and sociolinguistic variations in speech patterns to inform dataset diversity</span></p><p><span style=\"background-color: transparent;\">Evaluate linguistic consistency and naturalness across different speaker profiles and contexts</span></p><p><span style=\"background-color: transparent;\">Speech Dataset Validation &amp; Annotation</span></p><p><br></p><p><span style=\"background-color: transparent;\">Review voice recordings for linguistic clarity, consistency, and technical quality</span></p><p><span style=\"background-color: transparent;\">Apply linguistic expertise to support creation and validation of high-quality speech datasets with attention to language structure and variation</span></p><p><span style=\"background-color: transparent;\">Perform detailed linguistic annotation and labeling for dataset integrity (phonetic transcription, prosodic markup, morphological tagging where applicable)</span></p><p><span style=\"background-color: transparent;\">Assess dataset diversity and representativeness from a linguistic perspective</span></p><p><span style=\"background-color: transparent;\">Identify and document linguistic patterns that improve ASR and TTS model performance</span></p><p><span style=\"background-color: transparent;\">Voice AI Project Support</span></p><p><br></p><p><span style=\"background-color: transparent;\">Support TTS, ASR, voice similarity, voice generation, and conversational AI evaluation projects with linguistic expertise</span></p><p><span style=\"background-color: transparent;\">Provide linguistic quality assurance for voice technology projects focused on naturalness and semantic/pragmatic accuracy</span></p><p><span style=\"background-color: transparent;\">Document linguistic findings to inform model improvement and contribute to research insights</span></p><p><span style=\"background-color: transparent;\">Assess how linguistic features impact user perception and model performance</span></p><p><span style=\"background-color: transparent;\">Mandatory Qualifications</span></p><p><span style=\"background-color: transparent;\">Education / Professional Background</span></p><p><br></p><p><span style=\"background-color: transparent;\">One of the following:</span></p><p><br></p><p><span style=\"background-color: transparent;\">Bachelor's degree in Linguistics, Phonetics, Phonology, Speech-Language Pathology, Computational Linguistics, Language Sciences, or related linguistic discipline</span></p><p><span style=\"background-color: transparent;\">OR 2+ years professional experience in: linguistic analysis, speech science, language documentation, dialect research, computational linguistics, speech dataset creation, or voice AI linguistics projects</span></p><p><br></p><p><span style=\"background-color: transparent;\">Linguistic &amp; Technical Competency</span></p><p><br></p><p><span style=\"background-color: transparent;\">Advanced knowledge of Malaysian Malay phonetics, phonology, morphology, and syntax</span></p><p><span style=\"background-color: transparent;\">Working knowledge of: phonetic transcription, spectrogram analysis, prosodic analysis, acoustic phonetics, and language quality assessment</span></p><p><span style=\"background-color: transparent;\">Familiarity with linguistic annotation tools and practices (IPA notation, SAMPA, or similar systems)</span></p><p><span style=\"background-color: transparent;\">Ability to apply linguistic frameworks to evaluate speech quality and language naturalness</span></p><p><span style=\"background-color: transparent;\">Assessment &amp; Verification Requirements</span></p>"
     },
@@ -3935,7 +3959,7 @@
         "currency": "USD",
         "unit": "per_hour",
         "normalized_usd": 23.5,
-        "max_amount": 30.0
+        "max_amount": 30
       },
       "description": "<p><span style=\"background-color: transparent;\">﻿As a Korean Linguist in our Global AI Community, you evaluate and validate speech AI systems from a linguistic perspective—ensuring machine-generated voices communicate with natural language flow and prosody, speech recognition captures intent with linguistic accuracy, and voice AI models are trained on linguistically sound datasets. Your work directly impacts millions of users' voice-based AI experiences by maintaining the highest standards of linguistic quality and cultural authenticity.</span></p><p><span style=\"background-color: transparent;\">What You'll Do</span></p><p><span style=\"background-color: transparent;\">Linguistic Analysis &amp; Language Quality Assessment</span></p><p><span style=\"background-color: transparent;\">Analyze AI-generated speech (TTS) for naturalness of language patterns, pronunciation accuracy, prosodic rhythm, intonation, and emotional register from a linguistic perspective</span></p><p><span style=\"background-color: transparent;\">Identify transcription errors, phonological and morphological issues, and linguistic nuances in speech recognition (ASR) outputs</span></p><p><span style=\"background-color: transparent;\">Conduct linguistic quality evaluation of speech output including assessment of grammar, semantics, pragmatics, and discourse coherence</span></p><p><span style=\"background-color: transparent;\">Apply phonetic and phonological analysis to identify pronunciation variations, dialectal features, and language-specific patterns</span></p><p><span style=\"background-color: transparent;\">Provide structured linguistic feedback for model improvement</span></p><p><span style=\"background-color: transparent;\">Language Variation &amp; Dialectological Analysis</span></p><p><span style=\"background-color: transparent;\">Apply expertise in phonetics, phonology, morphology, and syntax to identify speech variations across Koreanesian dialects and accents</span></p><p><span style=\"background-color: transparent;\">Analyze prosodic features including stress patterns, intonation contours, and rhythm across different speech varieties</span></p><p><span style=\"background-color: transparent;\">Document regional and sociolinguistic variations in speech patterns to inform dataset diversity</span></p><p><span style=\"background-color: transparent;\">Evaluate linguistic consistency and naturalness across different speaker profiles and contexts</span></p><p><span style=\"background-color: transparent;\">Speech Dataset Validation &amp; Annotation</span></p><p><span style=\"background-color: transparent;\">Review voice recordings for linguistic clarity, consistency, and technical quality</span></p><p><span style=\"background-color: transparent;\">Apply linguistic expertise to support creation and validation of high-quality speech datasets with attention to language structure and variation</span></p><p><span style=\"background-color: transparent;\">Perform detailed linguistic annotation and labeling for dataset integrity (phonetic transcription, prosodic markup, morphological tagging where applicable)</span></p><p><span style=\"background-color: transparent;\">Assess dataset diversity and representativeness from a linguistic perspective</span></p><p><span style=\"background-color: transparent;\">Identify and document linguistic patterns that improve ASR and TTS model performance</span></p><p><span style=\"background-color: transparent;\">Voice AI Project Support</span></p><p><span style=\"background-color: transparent;\">Support TTS, ASR, voice similarity, voice generation, and conversational AI evaluation projects with linguistic expertise</span></p><p><span style=\"background-color: transparent;\">Provide linguistic quality assurance for voice technology projects focused on naturalness and semantic/pragmatic accuracy</span></p><p><span style=\"background-color: transparent;\">Document linguistic findings to inform model improvement and contribute to research insights</span></p><p><span style=\"background-color: transparent;\">Assess how linguistic features impact user perception and model performance</span></p><p><span style=\"background-color: transparent;\">Mandatory Qualifications</span></p><p><span style=\"background-color: transparent;\">Education / Professional Background</span></p><p><span style=\"background-color: transparent;\">One of the following:</span></p><p><span style=\"background-color: transparent;\">Bachelor's degree in Linguistics, Phonetics, Phonology, Speech-Language Pathology, Computational Linguistics, Language Sciences, or related linguistic discipline</span></p><p><span style=\"background-color: transparent;\">OR 2+ years professional experience in: linguistic analysis, speech science, language documentation, dialect research, computational linguistics, speech dataset creation, or voice AI linguistics projects</span></p><p><span style=\"background-color: transparent;\">Linguistic &amp; Technical Competency</span></p><p><span style=\"background-color: transparent;\">Advanced knowledge of Korean phonetics, phonology, morphology, and syntax</span></p><p><span style=\"background-color: transparent;\">Working knowledge of: phonetic transcription, spectrogram analysis, prosodic analysis, acoustic phonetics, and language quality assessment</span></p><p><span style=\"background-color: transparent;\">Familiarity with linguistic annotation tools and practices (IPA notation, SAMPA, or similar systems)</span></p><p><span style=\"background-color: transparent;\">Ability to apply linguistic frameworks to evaluate speech quality and language naturalness</span></p><p><span style=\"background-color: transparent;\">Assessment &amp; Verification Requirements</span></p>"
     },
@@ -3968,8 +3992,8 @@
         "amount": 25,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 25.0,
-        "max_amount": 55.0
+        "normalized_usd": 25,
+        "max_amount": 55
       },
       "description": "<h2><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">About the Role</span></h2><h2><br></h2><p><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">TELUS Digital is seeking research-level mathematicians to contribute to an advanced mathematical reasoning benchmark for a leading AI research organisation.</span></p><p><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">As a Complex Math Data Specialist, you will design a single original, research-level mathematical problem intended to probe the limits of current AI reasoning systems. The problem should sit beyond the capabilities demonstrated by current frontier models under the programme's evaluation protocol and must have a precise, machine-checkable answer.</span></p><p><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">This is problem authoring, not proof formalisation. You will not be asked to produce a machine-checked proof. Instead, you will create one rigorous mathematical challenge, provide its exact answer and solution, and supply the computational materials required to independently verify the result.</span></p><p><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">The project is particularly suited to researchers with deep expertise in areas such as number theory, combinatorics, algebraic geometry, analysis, topology, differential geometry, PDEs, harmonic analysis, category theory, or mathematical physics.</span></p><p><br></p><h2><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">What You'll Do</span></h2><h2><br></h2><ul><li><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Design one original research-level problem in your area of mathematical expertise. The problem must be new and unpublished. You may build on existing mathematical ideas, but the resulting problem must be sufficiently transformed or combined that its source is not readily identifiable.</span></li><li><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Make the problem completely self-contained. Include all definitions, conventions, non-standard notation and hypotheses required to solve it. The evaluator will not have access to supplementary papers or references at evaluation time.</span></li><li><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Define one exact answer and answer type. Accepted formats may include a Python integer, </span><code class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">sympy.Expr</code><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">, </span><code class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">sympy.Matrix</code><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">, tuple of integers, or another explicitly supported machine-checkable format. Approximate answers do not receive credit.</span></li><li><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Make the problem resistant to guessing. The probability of obtaining the correct answer without performing the substantive mathematical work should be below the programme's threshold. Small integers, familiar constants, simple counts and yes/no answers are generally unsuitable.</span></li><li><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Provide a complete solution write-up, presenting the key mathematical idea first, followed by the reasoning and any required computation.</span></li><li><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Provide reproducible code that computes or verifies the answer and runs in under approximately 60 seconds on ordinary hardware.</span></li><li><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Provide the required reference-answer function in the programme's submission format.</span></li><li><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Evaluate your own problem using the programme's testing harness, including repeated independent model attempts, a statement-only guessing attack and contamination/source-identification checks.</span></li><li><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Submit evaluation logs and the required difficulty metadata, including subject area, techniques used, estimated expert hours to discover the key idea, estimated execution time once the idea is known, and whether programming is required.</span></li></ul><p><span class=\"ql-size-small\">﻿</span></p><h3><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">﻿Mandatory Qualifications</span></h3><h3><br></h3><ul><li><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Active mathematical research at doctoral level or beyond, such as a senior PhD student with supervisor endorsement, postdoctoral researcher, early-career faculty member or professor.</span></li><li><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Demonstrated depth in a mathematical research area, supported by published or ongoing research. Relevant areas include:</span></li><li class=\"ql-indent-1\"><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Number theory</span></li><li class=\"ql-indent-1\"><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Combinatorics</span></li><li class=\"ql-indent-1\"><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Algebraic geometry</span></li><li class=\"ql-indent-1\"><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Analysis</span></li><li class=\"ql-indent-1\"><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Topology</span></li><li class=\"ql-indent-1\"><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Differential geometry</span></li><li class=\"ql-indent-1\"><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Partial differential equations</span></li><li class=\"ql-indent-1\"><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Harmonic analysis</span></li><li class=\"ql-indent-1\"><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Category theory</span></li><li class=\"ql-indent-1\"><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Mathematical physics</span></li><li><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Programming capability sufficient to compute and verify your own result, preferably using Python. Available tools include NumPy, SymPy, SciPy, NetworkX, gmpy2, mpmath and galois.</span></li><li><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Strong mathematical rigour, particularly the ability to state all assumptions and definitions explicitly and identify potential gaps under adversarial review.</span></li><li><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Publication-standard mathematical English.</span></li><li><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Ability to revise the submission following independent mathematical review.</span></li><li><span class=\"ql-size-small\" style=\"color: rgb(44, 46, 48);\">Willingness to work under strict confidentiality, including compliance with programme NDA requirements and restrictions on external testing or disclosure of the submitted problem.</span></li></ul>"
     },
@@ -4004,7 +4028,7 @@
         "amount": 120,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 120.0,
+        "normalized_usd": 120,
         "max_amount": null
       },
       "description": "<p><span style=\"background-color: transparent;\">Are you ready to use your domain knowledge to advance AI? Join us as a PhD Data Partner and work remotely with flexible hours.&nbsp;</span></p><p><br></p><p><strong style=\"background-color: transparent;\">TELUS International AI Community</strong></p><p><span style=\"background-color: transparent;\">Our global AI Community is a vibrant network of 1 million+ contributors from diverse backgrounds who help our customers collect, enhance, train, translate, and localize content to build better AI models. Become part of our growing community and make an impact supporting the machine learning models of some of the world’s largest brands.&nbsp;</span></p><p><br></p><p><br></p>"
@@ -4040,7 +4064,7 @@
         "amount": 100,
         "currency": "USD",
         "unit": "per_hour",
-        "normalized_usd": 100.0,
+        "normalized_usd": 100,
         "max_amount": null
       },
       "description": "<p><span style=\"background-color: transparent;\">Are you ready to use your domain knowledge to advance AI? Join us as a PhD Data Partner and work remotely with flexible hours.&nbsp;</span></p><p><br></p><p><strong style=\"background-color: transparent;\">TELUS International AI Community</strong></p><p><span style=\"background-color: transparent;\">Our global AI Community is a vibrant network of 1 million+ contributors from diverse backgrounds who help our customers collect, enhance, train, translate, and localize content to build better AI models. Become part of our growing community and make an impact supporting the machine learning models of some of the world’s largest brands.&nbsp;</span></p><p><br></p><p><br></p>"
