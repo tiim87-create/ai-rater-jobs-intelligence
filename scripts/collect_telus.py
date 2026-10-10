@@ -41,7 +41,11 @@ def transform(item,now):
     location=item.get("location")
     compensation=item.get("compensation") or {}
     language=item.get("hiring_language") or {}\n    codes,geo_status,country=geo(item.get("hiring_country"))
-    return {"id":"TELUS:"+ident,"source_id":ident,"vendor":"TELUS Digital","category":"TELUS Digital","title":str(item.get("title") or "").strip(),"url":BASE+ident,"source":API,"status":"active","coverage":"telus_ai_public_portal","first_seen":now,"last_seen":now,"missed_complete_scans":0,"location_raw":location or "","hiring_country_raw":item.get("hiring_country"),"country":country,"countries":codes,"geography_status":geo_status,"workplace_type":item.get("job_type"),"employment_type":item.get("employment_type"),"job_req_id":item.get("job_req_id"),"project_id":item.get("project_id"),"language":language.get("name") if isinstance(language,dict) else None,"language_iso2":language.get("iso2") if isinstance(language,dict) else None,"compensation":compensation if isinstance(compensation,dict) else None,"description":item.get("description")}
+    title=str(item.get("title") or "")
+    us_title=bool(re.search(r"(?i)(?<![A-Za-z])(?:US|USA)(?![A-Za-z])|United States",title))
+    if us_title:
+        codes,geo_status,country=["US"],"mapped","United States"
+    return {"id":"TELUS:"+ident,"source_id":ident,"vendor":"TELUS Digital","category":"TELUS Digital","title":str(item.get("title") or "").strip(),"url":BASE+ident,"source":API,"status":"active","coverage":"telus_ai_public_portal","first_seen":now,"last_seen":now,"missed_complete_scans":0,"location_raw":location or "","hiring_country_raw":item.get("hiring_country"),"geography_evidence":"title_us_market" if us_title else "hiring_country","country":country,"countries":codes,"geography_status":geo_status,"workplace_type":item.get("job_type"),"employment_type":item.get("employment_type"),"job_req_id":item.get("job_req_id"),"project_id":item.get("project_id"),"language":language.get("name") if isinstance(language,dict) else None,"language_iso2":language.get("iso2") if isinstance(language,dict) else None,"compensation":compensation if isinstance(compensation,dict) else None,"description":item.get("description")}
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--output",default="data/telus_jobs_test.json")
