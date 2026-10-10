@@ -57,9 +57,11 @@ def run():
  try:
   jobs=lever("Welo Data","weloglobal")
   # Keep historic enriched geography if source location has not changed.
+  from collect_rws import country as infer_country
   for j in jobs:
-   j["countries"]=[]
-   j["geography_status"]="unmapped"
+   code=infer_country(j.get("location_raw"))
+   j["countries"]=[code] if code else []
+   j["geography_status"]="mapped" if code else "unmapped"
    j["status"]="active"
   ingest("Welo Data",jobs,"full_board")
  except Exception as e: summary["Welo Data"]={"status":"error","error":str(e)[:200]}
@@ -68,7 +70,7 @@ def run():
   jobs=[transform_telus(x,NOW) for x in raw]
   ingest("TELUS Digital",jobs,"telus_ai_public_portal")
  except Exception as e: summary["TELUS Digital"]={"status":"error","error":str(e)[:200]}
- if all(v["status"]=="error" for v in summary.values()):
+ if any(v["status"]=="error" for v in summary.values()):
   print(json.dumps(summary),file=sys.stderr)
   return 1
  output=sorted(state.values(),key=lambda j:j["id"])
