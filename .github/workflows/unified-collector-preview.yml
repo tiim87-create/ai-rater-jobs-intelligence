@@ -1,0 +1,38 @@
+name: Unified multi-vendor collector preview
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify syntax
+        run: python -m compileall -q scripts/collect_unified.py scripts/collect_telus.py scripts/collect_rws.py scripts/collect.py
+      - name: Collect all vendors without publishing
+        run: python scripts/collect_unified.py
+      - name: Validate results
+        run: |
+          python - <<'PY'
+          import json
+          j=json.load(open('data/jobs.json'))['jobs']
+          s=json.load(open('data/summary.json'))['sources']
+          assert len(j)>=500
+          assert len(j)==len({x['id'] for x in j})
+          assert next(x for x in j if x['id']=='TELUS:129038')['countries']==['US']
+          print(json.dumps({'total':len(j),'vendors':s}))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: unified-collector-preview
+          path: |
+            data/jobs.json
+            data/history.json
+            data/summary.json
+          retention-days: 7
