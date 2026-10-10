@@ -40,7 +40,8 @@ def transform(item,now):
     ident=str(item["id"])
     location=item.get("location")
     compensation=item.get("compensation") or {}
-    language=item.get("hiring_language") or {}\n    codes,geo_status,country=geo(item.get("hiring_country"))
+    language=item.get("hiring_language") or {}
+    codes,geo_status,country=geo(item.get("hiring_country"))
     title=str(item.get("title") or "")
     us_title=bool(re.search(r"(?i)(?<![A-Za-z])(?:US|USA)(?![A-Za-z])|United States",title))
     if us_title:
