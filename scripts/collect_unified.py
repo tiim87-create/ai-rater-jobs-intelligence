@@ -27,6 +27,9 @@ def run():
   for item in items:
    ident=item["id"];seen.add(ident)
    old=state.get(ident,{})
+   if vendor=="Welo Data" and old.get("location_raw")==item.get("location_raw") and old.get("countries"):
+    item["countries"]=old["countries"]
+    item["geography_status"]=old.get("geography_status","mapped")
    merged={**old,**item,"first_seen":old.get("first_seen",NOW),"last_seen":NOW,"status":"active","missed_complete_scans":0}
    if not old: history.append({"at":NOW,"type":"new","id":ident})
    elif any(old.get(k)!=merged.get(k) for k in ("title","url","countries","location_raw","country")):
