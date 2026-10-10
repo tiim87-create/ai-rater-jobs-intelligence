@@ -1,5 +1,7 @@
 name: Publish TELUS to Job Matrix (validated)
 on:
+  schedule:
+    - cron: '37 6,18 * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -47,7 +49,20 @@ jobs:
           git add data/jobs.json
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Publish validated TELUS jobs and geography to Job Matrix"
-          git push origin HEAD:main
+          # Never overwrite concurrent RWS/Welo changes; retry by rebuilding against latest main.
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            echo "Concurrent update detected; rebuilding against latest main (attempt $attempt)"
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/preview_telus_matrix.py --existing data/jobs.json --telus data/telus_jobs_test.json --output data/jobs_telus_preview.json
+            cp data/jobs_telus_preview.json data/jobs.json
+            git add data/jobs.json
+            if git diff --cached --quiet; then echo "Already up to date"; exit 0; fi
+            git commit -m "Publish validated TELUS jobs and geography to Job Matrix"
+          done
+          echo "Could not publish without conflict" >&2
+          exit 1
       - uses: actions/upload-artifact@v4
         if: always()
         with:
