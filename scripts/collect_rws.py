@@ -61,9 +61,11 @@ def main():
     a=p.parse_args()
     path=pathlib.Path(a.output)
     old=[]
+    all_old=[]
     if path.exists():
         existing=json.loads(path.read_text())
-        old=existing.get("jobs",[]) if isinstance(existing,dict) else existing
+        all_old=existing.get("jobs",[]) if isinstance(existing,dict) else existing
+        old=[x for x in all_old if x.get("vendor")=="RWS"]
     try:
         raw=fetch(a.site)
         items=[transform(x) for x in raw]
@@ -76,7 +78,20 @@ def main():
     if errors:
         print(json.dumps(report),file=sys.stderr)
         return 1
-    payload={"generated_at":report["checked_at"],"source":"RWS Lever","count":len(items),"jobs":sorted(items,key=lambda x:x["id"])}
+    # Update only RWS; preserve the existing multi-vendor feed and its schema.
+    previous={x.get("source_id",x.get("id","").removeprefix("RWS:")):x for x in old}
+    names={v:k.title() for k,v in COUNTRIES.items() if len(k)>2}
+    names.update({"US":"United States","GB":"United Kingdom","KR":"South Korea","CZ":"Czech Republic","AE":"United Arab Emirates","EE":"Estonia","RS":"Serbia","LV":"Latvia","UZ":"Uzbekistan","CN":"China"})
+    updated=[]
+    for item in items:
+        prior=previous.get(item["id"],{})
+        mapped=", ".join(names.get(code,code) for code in item["countries"]) or "Unmapped"
+        if mapped=="Unmapped" and prior.get("country") not in (None,"Unmapped") and prior.get("location_raw")==item["location_raw"]:
+            mapped=prior["country"]
+        updated.append({**prior,"id":"RWS:"+item["id"],"source_id":item["id"],"vendor":"RWS","category":prior.get("category","RWS"),"country":mapped,"location_raw":item["location_raw"],"title":item["title"],"url":item["url"],"source":"https://api.lever.co/v0/postings/rws?mode=json","status":"active","coverage":"full_board","first_seen":prior.get("first_seen",report["checked_at"]),"last_seen":report["checked_at"],"missed_complete_scans":0,"workplace_type":item["workplace_type"],"countries":item["countries"],"geography_status":item["geography_status"]})
+    combined=[x for x in all_old if x.get("vendor")!="RWS"]+updated
+    payload={"generated_at":report["checked_at"],"jobs":sorted(combined,key=lambda x:x["id"])}
+
     path.parent.mkdir(parents=True,exist_ok=True)
     temporary=path.with_suffix(".tmp")
     temporary.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n")
