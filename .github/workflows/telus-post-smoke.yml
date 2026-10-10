@@ -1,0 +1,15 @@
+name: TELUS public jobs POST smoke test
+on:
+  workflow_dispatch:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test public TELUS job API
+        run: python scripts/test_telus_post.py
