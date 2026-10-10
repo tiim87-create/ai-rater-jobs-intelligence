@@ -1,0 +1,61 @@
+name: Unified vacancy intelligence (all vendors)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 6,18 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: jobs-json-publisher
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Collect all official sources
+        run: python scripts/collect_unified.py
+      - name: Validate feed before publishing
+        run: |
+          python - <<'PY'
+          import json
+          jobs=json.load(open('data/jobs.json'))['jobs']
+          summary=json.load(open('data/summary.json'))['sources']
+          assert all(x['status']=='ok' for x in summary.values()), summary
+          assert len(jobs)>=500 and len(jobs)==len({x['id'] for x in jobs})
+          assert next(x for x in jobs if x['id']=='TELUS:129038')['countries']==['US']
+          for vendor in ('RWS','Welo Data','TELUS Digital'):
+            assert any(j['vendor']==vendor and j.get('status')=='active' for j in jobs)
+          print(json.dumps({'total':len(jobs),'sources':summary}))
+          PY
+      - name: Commit validated snapshots safely
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            git add data/jobs.json data/history.json data/summary.json
+            if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+            git commit -m "Refresh unified vacancy intelligence snapshots"
+            if git push origin HEAD:main; then exit 0; fi
+            echo "Concurrent update; refreshing and rebuilding against latest main"
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/collect_unified.py
+          done
+          echo "Could not publish after three attempts" >&2
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: unified-vacancy-diagnostics
+          path: |
+            data/jobs.json
+            data/history.json
+            data/summary.json
+          retention-days: 14
