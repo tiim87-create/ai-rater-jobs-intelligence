@@ -1,0 +1,58 @@
+name: Publish TELUS to Job Matrix (validated)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: jobs-json-publisher
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Collect and stage TELUS
+        run: |
+          python scripts/collect_telus.py --output data/telus_jobs_test.json
+          python scripts/preview_telus_matrix.py --existing data/jobs.json --telus data/telus_jobs_test.json --output data/jobs_telus_preview.json
+      - name: Validate map geography and retained vendor records
+        run: |
+          python - <<'PY'
+          import json
+          old=json.load(open('data/jobs.json'))['jobs']
+          new=json.load(open('data/jobs_telus_preview.json'))['jobs']
+          telus=[j for j in new if j.get('vendor')=='TELUS Digital']
+          other_old={j['id']:j for j in old if j.get('vendor')!='TELUS Digital'}
+          other_new={j['id']:j for j in new if j.get('vendor')!='TELUS Digital'}
+          assert other_old==other_new, 'Other vendor records changed'
+          assert len(telus)>=10 and len(new)==len(other_old)+len(telus)
+          assert len({j['id'] for j in new})==len(new)
+          assert all(j.get('geography_status') in ('mapped','global','unmapped') for j in telus)
+          assert all(j.get('countries')==['US'] for j in telus if j.get('id')=='TELUS:129038'), 'TELUS 129038 must be US-only'
+          assert any(j.get('id')=='TELUS:129038' for j in telus), 'Missing TELUS 129038'
+          assert all(j.get('countries') and len(j['countries'])>=1 for j in telus if j['geography_status']=='mapped')
+          assert all(not j.get('countries') for j in telus if j['geography_status']=='global')
+          print(json.dumps({'validated':True,'telus':len(telus),'mapped':sum(j['geography_status']=='mapped' for j in telus),'global':sum(j['geography_status']=='global' for j in telus),'other_vendors_preserved':len(other_old)}))
+          PY
+      - name: Publish updated feed
+        run: |
+          cp data/jobs_telus_preview.json data/jobs.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/jobs.json
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Publish validated TELUS jobs and geography to Job Matrix"
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: telus-publish-evidence
+          path: |
+            data/telus_jobs_test.json
+            data/jobs_telus_preview.json
+          retention-days: 14
