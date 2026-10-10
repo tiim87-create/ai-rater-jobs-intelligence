@@ -1,27 +1,27 @@
 {
   "counts": {
-    "RWS": 55,
+    "RWS": 76,
     "TELUS Digital": 0,
-    "Welo Data": 530
+    "Welo Data": 528
   },
-  "generated_at": "2026-10-09T11:36:59+00:00",
+  "generated_at": "2026-10-10T07:32:41+00:00",
   "note": "Vendor totals are not directly comparable. TELUS discovery is partial; Lever boards include jobs outside rating.",
   "sources": {
     "RWS": {
-      "checked_at": "2026-10-09T11:36:59+00:00",
-      "count": 55,
+      "checked_at": "2026-10-10T07:32:41+00:00",
+      "count": 76,
       "coverage": "full_board",
       "status": "ok"
     },
     "TELUS Digital": {
-      "checked_at": "2026-10-09T11:36:59+00:00",
+      "checked_at": "2026-10-10T07:32:41+00:00",
       "coverage": "unknown",
       "error": "HTTP Error 403: Forbidden",
       "status": "error"
     },
     "Welo Data": {
-      "checked_at": "2026-10-09T11:36:59+00:00",
-      "count": 530,
+      "checked_at": "2026-10-10T07:32:41+00:00",
+      "count": 528,
       "coverage": "full_board",
       "status": "ok"
     }
