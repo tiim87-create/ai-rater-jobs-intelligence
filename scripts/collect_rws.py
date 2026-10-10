@@ -12,6 +12,17 @@ import urllib.request
 API = "https://api.lever.co/v0/postings/{site}?mode=json&limit=100&skip={skip}"
 COUNTRIES = {"united states":"US","usa":"US","us":"US","united kingdom":"GB","uk":"GB","india":"IN","bangladesh":"BD","canada":"CA","australia":"AU","germany":"DE","france":"FR","italy":"IT","spain":"ES","poland":"PL","portugal":"PT","brazil":"BR","japan":"JP","south korea":"KR","philippines":"PH","vietnam":"VN","indonesia":"ID","thailand":"TH","malaysia":"MY","singapore":"SG","netherlands":"NL","ireland":"IE","mexico":"MX","argentina":"AR","south africa":"ZA","egypt":"EG","turkey":"TR","pakistan":"PK","nigeria":"NG","kenya":"KE","romania":"RO","czech republic":"CZ","hungary":"HU","greece":"GR","sweden":"SE","norway":"NO","denmark":"DK","finland":"FI","belgium":"BE","switzerland":"CH","austria":"AT","new zealand":"NZ","taiwan":"TW","hong kong":"HK","colombia":"CO","chile":"CL","peru":"PE","united arab emirates":"AE","saudi arabia":"SA","israel":"IL","ukraine":"UA","estonia":"EE","serbia":"RS","latvia":"LV","uzbekistan":"UZ","china":"CN","czechia":"CZ"}
 CITY = {"prague":"CZ","seoul":"KR","tallinn":"EE","belgrade":"RS","riga":"LV","rome":"IT","madrid":"ES","mexico city":"MX","rio de janeiro":"BR","são paulo":"BR","sao paulo":"BR","recife":"BR","taipei":"TW","bangkok":"TH","kuala lumpur":"MY","riyadh":"SA","new delhi":"IN","tashkent":"UZ","tel aviv":"IL","shanghai":"CN","brasilia":"BR","br Brasília":"BR","london":"GB","new york":"US","san francisco":"US","boston":"US","dublin":"IE","berlin":"DE","paris":"FR","mumbai":"IN","delhi":"IN","bengaluru":"IN","bangalore":"IN","hyderabad":"IN","kolkata":"IN","dhaka":"BD","toronto":"CA","vancouver":"CA","sydney":"AU","melbourne":"AU","manila":"PH","warsaw":"PL","lisbon":"PT","amsterdam":"NL","singapore":"SG","tokyo":"JP"}
+# Geographic evidence from Lever location fields. Do not infer eligibility from job language.
+US_REGIONS = {"alabama","alaska","arizona","arkansas","california","colorado","connecticut","delaware","florida","georgia","hawaii","idaho","illinois","indiana","iowa","kansas","kentucky","louisiana","maine","maryland","massachusetts","michigan","minnesota","mississippi","missouri","montana","nebraska","nevada","new hampshire","new jersey","new mexico","new york","north carolina","north dakota","ohio","oklahoma","oregon","pennsylvania","rhode island","south carolina","south dakota","tennessee","texas","utah","vermont","virginia","washington","west virginia","wisconsin","wyoming","district of columbia"}
+CANADA_REGIONS = {"alberta","british columbia","manitoba","new brunswick","newfoundland and labrador","nova scotia","ontario","prince edward island","quebec","saskatchewan","northwest territories","nunavut","yukon"}
+US_CITIES = {"dallas","edison","milwaukee"}
+CANADA_CITIES = {"brampton"}
+def region_country(value):
+    if not isinstance(value,str): return None
+    words=value.lower().strip()
+    for terms,code in ((US_REGIONS,"US"),(CANADA_REGIONS,"CA"),(US_CITIES,"US"),(CANADA_CITIES,"CA")):
+        if any(re.search(r"(?<![a-z])"+re.escape(term)+r"(?![a-z])",words) for term in terms): return code
+    return None
 def country(value):
     if not isinstance(value,str): return None
     value=value.lower().strip()
@@ -19,7 +30,7 @@ def country(value):
         if re.search(r"(?<![a-z])"+re.escape(term)+r"(?![a-z])",value): return code
     for term,code in CITY.items():
         if re.search(r"(?<![a-z])"+re.escape(term)+r"(?![a-z])",value): return code
-    return None
+    return region_country(value)
 def fetch(site):
     result=[]
     for skip in range(0,10000,100):
