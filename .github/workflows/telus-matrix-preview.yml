@@ -1,0 +1,24 @@
+name: TELUS isolated matrix integration preview
+on:
+  workflow_dispatch:
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Collect complete TELUS snapshot
+        run: python scripts/collect_telus.py --output data/telus_jobs_test.json
+      - name: Merge TELUS into an isolated preview
+        run: python scripts/preview_telus_matrix.py --existing data/jobs.json --telus data/telus_jobs_test.json --output data/jobs_telus_preview.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: telus-matrix-preview
+          path: |
+            data/telus_jobs_test.json
+            data/jobs_telus_preview.json
+          retention-days: 7
