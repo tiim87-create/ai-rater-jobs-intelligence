@@ -1,7 +1,5 @@
 name: Publish TELUS to Job Matrix (validated)
 on:
-  schedule:
-    - cron: '37 6,18 * * *'
   workflow_dispatch:
 permissions:
   contents: write
