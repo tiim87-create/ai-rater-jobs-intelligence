@@ -1,0 +1,15 @@
+name: TELUS JS import and API call trace
+on:
+  workflow_dispatch:
+jobs:
+  trace:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Trace public Jobs imports and endpoint references
+        run: python scripts/trace_telus_job_imports.py
