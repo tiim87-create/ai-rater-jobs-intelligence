@@ -1,8 +1,6 @@
 name: Collect official vacancies
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "17 7 * * *"
 permissions:
   contents: write
 concurrency:
