@@ -1,6 +1,6 @@
 # AI Rater Insider — Editorial & Design Standards
 
-**Version:** 1.0  
+**Version:** 1.1  
 **Adopted:** 2026-10-11  
 **Scope:** AI Rater Insider (airaterinsider.com), WordPress editorial content, project directories, and Jobs Intelligence.
 
@@ -47,6 +47,8 @@ Do not force sections with no useful evidence; placeholders are for drafts, not 
 - Prefer theme tokens and registered Gutenberg blocks; ensure mobile responsiveness and editable WordPress content.
 - Screenshots and task illustrations must be accurate, correctly ordered, legible and labeled by provenance. Do not substitute invented UI for original interfaces.
 
+The implementation reference for reusable design components, tokens, table styling and QA is [editorial/design/DESIGN_SYSTEM.md](editorial/design/DESIGN_SYSTEM.md). Store source code in GitHub and verify front-end behavior before applying changes site-wide.
+
 ## 8. Jobs Intelligence standards
 - Prefer automated ingestion of official TELUS Digital, WeloData/WeloGlobal and RWS postings; avoid manual fixes as the primary solution.
 - Preserve job ID, title, official URL, vendor, geography, language, status, timestamps, evidence and mapping confidence.
@@ -75,3 +77,4 @@ This document is the project's **working editorial standard**, not a claim that 
 
 ### Change history
 - **1.0 — 2026-10-11:** Consolidated agreed editorial principles, site architecture, taxonomy, design, SEO, evidence and Jobs Intelligence rules.
+- **1.1 — 2026-10-11:** Linked the version-controlled design system and reusable UI source code as the implementation reference.
