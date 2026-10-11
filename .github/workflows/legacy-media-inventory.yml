@@ -67,7 +67,7 @@ jobs:
       - name: Retrieve original screenshots for private review
         run: |
           python - <<'PY'
-          import json, pathlib, urllib.request, urllib.parse, imghdr
+          import json, pathlib, urllib.request, urllib.parse
           urls=[
             "https://leapforceexamhelp.wordpress.com/wp-content/uploads/2026/10/img_8283-1.png",
             "https://leapforceexamhelp.wordpress.com/wp-content/uploads/2026/10/user-1ha0j6qdykh7eeydasgppxf4a8db858b7bc04ab6b92a5f8eefbf87ecmntdatascreenshot-2569-10-06-at-21.25.04.png"
@@ -75,7 +75,7 @@ jobs:
           output=pathlib.Path("legacy-originals"); output.mkdir(exist_ok=True)
           report=[]
           for idx,url in enumerate(urls,1):
-              variants=[url,"https://i0.wp.com/"+url.removeprefix("https://")+"?ssl=1"]
+              variants=[url,"https://i0.wp.com/"+url.removeprefix("https://")+"?ssl=1",url.replace("leapforceexamhelp.wordpress.com","passleapforceexam.com"),"https://i0.wp.com/passleapforceexam.com/"+url.split("/wp-content/",1)[1].join("") if False else "https://i0.wp.com/passleapforceexam.com/wp-content/"+url.split("/wp-content/",1)[1]+"?ssl=1"]
               item={"index":idx,"source":url,"success":False}
               for variant in variants:
                   try:
@@ -93,6 +93,7 @@ jobs:
                       item.setdefault("errors",[]).append(str(exc)[:250])
               report.append(item)
           (output/"download-report.json").write_text(json.dumps(report,indent=2))
+          if not any(x["success"] for x in report): print("No original files could be downloaded; no publishing performed.")
           print(json.dumps([{k:v for k,v in item.items() if k not in ("source","download_url")} for item in report],indent=2))
           PY
       - name: Save originals as restricted-retention artifact (not published)
