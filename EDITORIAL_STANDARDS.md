@@ -1,6 +1,6 @@
 # AI Rater Insider — Editorial & Design Standards
 
-**Version:** 1.1  
+**Version:** 1.2  
 **Adopted:** 2026-10-11  
 **Scope:** AI Rater Insider (airaterinsider.com), WordPress editorial content, project directories, and Jobs Intelligence.
 
@@ -20,6 +20,18 @@ Every substantive article must offer readers **information that is difficult to 
 - Be precise, evidence-led and readable; avoid generic AI marketing phrases, inflated claims and excessive repetition.
 - Use original observations responsibly and mark them as first-hand rather than official vendor policy.
 - Separate explanation from practical advice and opinion.
+
+### Narrative journalism standard (Knowledge features)
+- Write for a curious working rater, not an academic committee. Use investigative technology journalism informed by first-hand industry experience.
+- Open with a concrete scene, surprising documented detail, or compelling reader question; deliver the key insight early.
+- Use short, varied paragraphs, conversational transitions and plain English. Explain necessary technical terms on first use.
+- Let the story progress from a human situation to how a system works, evidence, implications and what remains unknown.
+- Integrate original screenshots, cases and historical anecdotes where they advance the narrative. Never invent scenes, dialogue or vendor-specific controls.
+- Prefer natural headings that promise an answer, not a rigid numbered report or repeated 'Layer' labels.
+- Avoid repeated blockquotes, repetitive caveats, corporate jargon, generic AI phrasing and abstract terms such as 'provenance' without a concrete explanation.
+- Keep evidence discipline: place compact source notes close to claims, distinguish firsthand reports and hypotheses, and maintain a concise evidence/limitations section.
+- Tables support the narrative; they do not replace it. Preserve SEO structure and scannability without turning the article into a listicle.
+- Editing target: engaging and accessible to non-experts while preserving specialist insight and nuance.
 
 ## 4. Site architecture
 - **Projects:** specific project families, workflows, task interfaces, qualification, platforms, project-to-job mappings.
@@ -76,5 +88,6 @@ The implementation reference for reusable design components, tokens, table styli
 This document is the project's **working editorial standard**, not a claim that every legacy page already complies. Proposed deviations should be discussed and recorded by Git commit. Revise the version and change history when standards materially change.
 
 ### Change history
+- **1.2 — 2026-10-11:** Adopted investigative, human-centered narrative journalism as the default voice for Knowledge features.
 - **1.0 — 2026-10-11:** Consolidated agreed editorial principles, site architecture, taxonomy, design, SEO, evidence and Jobs Intelligence rules.
 - **1.1 — 2026-10-11:** Linked the version-controlled design system and reusable UI source code as the implementation reference.
