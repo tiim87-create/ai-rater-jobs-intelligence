@@ -1,6 +1,6 @@
 # AI Rater Insider — Editorial & Design Standards
 
-**Version:** 1.2  
+**Version:** 1.3  
 **Adopted:** 2026-10-11  
 **Scope:** AI Rater Insider (airaterinsider.com), WordPress editorial content, project directories, and Jobs Intelligence.
 
@@ -21,8 +21,8 @@ Every substantive article must offer readers **information that is difficult to 
 - Use original observations responsibly and mark them as first-hand rather than official vendor policy.
 - Separate explanation from practical advice and opinion.
 
-### Narrative journalism standard (Knowledge features)
-- Write for a curious working rater, not an academic committee. Use investigative technology journalism informed by first-hand industry experience.
+### Narrative journalism standard (all editorial content)
+- Write for a curious reader or working rater, not an academic committee. Use investigative technology journalism informed by first-hand industry experience.
 - Open with a concrete scene, surprising documented detail, or compelling reader question; deliver the key insight early.
 - Use short, varied paragraphs, conversational transitions and plain English. Explain necessary technical terms on first use.
 - Let the story progress from a human situation to how a system works, evidence, implications and what remains unknown.
@@ -32,6 +32,16 @@ Every substantive article must offer readers **information that is difficult to 
 - Keep evidence discipline: place compact source notes close to claims, distinguish firsthand reports and hypotheses, and maintain a concise evidence/limitations section.
 - Tables support the narrative; they do not replace it. Preserve SEO structure and scannability without turning the article into a listicle.
 - Editing target: engaging and accessible to non-experts while preserving specialist insight and nuance.
+
+### Site-wide application by content type
+- **Knowledge / research:** story-driven investigative reporting with human examples, primary evidence and accessible explanations.
+- **Vendors:** tell the company's role and evolution through concrete industry consequences, not corporate-profile boilerplate.
+- **Projects:** open with what a contributor actually does, then explain workflow, qualification, platforms and verified employment details.
+- **Jobs Matrix / vacancy intelligence:** keep structured data concise and exact; apply the voice to introductions, descriptions and explanatory notes, never at the expense of data precision.
+- **Guides / onboarding:** clear, friendly, actionable explanations without promotional promises or speculative shortcuts.
+- **About / landing pages:** concise, distinctive, confident human voice; avoid generic marketing copy.
+- **UI labels, tables and technical references:** prioritize clarity and scannability; narrative style is not a reason to make interfaces wordy.
+- Apply to existing pages during editorial revision; do not overwrite all published pages blindly. Preserve unique sources, established URLs, visuals and citations, and review changes before broad rollout.
 
 ## 4. Site architecture
 - **Projects:** specific project families, workflows, task interfaces, qualification, platforms, project-to-job mappings.
@@ -88,6 +98,7 @@ The implementation reference for reusable design components, tokens, table styli
 This document is the project's **working editorial standard**, not a claim that every legacy page already complies. Proposed deviations should be discussed and recorded by Git commit. Revise the version and change history when standards materially change.
 
 ### Change history
+- **1.3 — 2026-10-11:** Extended the narrative journalism voice site-wide, adapted to content type, with staged editorial rollout.
 - **1.2 — 2026-10-11:** Adopted investigative, human-centered narrative journalism as the default voice for Knowledge features.
 - **1.0 — 2026-10-11:** Consolidated agreed editorial principles, site architecture, taxonomy, design, SEO, evidence and Jobs Intelligence rules.
 - **1.1 — 2026-10-11:** Linked the version-controlled design system and reusable UI source code as the implementation reference.
