@@ -1,20 +1,10 @@
 name: Editorial WordPress Block Sync
 on:
+  push:
+    branches: [main]
+    paths:
+      - "editorial/blocks/ios-tables-style.html"
   workflow_dispatch:
-    inputs:
-      page_id:
-        description: "Existing WordPress page ID"
-        required: true
-        default: "81"
-      block_slug:
-        description: "Managed block file name (without .html)"
-        required: true
-        default: "vendor-antifraud-comparison"
-      dry_run:
-        description: "Preview only (true); set false only after reviewing preview"
-        required: true
-        type: boolean
-        default: true
 permissions:
   contents: read
 concurrency:
@@ -29,15 +19,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Update managed WordPress block
+      - name: Publish iOS table styles to article 81
         env:
           WP_USER: ${{ secrets.WP_USER }}
           WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
-          WP_PAGE_ID: ${{ inputs.page_id }}
-          BLOCK_SLUG: ${{ inputs.block_slug }}
-          DRY_RUN: ${{ inputs.dry_run }}
+          WP_PAGE_ID: "81"
+          BLOCK_SLUG: "ios-tables-style"
+          DRY_RUN: "false"
         run: python scripts/wp_editorial_sync.py
-      - name: Save original and preview for review
+      - name: Save original and preview
         if: always()
         uses: actions/upload-artifact@v4
         with:
