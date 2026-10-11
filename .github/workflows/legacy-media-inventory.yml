@@ -39,3 +39,32 @@ jobs:
           name: legacy-media-inventory
           path: legacy-media-inventory.json
           retention-days: 30
+
+  migrate:
+    if: github.event_name == 'workflow_dispatch'
+    needs: inventory
+    runs-on: ubuntu-latest
+    environment: wordpress-editorial
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify existing WordPress credentials without publishing
+        env:
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: |
+          python - <<'PY'
+          import base64, os, urllib.request
+          token=base64.b64encode((os.environ["WP_USER"]+":"+os.environ["WP_APP_PASSWORD"]).encode()).decode()
+          req=urllib.request.Request("https://timallen87-zwkba.wpcomstaging.com/wp-json/wp/v2/users/me",headers={"Authorization":"Basic "+token})
+          with urllib.request.urlopen(req,timeout=30) as response:
+              print("Authenticated WordPress account:", response.status)
+          PY
+      - name: Preview transfer and require screenshot review
+        run: |
+          python scripts/migrate_legacy_media.py
+          echo "Transfer is intentionally disabled until sensitive screenshots have been reviewed and cropped."
