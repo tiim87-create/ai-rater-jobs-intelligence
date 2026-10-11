@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Replace one managed section in an existing WordPress page, preserving other content."""
-import os, sys, json, pathlib, urllib.request, urllib.error, base64, difflib
+import os, sys, json, pathlib, urllib.request, urllib.error, base64, difflib, re
 SITE = "https://timallen87-zwkba.wpcomstaging.com"
 PAGE_ID = int(os.environ.get("WP_PAGE_ID", "81"))
 SLUG = os.environ.get("BLOCK_SLUG", "vendor-antifraud-comparison")
@@ -25,7 +25,15 @@ original = page["content"]["raw"]
 if original.count(start) != original.count(end) or original.count(start) > 1:
     sys.exit("Malformed or duplicated managed markers; refusing to update")
 replacement = start + "\n" + block + "\n" + end
-if start in original:
+if SLUG == "ios-tables-style":
+    if start in original:
+        a = original.index(start); b = original.index(end, a) + len(end)
+        updated = original[:a] + replacement + original[b:]
+    else:
+        updated = original + "\\n" + replacement
+    # Scope the shared CSS to all tables in this article, without changing table data.
+    updated = re.sub(r'<table(\\s|>)', r'<table class="ari-ios-table"\\1', updated) if False else updated
+elif start in original:
     a = original.index(start); b = original.index(end, a) + len(end)
     updated = original[:a] + replacement + original[b:]
 else:
