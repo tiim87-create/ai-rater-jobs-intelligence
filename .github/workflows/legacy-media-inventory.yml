@@ -1,0 +1,40 @@
+name: Legacy media inventory
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'editorial/pages/**'
+      - 'scripts/migrate_legacy_media.py'
+      - '.github/workflows/legacy-media-inventory.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Find referenced legacy media (read-only)
+        run: python scripts/migrate_legacy_media.py > legacy-media-inventory.json
+      - name: Display summary
+        run: |
+          python - <<'PY'
+          import json
+          with open('legacy-media-inventory.json') as f:
+              data=json.load(f)
+          print(f"Legacy media URLs: {data['found']}")
+          print(f"Previously mapped: {data['already_mapped']}")
+          PY
+      - name: Upload inventory report
+        uses: actions/upload-artifact@v4
+        with:
+          name: legacy-media-inventory
+          path: legacy-media-inventory.json
+          retention-days: 30
