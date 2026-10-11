@@ -1,0 +1,37 @@
+name: Publish Anti-Fraud Article v1
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/wp_article81_v1_polish.py"
+      - ".github/workflows/publish-antifraud-v1.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: wordpress-editorial-sync
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: wordpress-editorial
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Apply guarded article v1 editorial changes
+        env:
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: python scripts/wp_article81_v1_polish.py
+      - name: Save backup and preview
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: antifraud-v1-backup-preview
+          path: |
+            wp-page-backup.html
+            wp-page-preview.html
+          if-no-files-found: ignore
+          retention-days: 14
