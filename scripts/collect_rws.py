@@ -15,6 +15,7 @@ CITY = {"prague":"CZ","seoul":"KR","tallinn":"EE","belgrade":"RS","riga":"LV","r
 # Geographic evidence from Lever location fields. Do not infer eligibility from job language.
 US_REGIONS = {"alabama","alaska","arizona","arkansas","california","colorado","connecticut","delaware","florida","georgia","hawaii","idaho","illinois","indiana","iowa","kansas","kentucky","louisiana","maine","maryland","massachusetts","michigan","minnesota","mississippi","missouri","montana","nebraska","nevada","new hampshire","new jersey","new mexico","new york","north carolina","north dakota","ohio","oklahoma","oregon","pennsylvania","rhode island","south carolina","south dakota","tennessee","texas","utah","vermont","virginia","washington","west virginia","wisconsin","wyoming","district of columbia"}
 CANADA_REGIONS = {"alberta","british columbia","manitoba","new brunswick","newfoundland and labrador","nova scotia","ontario","prince edward island","quebec","saskatchewan","northwest territories","nunavut","yukon"}
+CITY.update({"bern":"CH","vienna":"AT","brussels":"BE","lagos":"NG","oslo":"NO","copenhagen":"DK","buenos aires":"AR","hanoi":"VN","beijing":"CN","ottawa":"CA","kyiv":"UA","wellington":"NZ","stockholm":"SE","lagos":"NG"})
 US_CITIES = {"dallas","edison","milwaukee"}
 CANADA_CITIES = {"brampton"}
 def region_country(value):
