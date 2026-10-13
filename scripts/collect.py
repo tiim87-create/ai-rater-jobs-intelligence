@@ -19,7 +19,7 @@ def request(url, accept=None):
     if accept: headers["Accept"] = accept
     with urllib.request.urlopen(urllib.request.Request(url,headers=headers),timeout=35) as response:
         return response.read().decode("utf-8",errors="replace")
-CITY_COUNTRIES = {"kuala lumpur":"Malaysia","riyadh":"Saudi Arabia","jeddah":"Saudi Arabia","dubai":"United Arab Emirates","abu dhabi":"United Arab Emirates","florida":"United States","california":"United States","new york":"United States","london":"United Kingdom","manila":"Philippines","bangkok":"Thailand","amsterdam":"Netherlands","berlin":"Germany","paris":"France","toronto":"Canada","sydney":"Australia","singapore":"Singapore"}
+CITY_COUNTRIES = {"bern":"Switzerland","vienna":"Austria","brussels":"Belgium","lagos":"Nigeria","oslo":"Norway","copenhagen":"Denmark","buenos aires":"Argentina","hanoi":"Vietnam","beijing":"China","ottawa":"Canada","kyiv":"Ukraine","wellington":"New Zealand","stockholm":"Sweden","kuala lumpur":"Malaysia","riyadh":"Saudi Arabia","jeddah":"Saudi Arabia","dubai":"United Arab Emirates","abu dhabi":"United Arab Emirates","florida":"United States","california":"United States","new york":"United States","london":"United Kingdom","manila":"Philippines","bangkok":"Thailand","amsterdam":"Netherlands","berlin":"Germany","paris":"France","toronto":"Canada","sydney":"Australia","singapore":"Singapore"}
 def country_for(location):
     s = str(location or "").lower()
     hits = {canonical for name,canonical in COUNTRIES.items() if re.search(r"(?<![a-z])"+re.escape(name)+r"(?![a-z])",s)}
