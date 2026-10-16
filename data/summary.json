@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T19:12:11.779745+00:00",
+  "generated_at": "2026-10-16T07:16:04.518456+00:00",
   "sources": {
     "RWS": {
       "status": "ok",
@@ -8,7 +8,7 @@
     },
     "Welo Data": {
       "status": "ok",
-      "count": 539,
+      "count": 532,
       "coverage": "full_board"
     },
     "TELUS Digital": {
