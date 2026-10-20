@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-20T07:18:58.558162+00:00",
+  "generated_at": "2026-10-20T19:12:25.427293+00:00",
   "sources": {
     "RWS": {
       "status": "ok",
-      "count": 96,
+      "count": 98,
       "coverage": "full_board"
     },
     "Welo Data": {
       "status": "ok",
-      "count": 493,
+      "count": 494,
       "coverage": "full_board"
     },
     "TELUS Digital": {
