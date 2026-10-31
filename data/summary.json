@@ -1,19 +1,21 @@
 {
-  "generated_at": "2026-10-21T19:13:24.735722+00:00",
+  "generated_at": "2026-10-31T07:35:30.495855+00:00",
   "sources": {
     "RWS": {
       "status": "ok",
-      "count": 108,
-      "coverage": "full_board"
+      "count": 153,
+      "coverage": "full_board",
+      "warning": "Unmapped geography exceeds 20%; records retained without inferred countries",
+      "unmapped_count": 35
     },
     "Welo Data": {
       "status": "ok",
-      "count": 485,
+      "count": 460,
       "coverage": "full_board"
     },
     "TELUS Digital": {
       "status": "ok",
-      "count": 65,
+      "count": 69,
       "coverage": "telus_ai_public_portal"
     }
   }
