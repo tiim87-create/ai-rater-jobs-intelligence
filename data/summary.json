@@ -1,12 +1,10 @@
 {
-  "generated_at": "2026-10-31T07:35:56.000784+00:00",
+  "generated_at": "2026-10-31T16:06:30.542526+00:00",
   "sources": {
     "RWS": {
       "status": "ok",
       "count": 153,
-      "coverage": "full_board",
-      "warning": "Unmapped geography exceeds 20%; records retained without inferred countries",
-      "unmapped_count": 35
+      "coverage": "full_board"
     },
     "Welo Data": {
       "status": "ok",
