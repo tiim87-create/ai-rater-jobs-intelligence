@@ -12119,6 +12119,331 @@
       "at": "2026-10-31T07:35:30.495855+00:00",
       "type": "new",
       "id": "TELUS:129463"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "RWS:1196a75c-547a-4e5a-bb0e-f24ada55e2df"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "RWS:483109df-dff9-4f8e-9b2a-d51572725adc"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "RWS:4c85a4da-44bd-438a-9658-9bbb16cf9456"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "RWS:71e386a7-cc3a-4cc8-b299-1efaa712081b"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "RWS:bc4bc4e6-b7a4-41a7-bf07-de699c96f504"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "RWS:d77fd240-1ac5-49c1-b614-5115d0032931"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "RWS:f6347a54-df51-42b3-84c5-2cc745e76171"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:018e16b7-b5f8-412c-9d20-4d97fb8ab29f"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:04949c37-b676-43dc-97b3-360318840dd5"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:09e904a5-b2a4-4ae3-b5e7-c46151895ad2"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:15c7859a-e0ef-4d14-9f00-2e66b0937681"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:1b1e38bd-0864-4c62-9324-59e5f27542fb"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:21bed87c-777f-4336-8d6a-eb120e09c2fd"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:3de5c66a-4cbb-4556-b63a-3a73e1c973fe"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:3e22b9af-8031-452c-9b28-a200eb9857e9"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:427cb5ad-de5e-4ef8-8afd-d221f474e86c"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:462b24bf-d28d-420f-88c6-c151d9ba48d6"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:470cf9ad-28df-482c-9444-0bf9a17eef1e"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:4c775e12-fcd2-4977-acb9-567f09676420"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:4e44dc60-5c7f-4b2e-9794-e922bd082f92"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:4e540c41-21c7-4e25-b23e-73128488949d"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:565672d6-c994-4ef6-a4a8-7a9474ed8c70"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:5a704b57-ec05-4c79-bb0b-0389bff1bb61"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:5b2013dc-7a0b-4c32-aa36-66dc89487334"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:5ba63377-eea4-43b6-8546-8c7fc0f50e48"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:5ca54741-1e86-406c-b52c-543df04c1839"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:6043d0c1-f846-4b88-87fa-5f75ac85567a"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:64a77c00-bb9e-4542-b3cf-8c9d80bea31d"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:66de9c16-fbd8-4235-b8be-a4e84cb7486d"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:67381591-bfce-4a5b-8292-d1ddf4d15a57"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:6d531f47-e2eb-41a4-aa8f-87d5eaa53044"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:7853b6a2-9b65-4186-810d-95f7061cced8"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:7a1cd362-365b-41a3-b8b7-d484c749dc36"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:818c192d-7910-4391-91d5-b4d3e780df32"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:86626b6c-7f94-477c-b844-552cefe927f4"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:90d64e2e-d897-4275-8911-3cd19cece899"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:918aaba0-b345-437a-92da-f1d56a760a75"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:9240fd6f-2595-43c3-a95f-54a2c471eadd"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:943c9f2c-636d-42cf-be99-3f68d4e022ef"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:952e6188-856a-490a-bf4d-d7e2b0ff484f"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:98695530-c288-4bc0-b040-0d17cf6efa14"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:9bf1acc5-82ec-446b-9cb0-429f08b9d8f1"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:9ebe0f91-36d3-4c99-9616-b8cae3666a47"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:aa446464-26fe-4d7d-ba8a-5cbfb76055bc"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:aba23d95-caff-4c63-96ac-ed40f4561a19"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:b1e0450f-3f8e-4c0d-8db5-f2e40278f8fa"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:bd319f79-dbf6-4d7e-b1bc-57ade68fa003"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:c0509d1a-f040-429b-bb3d-8d63ab04ca25"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:c2cae305-d679-4675-85b5-fbf862baa2b0"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:c44a3c93-9c58-4566-9afa-7d5bdcd8d8a2"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:c50c826d-648d-4d40-aa6f-2ca6687f1ccd"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:cb36b5da-b580-42f8-a858-e5c464bc797a"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:ce4d73fb-6c53-48f8-8447-ff1d6b0b1332"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:d5981885-fd74-4116-89b9-21618d2aa8d5"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:d7553caa-efc5-456c-b8c3-4ce845b2884d"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:dcff7a0c-7004-4e19-b476-a891de234281"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:e852d796-864f-4451-a775-a7b3ad7768ca"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:e94bb3ca-1a19-42e7-af90-6c7df9bf2aa2"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:ecddec64-759e-4dde-9fa5-9872fe6341c0"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:ef48fc2d-7167-4272-855f-7d6a4802adb6"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:f1044b3d-c369-4a28-b7a6-9dc6efe22de7"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:f32bd881-f1d2-4de4-8fc4-5f1bb4482e16"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:f91248bb-9fc7-444f-a38d-ed7a1edea9b2"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "Welo Data:f9839048-c772-421f-b49a-cbc71b3657a8"
+    },
+    {
+      "at": "2026-10-31T07:35:56.000784+00:00",
+      "type": "archived",
+      "id": "TELUS:126755"
     }
   ]
 }
