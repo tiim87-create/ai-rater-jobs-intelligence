@@ -47,12 +47,17 @@ def run():
   mapped=[transform_rws(x) for x in raw]
   prior=[x for x in state.values() if x.get("vendor")=="RWS" and x.get("status")=="active"]
   errors,_=validate_rws(mapped,prior,1,.20,.35)
-  if errors: raise ValueError("; ".join(errors))
+  geography_warnings=[e for e in errors if e=="Unmapped share exceeds threshold"]
+  fatal_errors=[e for e in errors if e not in geography_warnings]
+  if fatal_errors: raise ValueError("; ".join(fatal_errors))
   normalized=[]
   for j in mapped:
    codes=j["countries"]
    normalized.append({**j,"id":"RWS:"+j["id"],"source_id":j["id"],"category":"RWS","country":", ".join(codes) if codes else "Unmapped","coverage":"full_board","source":"https://api.lever.co/v0/postings/rws?mode=json"})
   ingest("RWS",normalized,"full_board")
+  if geography_warnings:
+   summary["RWS"]["warning"]="Unmapped geography exceeds 20%; records retained without inferred countries"
+   summary["RWS"]["unmapped_count"]=sum(not j["countries"] for j in mapped)
  except Exception as e: summary["RWS"]={"status":"error","error":str(e)[:200]}
  try:
   jobs=lever("Welo Data","weloglobal")
