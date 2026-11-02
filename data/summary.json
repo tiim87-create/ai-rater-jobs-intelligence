@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T07:56:33.721511+00:00",
+  "generated_at": "2026-11-02T14:54:09.601672+00:00",
   "sources": {
     "RWS": {
       "status": "ok",
@@ -15,6 +15,11 @@
       "status": "ok",
       "count": 69,
       "coverage": "telus_ai_public_portal"
+    },
+    "Meridial": {
+      "status": "ok",
+      "count": 827,
+      "coverage": "full_board"
     }
   }
 }
