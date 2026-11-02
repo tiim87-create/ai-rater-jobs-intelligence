@@ -4,6 +4,7 @@ import datetime as dt,json,pathlib,sys
 from collect import lever
 from collect_rws import fetch as fetch_rws,transform as transform_rws,validate as validate_rws
 from collect_telus import collect as fetch_telus,transform as transform_telus
+from collect_meridial import collect as fetch_meridial
 ROOT=pathlib.Path(__file__).resolve().parents[1]/"data"
 NOW=dt.datetime.now(dt.timezone.utc).isoformat()
 def load(name,default):
@@ -75,6 +76,12 @@ def run():
   jobs=[transform_telus(x,NOW) for x in raw]
   ingest("TELUS Digital",jobs,"telus_ai_public_portal")
  except Exception as e: summary["TELUS Digital"]={"status":"error","error":str(e)[:200]}
+ try:
+  jobs=fetch_meridial()
+  ingest("Meridial",jobs,"full_board")
+ except Exception as e:
+  # Keep existing vendors publishing when this new Greenhouse source is unavailable.
+  summary["Meridial"]={"status":"warning","error":str(e)[:200],"coverage":"unavailable"}
  if any(v["status"]=="error" for v in summary.values()):
   print(json.dumps(summary),file=sys.stderr)
   return 1
