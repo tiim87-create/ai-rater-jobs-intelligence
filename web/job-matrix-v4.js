@@ -7,7 +7,7 @@ Promise.all([fetch('https://raw.githubusercontent.com/tiim87-create/ai-rater-job
  if(!payload||!Array.isArray(payload.jobs)||!payload.generated_at)throw Error('Invalid feed');
  var stamp=Date.parse(payload.generated_at),age=(Date.now()-stamp)/86400000;
  if(!Number.isFinite(stamp)||age>3||age<-.25)throw Error('Feed is stale or invalid');
- var selected=payload.jobs.filter(function(j){return ['RWS','Welo Data','TELUS Digital'].includes(j.vendor)&&['active','archived'].includes(j.status)&&Boolean(j.title)&&/^https:\/\//.test(j.url||'')});
+ var selected=payload.jobs.filter(function(j){return ['RWS','Welo Data','TELUS Digital','Meridial'].includes(j.vendor)&&['active','archived'].includes(j.status)&&Boolean(j.title)&&/^https:\/\//.test(j.url||'')});
  var rwsJobs=selected.filter(function(j){return j.vendor==='RWS'&&j.status==='active'}),weloJobs=selected.filter(function(j){return j.vendor==='Welo Data'&&j.status==='active'}),telusJobs=selected.filter(function(j){return j.vendor==='TELUS Digital'&&j.status==='active'});
  if(rwsJobs.length<10||weloJobs.length<30)throw Error('Unexpected source counts');
  function classify(j){
@@ -28,11 +28,11 @@ Promise.all([fetch('https://raw.githubusercontent.com/tiim87-create/ai-rater-job
   return {status:state,disappeared:j.status==='archived'?(event&&event.type==='archived'?event.at.slice(0,10):'Date unavailable'):'',v:j.vendor,id:j.source_id,c:country,t:j.title,url:j.url,family:f,project:p,mappingEvidence:e,mappingConfidence:p?'Title-based':'Unverified',client:'Not established',clientEvidence:'Unknown',firstSeen:(j.first_seen||'').slice(0,10),lastSeen:(j.last_seen||'').slice(0,10)};
  }
  var synced=selected.map(classify);
- rows=rows.filter(function(r){return !['RWS','Welo Data','TELUS Digital'].includes(r.v)}).concat(synced);
+ rows=rows.filter(function(r){return !['RWS','Welo Data','TELUS Digital','Meridial'].includes(r.v)}).concat(synced);
  function refresh(select,values){var old=select.value;select.querySelectorAll('option:not([value=""])').forEach(function(o){o.remove()});Array.from(new Set(values.filter(Boolean))).sort().forEach(function(x){var o=document.createElement('option');o.value=x;o.textContent=x;select.appendChild(o)});select.value=old;if(select.selectedIndex<0)select.value=''}
  refresh(family,rows.map(function(r){return r.family}));
  refresh(country,rows.map(function(r){return r.c}).filter(function(x){return x!=='Unmapped'}));
  paint();
- syncNote.textContent='Official-source feed with history: '+payload.generated_at.slice(0,16).replace('T',' ')+' UTC · RWS '+rwsJobs.length+' · Welo Data '+weloJobs.length+' active Lever listings (not all AI rater jobs). TELUS Digital '+telusJobs.length+' active official AI Community listings.';
+ syncNote.textContent='Official-source feed with history: '+payload.generated_at.slice(0,16).replace('T',' ')+' UTC · RWS '+rwsJobs.length+' · Welo Data '+weloJobs.length+' active Lever listings (not all AI rater jobs). TELUS Digital '+telusJobs.length+' active official AI Community listings; Meridial '+selected.filter(function(j){return j.vendor==='Meridial'&&j.status==='active'}).length+' active Greenhouse listings.';
 }).catch(function(err){syncNote.textContent='Live job feed unavailable ('+err.message+'). Showing saved listings; live freshness is not confirmed.';syncNote.style.color='#a16207'});
 })();
