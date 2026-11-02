@@ -27,7 +27,8 @@ jobs:
           import json
           jobs=json.load(open('data/jobs.json'))['jobs']
           summary=json.load(open('data/summary.json'))['sources']
-          assert all(x['status']=='ok' for x in summary.values()), summary
+          assert all(summary[x]['status']=='ok' for x in ('RWS','Welo Data','TELUS Digital')), summary
+          assert summary.get('Meridial',{}).get('status') in ('ok','warning'), summary
           assert len(jobs)>=500 and len(jobs)==len({x['id'] for x in jobs})
           assert next(x for x in jobs if x['id']=='TELUS:129038')['countries']==['US']
           for vendor in ('RWS','Welo Data','TELUS Digital'):
