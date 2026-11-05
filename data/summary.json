@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-11-05T07:52:07.005256+00:00",
+  "generated_at": "2026-11-05T19:29:30.315433+00:00",
   "sources": {
     "RWS": {
       "status": "ok",
-      "count": 150,
+      "count": 144,
       "coverage": "full_board"
     },
     "Welo Data": {
       "status": "ok",
-      "count": 437,
+      "count": 439,
       "coverage": "full_board"
     },
     "TELUS Digital": {
       "status": "ok",
-      "count": 66,
+      "count": 65,
       "coverage": "telus_ai_public_portal"
     },
     "Meridial": {
