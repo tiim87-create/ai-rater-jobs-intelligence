@@ -1,6 +1,6 @@
 # AI Rater Insider — Editorial & Design Standards
 
-**Version:** 1.3  
+**Version:** 1.4  
 **Adopted:** 2026-10-11  
 **Scope:** AI Rater Insider (airaterinsider.com), WordPress editorial content, project directories, and Jobs Intelligence.
 
@@ -94,10 +94,34 @@ The implementation reference for reusable design components, tokens, table styli
 6. Publish only when content is sufficiently complete and reviewed; otherwise use drafts.
 7. Record significant editorial changes and open research questions.
 
+## 12. Living intelligence and community contributions
+
+AI Rater Insider is a **living, continuously revised knowledge base**, not a static directory. Maintain five distinct evidence channels:
+
+1. **Official Sources:** dated company/client documentation, vacancy postings, contracts, public statements and guidelines.
+2. **Operational Archives:** historical datasets, workflow records and original materials, with scope, dates and methodological limits.
+3. **First-hand Intelligence:** directly observed project experience, clearly attributed by type without exposing confidential identities.
+4. **Community Intelligence:** voluntary contributor submissions, Reddit discussions and rater reports; these are leads and testimony, not automatic confirmation of company policy.
+5. **Editorial Analysis:** transparent synthesis, inference and hypotheses, separated from observed facts.
+
+### Evidence status and publication rules
+- **Verified:** supported by an authentic primary source or direct documentary evidence appropriate to the precise claim. Verify what the document establishes; a job posting alone does not prove the identity of an undisclosed client.
+- **Corroborated:** supported by multiple plausibly independent and consistent accounts, but lacking decisive primary confirmation. Check whether accounts merely repeat one original claim.
+- **Unverified:** a single report, ambiguous evidence or an open hypothesis. Label it clearly; do not turn it into a fact through repetition.
+- Confidence attaches to each **specific claim**, not automatically to an entire vendor or project. Distinguish “reported RaterHub use” from “confirmed Google Search Quality Rating contract.”
+- Record the source type, source URL or protected internal reference, observation date, publication date, relevant market/vendor/project, verification status, reviewer notes and last-reviewed date where feasible.
+- Link to public original sources when available; quote or paraphrase accurately, distinguish current practice from historical reports and preserve material counterevidence.
+- Invite contributions through the existing [Contribute Intelligence](https://timallen87-zwkba.wpcomstaging.com/report-a-job-update/) channel. Moderate and verify submissions before publication; do not publish allegations, personal identifiers, private messages or confidential client materials without appropriate permission and review.
+- Protect contributors: minimize personal data, remove usernames and identifying employment details unless explicit informed permission and editorial necessity justify attribution. Never publish raw personnel datasets or small identifiable aggregate cells.
+- Preserve a dated correction/change log when claims change status, become outdated, are disputed or are disproved. Update the current article without silently erasing the history of significant revisions.
+- Maintain research queues for unresolved questions; link relevant project, vendor, Knowledge and Jobs Matrix pages contextually, avoiding circular or speculative claims.
+- **Illustrative case — Meridial / Invisible:** public search-evaluation recruitment and community reports of RaterHub activity are distinct observations. Until independently confirmed, do not present the company as a verified Google General Pool vendor solely on that basis.
+
 ## 11. Governance
 This document is the project's **working editorial standard**, not a claim that every legacy page already complies. Proposed deviations should be discussed and recorded by Git commit. Revise the version and change history when standards materially change.
 
 ### Change history
+- **1.4 — 2026-11-05:** Established living intelligence, five evidence channels, claim-level verification statuses, contributor privacy and dated corrections.
 - **1.3 — 2026-10-11:** Extended the narrative journalism voice site-wide, adapted to content type, with staged editorial rollout.
 - **1.2 — 2026-10-11:** Adopted investigative, human-centered narrative journalism as the default voice for Knowledge features.
 - **1.0 — 2026-10-11:** Consolidated agreed editorial principles, site architecture, taxonomy, design, SEO, evidence and Jobs Intelligence rules.
