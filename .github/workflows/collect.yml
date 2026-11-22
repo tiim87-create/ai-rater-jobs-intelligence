@@ -15,14 +15,27 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Collect official vacancies
-        run: python scripts/collect.py
-      - name: Commit JSON data
+      - name: Collect all official sources
+        run: python scripts/collect_unified.py
+      - name: Validate feed before publishing
+        run: python scripts/validate_vacancies.py
+      - name: Commit validated snapshots safely
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/jobs.json data/history.json data/summary.json
           if ! git diff --cached --quiet; then
-            git commit -m "data: refresh vacancy snapshots"
-            git push
+            git commit -m "data: refresh validated vacancy snapshots"
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
+      - name: Upload diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unified-vacancy-diagnostics
+          path: |
+            data/jobs.json
+            data/history.json
+            data/summary.json
+          retention-days: 14
