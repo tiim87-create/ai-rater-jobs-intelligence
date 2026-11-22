@@ -1,0 +1,23 @@
+name: Diagnose TELUS listing count
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Inspect TELUS pagination and count drift
+        run: python scripts/diagnose_telus_count.py
+      - name: Upload TELUS diagnostic
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: telus-count-diagnostic
+          path: data/telus_count_diagnostic.json
+          retention-days: 14
