@@ -1,20 +1,25 @@
 name: TELUS isolated full collector test
 on:
   workflow_dispatch:
+permissions:
+  contents: read
 jobs:
   collect:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-      - name: Collect and validate TELUS jobs
-        run: python scripts/collect_telus.py --output data/telus_jobs_test.json
-      - uses: actions/upload-artifact@v4
+          python-version: '3.12'
+      - name: Install isolated collector dependencies
+        run: python -m pip install requests beautifulsoup4
+      - name: Collect official AI Community pages (read-only)
+        run: python scripts/collect_telus_test.py
+      - name: Upload candidate feed and diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
-          name: telus-jobs-test
-          path: data/telus_jobs_test.json
-          retention-days: 7
+          name: telus-ai-community-candidate
+          path: data/telus_test.json
+          retention-days: 14
