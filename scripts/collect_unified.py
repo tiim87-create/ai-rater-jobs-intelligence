@@ -23,7 +23,7 @@ def run():
  def ingest(vendor,items,coverage):
   previous={k:v for k,v in state.items() if v.get("vendor")==vendor}
   if not items or len({x["id"] for x in items})!=len(items): raise ValueError("Empty/duplicate source")
-  if previous and len(items)<max(5,int(len(previous)*0.65)): raise ValueError("Unexpected source count drop")
+  if previous and len(items)<max(5,int(len(previous)*0.65)): raise ValueError(f"Unexpected source count drop: received={len(items)}, previous={len(previous)}, minimum={max(5,int(len(previous)*0.65))}")
   seen=set()
   for item in items:
    ident=item["id"];seen.add(ident)
@@ -75,7 +75,11 @@ def run():
   raw,_=fetch_telus()
   jobs=[transform_telus(x,NOW) for x in raw]
   ingest("TELUS Digital",jobs,"telus_ai_public_portal")
- except Exception as e: summary["TELUS Digital"]={"status":"error","error":str(e)[:200]}
+ except Exception as e:
+  # Preserve the last verified TELUS snapshot without aging its records.
+  previous_telus=[j for j in state.values() if j.get("vendor")=="TELUS Digital" and j.get("status")!="archived"]
+  summary["TELUS Digital"]={"status":"stale","error":str(e)[:200],"count":len(previous_telus),"coverage":"telus_ai_public_portal","last_successful_at":load("summary.json",{}).get("generated_at") if load("summary.json",{}).get("sources",{}).get("TELUS Digital",{}).get("status")=="ok" else load("summary.json",{}).get("sources",{}).get("TELUS Digital",{}).get("last_successful_at")}
+  print("TELUS Digital stale: "+str(e),file=sys.stderr)
  try:
   jobs=fetch_meridial()
   ingest("Meridial",jobs,"full_board")
