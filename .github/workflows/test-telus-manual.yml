@@ -31,3 +31,5 @@ jobs:
               else: raise AssertionError("Invalid snapshot accepted")
           print("PASS: geography, missing location fallback, completeness, duplicate rejection")
           PY
+
+      - run: python scripts/test_telus_integration.py
