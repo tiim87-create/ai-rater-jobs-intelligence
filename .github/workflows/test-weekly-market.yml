@@ -1,0 +1,30 @@
+name: Weekly market validation
+on:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: |
+          git fetch origin main
+          python scripts/backfill_market_snapshots.py
+          python scripts/build_weekly_market.py
+          python - <<'PY'
+          import json
+          d=json.load(open('data/market_weekly.json'))
+          w=next(w for w in d['weeks'] if w['week']=='2026-W48')
+          assert w['complete'],w['missing_sources']
+          assert {v:r['count'] for v,r in w['vendors'].items()}=={'RWS':142,'Welo Data':477,'Meridial':827,'TELUS Digital':79}
+          assert all(len(set(r['listing_ids']))==r['count'] for r in w['vendors'].values())
+          print('WEEKLY BASELINE PASS',w['week'],w['observed_total'])
+          print('HISTORICAL WEEKS',len(d['weeks']))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: weekly-market-validation
+          path: data/market_weekly.json
