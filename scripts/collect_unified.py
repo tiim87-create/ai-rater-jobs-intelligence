@@ -23,7 +23,8 @@ def run():
  def ingest(vendor,items,coverage):
   previous={k:v for k,v in state.items() if v.get("vendor")==vendor}
   if not items or len({x["id"] for x in items})!=len(items): raise ValueError("Empty/duplicate source")
-  if previous and len(items)<max(5,int(len(previous)*0.65)): raise ValueError(f"Unexpected source count drop: received={len(items)}, previous={len(previous)}, minimum={max(5,int(len(previous)*0.65))}")
+  prior_count=sum(v.get("status")=="active" for v in previous.values())
+  if prior_count and len(items)<max(5,int(prior_count*0.65)): raise ValueError(f"Unexpected source count drop: received={len(items)}, previous={prior_count}, minimum={max(5,int(prior_count*0.65))}")
   seen=set()
   for item in items:
    ident=item["id"];seen.add(ident)
@@ -32,7 +33,8 @@ def run():
     item["countries"]=old["countries"]
     item["geography_status"]=old.get("geography_status","mapped")
    merged={**old,**item,"first_seen":old.get("first_seen",NOW),"last_seen":NOW,"status":"active","missed_complete_scans":0}
-   if not old: history.append({"at":NOW,"type":"new","id":ident})
+   if not old: history.append({"at":NOW,"type":"new" if previous else "baseline","id":ident})
+   elif old.get("status")=="archived": history.append({"at":NOW,"type":"reopened","id":ident})
    elif any(old.get(k)!=merged.get(k) for k in ("title","url","countries","location_raw","country")):
     history.append({"at":NOW,"type":"changed","id":ident})
    state[ident]=merged
@@ -92,7 +94,7 @@ def run():
  output=sorted(state.values(),key=lambda j:j["id"])
  assert len(output)==len(set(j["id"] for j in output))
  save("jobs.json",{"generated_at":NOW,"jobs":output})
- save("history.json",{"events":history[-10000:]})
+ save("history.json",{"events":history})
  save("summary.json",{"generated_at":NOW,"sources":summary})
  print(json.dumps(summary))
  return 0
