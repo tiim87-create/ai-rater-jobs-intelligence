@@ -1,0 +1,39 @@
+name: Build weekly market intelligence
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 21 * * 5'
+permissions:
+  contents: write
+concurrency:
+  group: vacancy-collector
+  cancel-in-progress: false
+jobs:
+  analytics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: |
+          git fetch origin main
+          python scripts/backfill_market_snapshots.py
+          python scripts/build_weekly_market.py
+          python scripts/build_market_analytics.py
+          python - <<'PY'
+          import json
+          d=json.load(open('data/market_weekly.json'))
+          assert d['weeks']
+          for w in d['weeks']:
+              assert sum(w['market_segments'].values())==w['observed_total']
+          print('ANALYTICS VALIDATED',len(d['weeks']))
+          PY
+      - if: github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/market_snapshots.json data/market_weekly.json data/market_analytics.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: publish weekly market intelligence"
+            git push origin HEAD:main
+          fi
