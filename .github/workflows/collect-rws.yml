@@ -1,0 +1,50 @@
+name: Collect RWS
+on:
+  schedule:
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'scripts/collect_unified.py'
+      - '.github/workflows/collect-rws.yml'
+permissions:
+  contents: write
+concurrency:
+  group: ${{ github.event_name == 'pull_request' && format('test-rws-{0}', github.ref) || 'vacancy-collector' }}
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          cp data/jobs.json /tmp/before.json
+          python scripts/collect_unified.py 'RWS'
+          python scripts/validate_vacancies.py
+          python - <<'PY'
+          import json
+          vendor='RWS'
+          other=lambda p: {j['id']:j for j in json.load(open(p))['jobs'] if j['vendor']!=vendor}
+          assert other('/tmp/before.json')==other('data/jobs.json')
+          s=json.load(open('data/summary.json'))['sources'][vendor]
+          print('SOURCE RESULT',vendor,s)
+          assert s['status'] in ('ok','stale'),s
+          if s['status']=='stale':
+              assert other('/tmp/before.json')==other('data/jobs.json')
+          PY
+      - if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/jobs.json data/history.json data/summary.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh RWS"
+            git push origin HEAD:main
+          fi
+      - name: Report source failure
+        run: |
+          python -c "import json; assert json.load(open('data/summary.json'))['sources']['RWS']['status']=='ok'"
