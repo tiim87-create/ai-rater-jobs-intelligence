@@ -3,7 +3,6 @@
 import datetime as dt,json,pathlib,sys
 from collect import lever
 from collect_rws import fetch as fetch_rws,transform as transform_rws,validate as validate_rws
-from collect_telus import collect as fetch_telus,transform as transform_telus
 from collect_meridial import collect as fetch_meridial
 ROOT=pathlib.Path(__file__).resolve().parents[1]/"data"
 NOW=dt.datetime.now(dt.timezone.utc).isoformat()
@@ -71,15 +70,8 @@ def run():
    j["status"]="active"
   ingest("Welo Data",jobs,"full_board")
  except Exception as e: summary["Welo Data"]={"status":"error","error":str(e)[:200]}
- try:
-  raw,_=fetch_telus()
-  jobs=[transform_telus(x,NOW) for x in raw]
-  ingest("TELUS Digital",jobs,"telus_ai_public_portal")
- except Exception as e:
-  # Preserve the last verified TELUS snapshot without aging its records.
-  previous_telus=[j for j in state.values() if j.get("vendor")=="TELUS Digital" and j.get("status")!="archived"]
-  summary["TELUS Digital"]={"status":"stale","error":str(e)[:200],"count":len(previous_telus),"coverage":"telus_ai_public_portal","last_successful_at":load("summary.json",{}).get("generated_at") if load("summary.json",{}).get("sources",{}).get("TELUS Digital",{}).get("status")=="ok" else load("summary.json",{}).get("sources",{}).get("TELUS Digital",{}).get("last_successful_at")}
-  print("TELUS Digital stale: "+str(e),file=sys.stderr)
+ # TELUS is maintained by its independent publication workflow.
+ summary["TELUS Digital"]=load("summary.json",{}).get("sources",{}).get("TELUS Digital",{"status":"stale","coverage":"telus_ai_community_manual"})
  try:
   jobs=fetch_meridial()
   ingest("Meridial",jobs,"full_board")
@@ -92,7 +84,7 @@ def run():
  output=sorted(state.values(),key=lambda j:j["id"])
  assert len(output)==len(set(j["id"] for j in output))
  save("jobs.json",{"generated_at":NOW,"jobs":output})
- save("history.json",{"events":history[-10000:]})
+ save("history.json",{"events":history})
  save("summary.json",{"generated_at":NOW,"sources":summary})
  print(json.dumps(summary))
  return 0
