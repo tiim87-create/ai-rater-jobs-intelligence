@@ -37,7 +37,7 @@ def build(archive):
                 "count":row.get("reported_count") if row.get("reported_count") is not None else row.get("active_listings"),
                 "listing_ids":row.get("listing_ids"), "countries":row.get("countries"),
                 "country_associations":row.get("country_associations"),
-                "project_families":row.get("project_families"),
+                "project_families":row.get("project_families"), "market_segments":row.get("market_segments"),
                 "provenance":snap.get("provenance", {"kind":"snapshot","at":snap["at"]})
             }
     result = []
@@ -56,6 +56,11 @@ def build(archive):
         w["missing_sources"]=[v for v in VENDORS if w["vendors"][v] is None]
         w["complete"]=not w["missing_sources"]
         w["observed_total"]=sum(row["count"] or 0 for row in w["vendors"].values() if row is not None)
+        w["market_segments"] = {}
+        for row in w["vendors"].values():
+            if row:
+                for k,n in (row.get("market_segments") or {}).items():
+                    w["market_segments"][k] = w["market_segments"].get(k,0)+n
         result.append(w)
     return {"schema_version":1,"cadence":"weekly_friday_utc","weeks":result}
 
