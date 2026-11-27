@@ -24,9 +24,11 @@ jobs:
           git fetch origin main
           python scripts/backfill_market_snapshots.py > backfill-report.json
           cat backfill-report.json
+          python scripts/build_market_analytics.py
       - uses: actions/upload-artifact@v4
         with:
           name: market-history-preview
           path: |
             data/market_snapshots.json
             backfill-report.json
+            data/market_analytics.json
