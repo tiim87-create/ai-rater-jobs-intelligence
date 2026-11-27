@@ -26,6 +26,19 @@ jobs:
           for week in d['weeks']:
               print('WEEK AUDIT',json.dumps({'week':week['week'],'complete':week['complete'],'missing':week['missing_sources'],'vendors':{v:({k:r.get(k) for k in ('count','coverage','observed_at','change','project_families')} if r else None) for v,r in week['vendors'].items()}}))
           PY
+      - name: Audit unclassified titles
+        run: |
+          git show origin/main:data/jobs.json > /tmp/market-jobs.json
+          PYTHONPATH=scripts python - <<'PY'
+          import json
+          from collections import Counter
+          from classify_market_projects import classify
+          jobs=json.load(open('/tmp/market-jobs.json'))['jobs']
+          for vendor in sorted({j['vendor'] for j in jobs}):
+              rows=[j for j in jobs if j['vendor']==vendor and j['status']=='active']
+              unknown=Counter(j['title'] for j in rows if classify(j)=='Other / Unclassified')
+              print('UNKNOWN TITLE AUDIT',vendor,json.dumps(unknown.most_common(40),ensure_ascii=False))
+          PY
       - uses: actions/upload-artifact@v4
         with:
           name: weekly-market-validation
