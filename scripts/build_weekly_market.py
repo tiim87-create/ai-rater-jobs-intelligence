@@ -61,6 +61,12 @@ def build(archive):
             if row:
                 for k,n in (row.get("market_segments") or {}).items():
                     w["market_segments"][k] = w["market_segments"].get(k,0)+n
+        from collections import Counter
+        geo=Counter()
+        for row in w["vendors"].values():
+            if row:
+                geo.update(row.get("country_associations") or {})
+        w["geography"]={"country_associations":dict(sorted(geo.items())), "mapped_countries":len(geo)}
         result.append(w)
     return {"schema_version":1,"cadence":"weekly_friday_utc","weeks":result}
 
