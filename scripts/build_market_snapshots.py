@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 from collections import Counter
 from classify_market_projects import classify, VERSION
+from market_segments import segment
 from datetime import datetime, timedelta
 
 DATA = Path(__file__).resolve().parents[1] / "data"
@@ -31,6 +32,7 @@ def build_snapshot(jobs, summary, events):
             "retained_active_listings": len(rows),
             "countries": sorted(codes) if observed else None,
             "country_associations": dict(Counter(c for j in rows for c in set(j.get("countries") or []))) if observed else None,
+            "market_segments": dict(Counter(segment(classify(j)) for j in rows)) if observed else None,
             "project_families": dict(Counter(classify(j) for j in rows)) if observed else None,
             "events": dict(Counter(e["type"] for e in events if e["at"] == at and e["id"] in {j["id"] for j in jobs if j["vendor"] == vendor})) if fresh else None,
         }
