@@ -1,0 +1,61 @@
+name: TELUS browser access diagnostic
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/telus-browser-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Test ordinary browser navigation
+        run: |
+          python - <<'PY'
+          from playwright.sync_api import sync_playwright
+          from pathlib import Path
+          import json, time, hashlib
+          out=Path("telus-browser-diagnostics")
+          out.mkdir()
+          rows=[]
+          with sync_playwright() as p:
+              browser=p.chromium.launch()
+              page=browser.new_page()
+              for i in range(1,5):
+                  url=f"https://jobs.telusdigital.com/search/cfm5/ai-community/jobs/in?page={i}"
+                  try:
+                      response=page.goto(url,wait_until="domcontentloaded",timeout=30000)
+                      status=response.status if response else None
+                      row={"page":i,"status":status,"url":page.url}
+                      if status in (401,403,429):
+                          rows.append(row)
+                          print(json.dumps(row))
+                          break
+                      page.wait_for_timeout(2000)
+                      body=page.content()
+                      row.update({"title":page.title(),"bytes":len(body.encode()),"sha256":hashlib.sha256(body.encode()).hexdigest()})
+                      (out/f"page-{i}.html").write_text(body,encoding="utf-8")
+                      rows.append(row)
+                      print(json.dumps(row))
+                      if status!=200:
+                          break
+                      time.sleep(2)
+                  except Exception as e:
+                      rows.append({"page":i,"error":str(e)})
+                      break
+              browser.close()
+          (out/"report.json").write_text(json.dumps(rows,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: telus-browser-diagnostics
+          path: telus-browser-diagnostics/
