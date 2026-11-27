@@ -33,3 +33,13 @@ jobs:
           PY
 
       - run: python scripts/test_telus_integration.py
+      - run: |
+          python scripts/normalize_telus_manual.py data/telus_manual_latest.json /tmp/telus_normalized.json
+          python - <<'PY'
+          import json
+          from collections import Counter
+          d=json.load(open('/tmp/telus_normalized.json'))
+          assert len(d['jobs'])==d['reported_total']
+          assert all(j['countries'] for j in d['jobs'])
+          print('REAL DATA PASS',len(d['jobs']),Counter(c for j in d['jobs'] for c in j['countries']))
+          PY
