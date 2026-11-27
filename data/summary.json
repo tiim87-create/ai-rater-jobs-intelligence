@@ -1,10 +1,11 @@
 {
-  "generated_at": "2026-11-27T17:47:10.286315+00:00",
+  "generated_at": "2026-11-27T18:03:55.043025+00:00",
   "sources": {
     "RWS": {
       "status": "ok",
-      "count": 147,
-      "coverage": "full_board"
+      "count": 142,
+      "coverage": "full_board",
+      "last_successful_at": "2026-11-27T18:03:55.043025+00:00"
     },
     "Welo Data": {
       "status": "ok",
