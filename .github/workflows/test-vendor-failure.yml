@@ -1,0 +1,35 @@
+name: Vendor failure isolation
+on:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  failure-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          PYTHONPATH=scripts python - <<'PY'
+          import collect_unified as c
+          import tempfile, pathlib, shutil, json
+          from unittest.mock import patch
+          original=c.ROOT
+          for vendor,fn in [('RWS','fetch_rws'),('Welo Data','lever'),('Meridial','fetch_meridial')]:
+              with tempfile.TemporaryDirectory() as d:
+                  c.ROOT=pathlib.Path(d)
+                  for name in ['jobs.json','history.json','summary.json']:
+                      shutil.copy(original/name,c.ROOT/name)
+                  before=c.load('jobs.json',{})['jobs']
+                  old=c.load('summary.json',{})['sources']
+                  with patch.object(c,fn,side_effect=RuntimeError('simulated outage')):
+                      assert c.run([vendor])==0
+                  assert {j['id']:j for j in before}=={j['id']:j for j in c.load('jobs.json',{})['jobs']}
+                  new=c.load('summary.json',{})['sources']
+                  assert new[vendor]['status']=='stale'
+                  assert new[vendor]['count']==old[vendor]['count']
+                  assert all(new[k]==v for k,v in old.items() if k!=vendor)
+                  print('FAILURE ISOLATION PASS',vendor)
+          PY
