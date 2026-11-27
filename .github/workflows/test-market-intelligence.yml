@@ -1,0 +1,32 @@
+name: Test market intelligence
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile and test
+        run: |
+          python -m py_compile scripts/collect_unified.py scripts/build_market_snapshots.py scripts/backfill_market_snapshots.py
+          python -m unittest discover -s scripts -p 'test_market_snapshots.py'
+      - name: Recover historical observations
+        run: |
+          git fetch origin main
+          python scripts/backfill_market_snapshots.py > backfill-report.json
+          cat backfill-report.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: market-history-preview
+          path: |
+            data/market_snapshots.json
+            backfill-report.json
