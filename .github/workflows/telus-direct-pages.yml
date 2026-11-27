@@ -1,0 +1,46 @@
+name: TELUS direct page access diagnostic
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/telus-direct-pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Probe public catalog URLs
+        run: |
+          python - <<'PY'
+          import urllib.request, urllib.error, time, hashlib, json
+          from pathlib import Path
+          out=Path("telus-direct-diagnostics")
+          out.mkdir()
+          results=[]
+          for i in range(1,5):
+              url=f"https://jobs.telusdigital.com/search/cfm5/ai-community/jobs/in?page={i}"
+              try:
+                  with urllib.request.urlopen(url,timeout=25) as r:
+                      body=r.read()
+                      row={"page":i,"status":r.status,"url":r.geturl(),"bytes":len(body),"sha256":hashlib.sha256(body).hexdigest()}
+                      (out/f"page-{i}.html").write_bytes(body)
+              except urllib.error.HTTPError as e:
+                  row={"page":i,"status":e.code,"url":url}
+                  results.append(row)
+                  print(json.dumps(row))
+                  if e.code in (401,403,429):
+                      break
+                  continue
+              except Exception as e:
+                  row={"page":i,"error":str(e),"url":url}
+              results.append(row)
+              print(json.dumps(row))
+              time.sleep(2)
+          (out/"report.json").write_text(json.dumps(results,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: telus-direct-diagnostics
+          path: telus-direct-diagnostics/

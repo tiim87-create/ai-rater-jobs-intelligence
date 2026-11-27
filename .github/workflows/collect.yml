@@ -12,18 +12,29 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Initialize historical archive if absent
+        run: |
+          if [ ! -f data/market_snapshots.json ]; then
+            python scripts/backfill_market_snapshots.py
+          fi
       - name: Collect all official sources
         run: python scripts/collect_unified.py
       - name: Validate feed before publishing
         run: python scripts/validate_vacancies.py
+      - name: Build historical market snapshot
+        run: |
+          python scripts/build_market_snapshots.py
+          python scripts/build_market_analytics.py
       - name: Commit validated snapshots safely
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/jobs.json data/history.json data/summary.json
+          git add data/jobs.json data/history.json data/summary.json data/market_snapshots.json data/market_analytics.json
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh validated vacancy snapshots"
             git pull --rebase origin main
@@ -38,4 +49,6 @@ jobs:
             data/jobs.json
             data/history.json
             data/summary.json
+            data/market_snapshots.json
+            data/market_analytics.json
           retention-days: 14
