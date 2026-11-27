@@ -24,6 +24,10 @@ jobs:
           print('WEEKLY BASELINE PASS',w['week'],w['observed_total'])
           print('HISTORICAL WEEKS',len(d['weeks']))
           for week in d['weeks']:
+              assert sum(week['market_segments'].values())==week['observed_total']
+              assert all(sum(r['market_segments'].values())==r['count'] for r in week['vendors'].values() if r)
+              print('SEGMENT GEO AUDIT',week['week'],json.dumps(week['market_segments']),json.dumps(week['geography']))
+          for week in d['weeks']:
               print('WEEK AUDIT',json.dumps({'week':week['week'],'complete':week['complete'],'missing':week['missing_sources'],'vendors':{v:({k:r.get(k) for k in ('count','coverage','observed_at','change','project_families')} if r else None) for v,r in week['vendors'].items()}}))
           PY
       - name: Audit unclassified titles
