@@ -1,0 +1,53 @@
+name: Independent TELUS publication
+on:
+  pull_request:
+    paths:
+      - 'scripts/publish_telus_manual.py'
+      - 'scripts/normalize_telus_manual.py'
+      - 'data/telus_manual_latest.json'
+      - '.github/workflows/collect-telus.yml'
+  push:
+    branches: [main]
+    paths: ['data/telus_manual_latest.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: vacancy-collector
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          cp data/jobs.json /tmp/before.json
+          python scripts/publish_telus_manual.py
+          python scripts/validate_vacancies.py
+          python - <<'PY'
+          import json
+          before=json.load(open('/tmp/before.json'))['jobs']
+          after=json.load(open('data/jobs.json'))['jobs']
+          other=lambda rows: {j['id']:j for j in rows if j['vendor']!='TELUS Digital'}
+          assert other(before)==other(after)
+          active=[j for j in after if j['vendor']=='TELUS Digital' and j['status']=='active']
+          expected=json.load(open('data/telus_manual_latest.json'))['reported_total']
+          assert len(active)==expected and all(j['countries'] for j in active)
+          print('PUBLICATION PASS',len(active),'other vendors unchanged')
+          PY
+          sha256sum data/jobs.json data/history.json data/summary.json > /tmp/checksums
+          python scripts/publish_telus_manual.py
+          sha256sum -c /tmp/checksums
+      - name: Publish only on main
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/jobs.json data/history.json data/summary.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: publish verified TELUS snapshot"
+            git push origin HEAD:main
+          fi
