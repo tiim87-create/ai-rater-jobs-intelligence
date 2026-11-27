@@ -14,18 +14,23 @@ def build_snapshot(jobs, summary, events):
     for vendor, source in summary["sources"].items():
         rows = [j for j in jobs if j["vendor"] == vendor and j.get("status") == "active"]
         observed = source["status"] == "ok"
+        source_at = source.get("last_successful_at")
+        fresh = observed and (source_at == at if source_at else not any(s.get("last_successful_at") for s in summary["sources"].values()))
         codes = {c for j in rows for c in (j.get("countries") or [])}
         if observed:
             countries.update(codes)
         vendors[vendor] = {
             "source_status": source["status"],
+            "source_observed_at": source_at or (at if fresh else None),
+            "fresh_observation": fresh,
+            "reported_count": source.get("count"),
             "coverage": source.get("coverage"),
             "active_listings": len(rows) if observed else None,
             "retained_active_listings": len(rows),
             "countries": sorted(codes) if observed else None,
             "country_associations": dict(Counter(c for j in rows for c in set(j.get("countries") or []))) if observed else None,
             "project_families": dict(Counter(j.get("project_family") or j.get("family") or "Unclassified" for j in rows)) if observed else None,
-            "events": dict(Counter(e["type"] for e in events if e["at"] == at and e["id"] in {j["id"] for j in jobs if j["vendor"] == vendor})) if observed else None,
+            "events": dict(Counter(e["type"] for e in events if e["at"] == at and e["id"] in {j["id"] for j in jobs if j["vendor"] == vendor})) if fresh else None,
         }
     complete = all(v["source_status"] == "ok" for v in vendors.values())
     return {"at": at, "complete": complete, "vendors": vendors,
