@@ -12,9 +12,16 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Initialize historical archive if absent
+        run: |
+          if [ ! -f data/market_snapshots.json ]; then
+            python scripts/backfill_market_snapshots.py
+          fi
       - name: Collect all official sources
         run: python scripts/collect_unified.py
       - name: Validate feed before publishing
