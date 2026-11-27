@@ -18,7 +18,7 @@ def normalize(doc):
         code=next((v for k,v in sorted(CODES.items(),key=lambda x:-len(x[0])) if raw==k or raw.endswith(", "+k)),None)
         evidence="location"
         if not raw:
-            matches={v for k,v in CODES.items() if re.search(r"(?<!\\w)"+re.escape(k)+r"(?!\\w)",row["title"].casefold())}
+            matches={v for k,v in CODES.items() if re.search(r"(?<!\w)"+re.escape(k)+r"(?!\w)",row["title"].casefold())}
             if len(matches)==1:
                 code=matches.pop()
                 evidence="title"
