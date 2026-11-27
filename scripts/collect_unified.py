@@ -74,27 +74,23 @@ def run():
   ingest("Welo Data",jobs,"full_board")
  except Exception as e: summary["Welo Data"]={"status":"error","error":str(e)[:200]}
  try:
-  raw,pagination=fetch_telus()
-  jobs=[transform_telus(x,NOW) for x in raw]
-  try:
-   ingest("TELUS Digital",jobs,"telus_ai_public_portal")
-  except ValueError as anomaly:
-   if not str(anomaly).startswith("Unexpected source count drop:"): raise
-   # Refresh positively observed records, but do not age absent records on anomalous scans.
-   for item in jobs:
-    ident=item["id"]; old=state.get(ident,{})
-    if old and old.get("coverage")!="telus_ai_public_portal": raise ValueError("TELUS source ID collision")
-    if not old: history.append({"at":NOW,"type":"new","id":ident})
-    elif old.get("status")=="archived": history.append({"at":NOW,"type":"reopened","id":ident})
-    state[ident]={**old,**item,"first_seen":old.get("first_seen",NOW),"last_seen":NOW,"status":"active","missed_complete_scans":0}
-   summary["TELUS Digital"]={"status":"warning","coverage":"telus_ai_public_portal","count":len(jobs),"observed_count":len(jobs),"absence_updates":False,"warning":str(anomaly),"pagination":pagination}
+  from normalize_telus_manual import normalize
+  manual=load("telus_manual_latest.json",None)
+  if manual is None: raise ValueError("No verified manual catalog")
+  doc=normalize(manual)
+  if any(not j["countries"] for j in doc["jobs"]): raise ValueError("Unmapped manual catalog geography")
+  previous_summary=load("summary.json",{}).get("sources",{}).get("TELUS Digital",{})
+  if previous_summary.get("snapshot_date")==doc["date"]:
+   summary["TELUS Digital"]={**previous_summary,"status":"stale","reason":"No new manual snapshot"}
   else:
-   summary["TELUS Digital"].update({"observed_count":len(jobs),"absence_updates":True,"pagination":pagination})
+   ingest("TELUS Digital",doc["jobs"],"telus_ai_community_manual")
+   for j in state.values():
+    if j.get("vendor")=="TELUS Digital" and j.get("coverage")!="telus_ai_community_manual":
+     j["status"]="archived"
+     j["archive_reason"]="source_scope_superseded"
+   summary["TELUS Digital"].update({"snapshot_date":doc["date"],"observed_count":len(doc["jobs"])})
  except Exception as e:
-  # Preserve the last verified TELUS snapshot without aging its records.
-  previous_telus=[j for j in state.values() if j.get("vendor")=="TELUS Digital" and j.get("status")!="archived"]
-  summary["TELUS Digital"]={"status":"stale","error":str(e)[:200],"count":len(previous_telus),"coverage":"telus_ai_public_portal","last_successful_at":load("summary.json",{}).get("generated_at") if load("summary.json",{}).get("sources",{}).get("TELUS Digital",{}).get("status")=="ok" else load("summary.json",{}).get("sources",{}).get("TELUS Digital",{}).get("last_successful_at")}
-  print("TELUS Digital stale: "+str(e),file=sys.stderr)
+  summary["TELUS Digital"]={"status":"stale","error":str(e)[:200],"count":sum(j.get("vendor")=="TELUS Digital" and j.get("status")=="active" for j in state.values())}
  try:
   jobs=fetch_meridial()
   ingest("Meridial",jobs,"full_board")
