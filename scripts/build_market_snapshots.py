@@ -24,6 +24,7 @@ def build_snapshot(jobs, summary, events):
             "source_observed_at": source_at or (at if fresh else None),
             "fresh_observation": fresh,
             "reported_count": source.get("count"),
+            "listing_ids": sorted(j["id"] for j in rows) if fresh else None,
             "coverage": source.get("coverage"),
             "active_listings": len(rows) if observed else None,
             "retained_active_listings": len(rows),
