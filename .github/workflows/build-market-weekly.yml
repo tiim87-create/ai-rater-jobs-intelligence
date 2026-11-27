@@ -1,12 +1,16 @@
 name: Build weekly market intelligence
 on:
+  pull_request:
+    paths:
+      - '.github/workflows/build-market-weekly.yml'
+      - 'scripts/*market*.py'
   workflow_dispatch:
   schedule:
     - cron: '30 21 * * 5'
 permissions:
   contents: write
 concurrency:
-  group: vacancy-collector
+  group: ${{ github.event_name == 'pull_request' && format('market-test-{0}', github.ref) || 'vacancy-collector' }}
   cancel-in-progress: false
 jobs:
   analytics:
@@ -28,7 +32,7 @@ jobs:
               assert sum(w['market_segments'].values())==w['observed_total']
           print('ANALYTICS VALIDATED',len(d['weeks']))
           PY
-      - if: github.ref == 'refs/heads/main'
+      - if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
