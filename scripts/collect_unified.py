@@ -24,7 +24,7 @@ def run():
   previous={k:v for k,v in state.items() if v.get("vendor")==vendor and (vendor!="TELUS Digital" or v.get("coverage")==coverage)}
   if not items or len({x["id"] for x in items})!=len(items): raise ValueError("Empty/duplicate source")
   prior_count=sum(v.get("status")=="active" for v in previous.values())
-  if prior_count and len(items)<max(5,int(prior_count*0.65)): raise ValueError(f"Unexpected source count drop: received={len(items)}, previous={prior_count}, minimum={max(5,int(prior_count*0.65))}")
+  if prior_count and len(items)<min(prior_count,max(5,int(prior_count*0.65))): raise ValueError(f"Unexpected source count drop: received={len(items)}, previous={prior_count}, minimum={min(prior_count,max(5,int(prior_count*0.65)))}")
   seen=set()
   for item in items:
    ident=item["id"];seen.add(ident)
