@@ -23,6 +23,8 @@ jobs:
           assert all(len(set(r['listing_ids']))==r['count'] for r in w['vendors'].values())
           print('WEEKLY BASELINE PASS',w['week'],w['observed_total'])
           print('HISTORICAL WEEKS',len(d['weeks']))
+          for week in d['weeks']:
+              print('WEEK AUDIT',json.dumps({'week':week['week'],'complete':week['complete'],'missing':week['missing_sources'],'vendors':{v:({k:r.get(k) for k in ('count','coverage','observed_at','change','project_families')} if r else None) for v,r in week['vendors'].items()}}))
           PY
       - uses: actions/upload-artifact@v4
         with:
