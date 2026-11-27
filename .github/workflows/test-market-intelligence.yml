@@ -24,6 +24,7 @@ jobs:
           git fetch origin main
           python scripts/backfill_market_snapshots.py > backfill-report.json
           cat backfill-report.json
+          python -c 'import json,collections; j=json.load(open("data/jobs.json"))["jobs"]; print("CLASSIFICATION FIELD AUDIT",json.dumps({v:dict(collections.Counter(k for x in j if x.get("vendor")==v for k in x if x[k] is not None)) for v in sorted({x["vendor"] for x in j})}))'
           python scripts/build_market_analytics.py
           python -c 'import json; d=json.load(open("data/market_analytics.json")); t=d["trends"]; print(json.dumps({"first":t[0],"last":t[-1],"latest":d["latest"],"weekly_pulse":d["weekly_pulse"],"complete_count":sum(x["complete"] for x in t)},ensure_ascii=False))'
       - uses: actions/upload-artifact@v4
