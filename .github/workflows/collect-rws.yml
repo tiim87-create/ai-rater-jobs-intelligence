@@ -10,7 +10,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: vacancy-collector
+  group: ${{ github.event_name == 'pull_request' && format('test-rws-{0}', github.ref) || 'vacancy-collector' }}
   cancel-in-progress: false
 jobs:
   collect:
