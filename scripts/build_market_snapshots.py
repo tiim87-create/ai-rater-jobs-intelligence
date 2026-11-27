@@ -3,6 +3,7 @@
 import json
 from pathlib import Path
 from collections import Counter
+from classify_market_projects import classify, VERSION
 from datetime import datetime, timedelta
 
 DATA = Path(__file__).resolve().parents[1] / "data"
@@ -30,11 +31,11 @@ def build_snapshot(jobs, summary, events):
             "retained_active_listings": len(rows),
             "countries": sorted(codes) if observed else None,
             "country_associations": dict(Counter(c for j in rows for c in set(j.get("countries") or []))) if observed else None,
-            "project_families": dict(Counter(j.get("project_family") or j.get("family") or "Unclassified" for j in rows)) if observed else None,
+            "project_families": dict(Counter(classify(j) for j in rows)) if observed else None,
             "events": dict(Counter(e["type"] for e in events if e["at"] == at and e["id"] in {j["id"] for j in jobs if j["vendor"] == vendor})) if fresh else None,
         }
     complete = all(v["source_status"] == "ok" for v in vendors.values())
-    return {"at": at, "complete": complete, "vendors": vendors,
+    return {"at": at, "classifier_version": VERSION, "complete": complete, "vendors": vendors,
             "observed_active_listings": sum(v["active_listings"] or 0 for v in vendors.values()),
             "observed_countries": sorted(countries)}
 
