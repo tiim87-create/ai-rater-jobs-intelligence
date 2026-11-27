@@ -1,0 +1,33 @@
+name: Test manual TELUS
+on:
+  pull_request:
+    paths:
+      - 'scripts/normalize_telus_manual.py'
+      - 'scripts/collect_unified.py'
+      - '.github/workflows/test-telus-manual.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          python -m py_compile scripts/collect_unified.py scripts/normalize_telus_manual.py
+          PYTHONPATH=scripts python - <<'PY'
+          from normalize_telus_manual import normalize
+          cases=[("M, Spain","ES"),("Korea, Republic of","KR"),("Tanzania, Tanzania, United Republic of","TZ"),("Kyrgyzstan, Kyrgyzstan","KG"),("","ZA"),("Philippines","PH")]
+          rows=[dict(page=1,title="Online Data Analyst - South Africa" if not loc else "Japanese (PH)",url=f"https://jobs.telusdigital.com/jobs/{i}",fields=[loc,"Japanese","Part time",str(i)]) for i,(loc,code) in enumerate(cases)]
+          doc=dict(date="2026-11-27",reported_total=len(rows),jobs=rows)
+          out=normalize(doc)
+          assert [j["countries"] for j in out["jobs"]]==[[code] for loc,code in cases]
+          for bad in [dict(doc,reported_total=99),dict(doc,jobs=rows[:-1]+[rows[0]])]:
+              try: normalize(bad)
+              except ValueError: pass
+              else: raise AssertionError("Invalid snapshot accepted")
+          print("PASS: geography, missing location fallback, completeness, duplicate rejection")
+          PY
