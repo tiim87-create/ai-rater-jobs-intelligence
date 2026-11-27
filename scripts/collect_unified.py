@@ -21,7 +21,7 @@ def run():
  history=load("history.json",{"events":[]}).get("events",[])
  summary={}
  def ingest(vendor,items,coverage):
-  previous={k:v for k,v in state.items() if v.get("vendor")==vendor}
+  previous={k:v for k,v in state.items() if v.get("vendor")==vendor and (vendor!="TELUS Digital" or v.get("coverage")==coverage)}
   if not items or len({x["id"] for x in items})!=len(items): raise ValueError("Empty/duplicate source")
   prior_count=sum(v.get("status")=="active" for v in previous.values())
   if prior_count and len(items)<max(5,int(prior_count*0.65)): raise ValueError(f"Unexpected source count drop: received={len(items)}, previous={prior_count}, minimum={max(5,int(prior_count*0.65))}")
@@ -74,9 +74,22 @@ def run():
   ingest("Welo Data",jobs,"full_board")
  except Exception as e: summary["Welo Data"]={"status":"error","error":str(e)[:200]}
  try:
-  raw,_=fetch_telus()
+  raw,pagination=fetch_telus()
   jobs=[transform_telus(x,NOW) for x in raw]
-  ingest("TELUS Digital",jobs,"telus_ai_public_portal")
+  try:
+   ingest("TELUS Digital",jobs,"telus_ai_public_portal")
+  except ValueError as anomaly:
+   if not str(anomaly).startswith("Unexpected source count drop:"): raise
+   # Refresh positively observed records, but do not age absent records on anomalous scans.
+   for item in jobs:
+    ident=item["id"]; old=state.get(ident,{})
+    if old and old.get("coverage")!="telus_ai_public_portal": raise ValueError("TELUS source ID collision")
+    if not old: history.append({"at":NOW,"type":"new","id":ident})
+    elif old.get("status")=="archived": history.append({"at":NOW,"type":"reopened","id":ident})
+    state[ident]={**old,**item,"first_seen":old.get("first_seen",NOW),"last_seen":NOW,"status":"active","missed_complete_scans":0}
+   summary["TELUS Digital"]={"status":"warning","coverage":"telus_ai_public_portal","count":len(jobs),"observed_count":len(jobs),"absence_updates":False,"warning":str(anomaly),"pagination":pagination}
+  else:
+   summary["TELUS Digital"].update({"observed_count":len(jobs),"absence_updates":True,"pagination":pagination})
  except Exception as e:
   # Preserve the last verified TELUS snapshot without aging its records.
   previous_telus=[j for j in state.values() if j.get("vendor")=="TELUS Digital" and j.get("status")!="archived"]
