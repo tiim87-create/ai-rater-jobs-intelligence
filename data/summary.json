@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T08:14:31.871865+00:00",
+  "generated_at": "2026-11-27T17:47:10.286315+00:00",
   "sources": {
     "RWS": {
       "status": "ok",
@@ -12,11 +12,11 @@
       "coverage": "full_board"
     },
     "TELUS Digital": {
-      "status": "stale",
-      "error": "Unexpected source count drop: received=31, previous=71, minimum=46",
-      "count": 65,
-      "coverage": "telus_ai_public_portal",
-      "last_successful_at": "2026-11-10T15:11:24.790931+00:00"
+      "status": "ok",
+      "count": 79,
+      "coverage": "telus_ai_community_manual",
+      "snapshot_date": "2026-11-27",
+      "last_successful_at": "2026-11-27T17:47:10.286315+00:00"
     },
     "Meridial": {
       "status": "ok",
