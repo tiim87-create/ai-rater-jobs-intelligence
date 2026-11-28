@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-27T18:05:41.067627+00:00",
+  "generated_at": "2026-11-28T01:37:53.859469+00:00",
   "sources": {
     "RWS": {
       "status": "ok",
-      "count": 142,
+      "count": 145,
       "coverage": "full_board",
-      "last_successful_at": "2026-11-27T18:03:55.043025+00:00"
+      "last_successful_at": "2026-11-28T01:37:53.859469+00:00"
     },
     "Welo Data": {
       "status": "ok",
       "count": 477,
       "coverage": "full_board",
-      "last_successful_at": "2026-11-27T18:04:56.049943+00:00"
+      "last_successful_at": "2026-11-28T01:37:53.859469+00:00"
     },
     "TELUS Digital": {
       "status": "ok",
@@ -24,7 +24,7 @@
       "status": "ok",
       "count": 827,
       "coverage": "full_board",
-      "last_successful_at": "2026-11-27T18:05:41.067627+00:00"
+      "last_successful_at": "2026-11-28T01:37:53.859469+00:00"
     }
   }
 }
